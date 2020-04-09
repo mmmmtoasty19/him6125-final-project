@@ -202,9 +202,238 @@
       <column aggregation='None' caption='State Fips' datatype='string' name='[STATE_FIPS]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column aggregation='None' caption='State Name' datatype='string' name='[STATE_NAME]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.501597' measure-ordering='alphabetic' measure-percentage='0.498403' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.552066' measure-ordering='alphabetic' measure-percentage='0.447934' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='cdc_prevention_programs' inline='true' name='federated.06fgpt51vzfxno1c2u7cf10ybxwp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cdc_prevention_programs' name='textscan.0n719jw1o8yux61a5a7nf1kuk5uk'>
+            <connection class='textscan' directory='Data/Downloads' filename='cdc_prevention_programs.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0n719jw1o8yux61a5a7nf1kuk5uk' name='cdc_prevention_programs.csv' table='[cdc_prevention_programs#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Name' ordinal='0' />
+            <column datatype='string' name='Address Line 1' ordinal='1' />
+            <column datatype='string' name='Address Line 2' ordinal='2' />
+            <column datatype='string' name='City' ordinal='3' />
+            <column datatype='string' name='State' ordinal='4' />
+            <column datatype='string' name='Zip' ordinal='5' />
+            <column datatype='string' name='Phone' ordinal='6' />
+            <column datatype='string' name='Web Address' ordinal='7' />
+            <column datatype='string' name='Recognition Status' ordinal='8' />
+            <column datatype='string' name='Class open To' ordinal='9' />
+            <column datatype='string' name='Delivery Mode' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address Line 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Address Line 1]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>Address Line 1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address Line 2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Address Line 2]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>Address Line 2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Phone]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>Phone</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Web Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Web Address]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>Web Address</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recognition Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Recognition Status]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>Recognition Status</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Class open To</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Class open To]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>Class open To</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery Mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Delivery Mode]</local-name>
+            <parent-name>[cdc_prevention_programs.csv]</parent-name>
+            <remote-alias>Delivery Mode</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column aggregation='None' datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+        <semantic-values semantic-role='[City].[Name]'>
+          <semantic-value key='&quot;Asheville Nc&quot;' value='&quot;Asheville&quot;' />
+        </semantic-values>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Recognition Status]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='None' datatype='string' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column-instance column='[Recognition Status]' derivation='None' name='[none:Recognition Status:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.639669' measure-ordering='alphabetic' measure-percentage='0.360331' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Recognition Status:nk]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;Pending&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;Preliminary&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;Full&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[City].[Name]' value='%null%' />
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[State].[Name]' value='&quot;North Carolina&quot;' />
       </semantic-values>
     </datasource>
   </datasources>
@@ -333,9 +562,120 @@
       </table>
       <simple-id uuid='{6C238617-F677-44BA-8440-A63D2D69B790}' />
     </worksheet>
+    <worksheet name='Prevention Program Locations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cdc_prevention_programs' name='federated.06fgpt51vzfxno1c2u7cf10ybxwp' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.06fgpt51vzfxno1c2u7cf10ybxwp'>
+            <column aggregation='None' datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <semantic-values semantic-role='[City].[Name]'>
+                <semantic-value key='&quot;Asheville Nc&quot;' value='&quot;Asheville&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[Recognition Status]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Recognition Status]' derivation='None' name='[none:Recognition Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[Longitude (generated)]' included-values='non-null' />
+          <filter class='categorical' column='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;NC&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[none:State:nk]</column>
+            <column>[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[Latitude (generated)]</column>
+            <column>[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[Longitude (generated)]' field-type='quantitative' max='-8374513.3498472599' min='-9381620.7338308152' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[Latitude (generated)]' field-type='quantitative' max='4526175.4255107595' min='3892722.4611066743' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[none:City:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[none:City:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[none:City:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+            <format attr='enabled' id='admin-2-boundaries-bg' value='true' />
+            <format attr='enabled' id='admin-2-boundaries' value='true' />
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='light' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='County' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[none:Recognition Status:nk]' />
+              <lod column='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[none:City:nk]' />
+              <geometry column='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[Latitude (generated)]</rows>
+        <cols>[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{BB66C837-5406-420D-A1A6-C855122AA91D}' />
+    </worksheet>
   </worksheets>
-  <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Diabetes Map'>
+  <windows source-height='51'>
+    <window class='worksheet' name='Diabetes Map'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -371,6 +711,39 @@
         <default-map-tool-selection tool='16' />
       </viewpoint>
       <simple-id uuid='{E6E049EE-557F-4E64-ADF4-0D5E19871F0D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Prevention Program Locations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.06fgpt51vzfxno1c2u7cf10ybxwp].[none:Recognition Status:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2547AC35-A361-439C-983E-E9BC1ADAFB2D}' />
     </window>
   </windows>
 </workbook>

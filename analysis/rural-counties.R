@@ -8,6 +8,7 @@ library(magrittr) # enables piping : %>%
 library(dplyr)    # data wrangling
 library(ggplot2)  # graphs
 library(tidyr)    # data tidying
+library(flextable)
 
 # ---- load-sources ---------------------------------------------------
 
@@ -47,7 +48,26 @@ ds0 <- nc_diabetes_data %>%
   left_join(us_diabetes_totals, by = c("year" = "Year")) 
 
 
+# ---- pct-diff ----------------------------------------------------------------
 
+pct_diff <- ds0 %>% 
+  filter(year == 2016) %>% 
+  mutate(
+    percentage = Percentage
+    ,us_total = `Total - Percentage`
+  ) %>% 
+  select(County,rural,percentage,us_total) %>% 
+  group_by(rural) %>% 
+  summarise(
+    n = n()
+    ,pct_diabetes = round(mean(percentage),2)
+    ,us_total = max(us_total)
+    ,pct_diff = round((pct_diabetes - us_total)/us_total*100,2)
+  )
+colnames(pct_diff) <- c("Rural", "N","NC Diabetes (%)","US Diabetes (%)","% Diff")
+
+pct_diff_table <- flextable(pct_diff)
+pct_diff_table
 
 # ---- line-graph ----------------------------------------------------
 
@@ -104,3 +124,15 @@ g_obesity <- nc_diabetes_data_16 %>%
 
   
 g_obesity
+
+
+# ---- NC-Population ------------------------------------------------------
+
+nc_pop <- 10488084
+pct_diabetes <- 0.13
+programs <- 77
+
+pop_per_program <-  (nc_pop*pct_diabetes)/programs
+
+
+
