@@ -1,13 +1,16 @@
 ---
-title: 'North Carolina Where the Only Thing Sweeter Than the Tea is Our Blood Sugar : Addressing the Diabetes Epidemic in Rural North Carolina'
+title: 'North Carolina Where the Only Thing Sweeter Than the Tea is Our Blood Sugar
+  : Addressing the Diabetes Epidemic in Rural North Carolina'
 author: "Kyle Belanger"
+csl: ../biblography/apa.csl
 output:
   html_document:
     toc: yes
-bibliography: ../biblography/him6125-final-project.bib
-csl: ../biblography/apa.csl
+  word_document:
+    toc: yes
 nocite: |
   @UniStatesCensusBureau2020
+bibliography: ../biblography/him6125-final-project.bib
 ---
 
 <!-- These two chunks should be added in the beginning of every .Rmd that you want to source an .R script -->
@@ -48,7 +51,7 @@ read_chunk("./analysis/rural-counties.R")
 
 
 <!-- Load packages to be used in this report. --> 
-```{r load-packages, echo=echoChunks, message=FALSE}
+```{r load-packages, echo=echoChunks, message=FALSE, warning=FALSE}
 ```
 
 
