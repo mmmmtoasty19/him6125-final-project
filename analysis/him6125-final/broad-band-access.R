@@ -23,7 +23,6 @@ acs_raw <- readr::read_csv("./data-public/raw/ACS/ACSDP5Y2018.DP02_data_with_ove
 nc_county_map <- map_data("county",region = "north carolina")
 
 
-
 # ---- tweak-data -----------------------------------------------------
 
 acs0 <- acs_raw %>% 

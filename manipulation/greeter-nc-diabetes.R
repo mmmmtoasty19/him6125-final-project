@@ -31,14 +31,24 @@ import_data <- function(path_folder){
 
 diabetes_list <- import_data("./data-public/raw/nc_diabetes_data") 
 
+
+# ---- tweak-data
+
+#convert from list to data frame
 diabetes_list <-  do.call(rbind.data.frame,diabetes_list) 
+#drop pre created row names
 rownames(diabetes_list) <- c()
 
+#clear white space
+
+diabetes_list <- diabetes_list %>% 
+  mutate_at("County",trimws)
 
 
+# ---- save-data ------------------------------------------------------
 
 readr::write_rds(diabetes_list,"./data-public/derived/nc-diabetes-data.rds")
 readr::write_csv(diabetes_list,"./data-public/derived/nc-diabetes-data.csv")
 
 
-# ---- save-data ------------------------------------------------------
+

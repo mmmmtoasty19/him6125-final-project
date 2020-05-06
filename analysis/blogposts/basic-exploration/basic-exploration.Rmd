@@ -20,7 +20,7 @@ output:
 # cat("Working directory: ", getwd()) # check where you are
   library(knitr)
 # Rmd is in "./reports/reportA/reportA.Rmd", but now the root is "./"
-  knitr::opts_knit$set(root.dir='../../') 
+  knitr::opts_knit$set(root.dir='../../../') 
 ```
 
 <!--  The 2nd mandatory chunck  -->
@@ -42,13 +42,16 @@ opts_chunk$set(
   # dev = "pdf"#,
   # dev.args=list(pdf = list(colormodel = 'cmyk'))
 )
-echoChunks <- FALSE
+echoChunks <- TRUE
 options(width=120) #So the output is 50% wider than the default.
 # connect to the file with the underlying R script  
-read_chunk("./analysis/*/report_1.R") 
+read_chunk("./analysis/blogposts/basic-exploration/basic-exploration.R") 
 ```
 
 
+# Abstract
+
+In Progress 
 
 <!-- Load packages to be used in this report. --> 
 ```{r load-packages, echo=echoChunks, message=FALSE}
@@ -69,27 +72,37 @@ read_chunk("./analysis/*/report_1.R")
 #Put code in here.  It doesn't call a chunk in the codebehind file.
 ```
 
+# Data
+
+The data for this exploration comes from several different sources:
+
+1. The Diabetes data was taken from the US Diabetes Surveillance System; www.cdc.gov/diabetes/data; Division of Diabetes Translation - Centers for Disease Control and Prevention.  The data was downloaded by year, and compiled into one set.
+
+2. The list of rural counties is compiled from The US Census Bureau, it includes all North Carolina Counties that are at least 90% rural, more on the topic can be found here [Rural America](https://gis-portal.data.census.gov/arcgis/apps/MapSeries/index.html?appid=7a41374f6b03456e9d138cb014711e01)
+
 <!-- Load the datasets.   -->
-```{r load-data, echo=echoChunks, results='show', message=FALSE}
+```{r load-data, echo=echoChunks, results='show', message=FALSE, warning=FALSE}
 ```
 
-<!-- Inspect the datasets.   -->
-```{r inspect-data, echo=echoChunks, results='show', message=FALSE}
-```
+
+
+# Data Tweaks
+
+The Diabetes data comes quite tidy from the CDC, the script to combine each year can be found here <!-- INSERT LINK TO GIT HUB SCRIPT -->
+The only tweaks done here are to combine the rural countines column, and the map data for creating maps.
 
 <!-- Tweak the datasets.   -->
 ```{r tweak-data, echo=echoChunks, results='show', message=FALSE}
 ```
 
 
+# Overall
 
-<!-- Basic table view.   -->
-```{r basic-table, echo=TRUE, results='show', message=FALSE}
+When examining North Carolina as a whole we can see that NC has been trending much higher than the United States as a whole.  We see that in 2016 there was a large spike in diagnosied cases, unfortunally this is the last year of data available to see if this upward trend contiunes. 
+
+```{r g1, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
 ```
 
-<!-- Basic graph view.   -->
-```{r basic-graph, echo=TRUE, results='show', message=FALSE}
-```
 
 
 
