@@ -10,6 +10,8 @@ library(ggplot2)  # graphs
 library(tidyr)    # data tidying
 library(maps)
 library(mapdata)
+library(sf)
+library(gganimate)
 
 
 
@@ -36,9 +38,7 @@ rural_counties <- readr::read_csv("./data-public/metadata/rural-counties.csv")
 
 county_centers_raw <- readxl::read_xlsx("./data-public/raw/nc_county_centers.xlsx", col_names = c("county", "lat","long"))
   
-# load map data for NC
 
-nc_county_map <- map_data("county",region = "north carolina")
 
 
 
@@ -69,11 +69,6 @@ nc_diabetes_data <- nc_diabetes_data_raw %>%
   ) %>% 
   mutate_at("county",tolower) %>% 
   left_join(us_diabetes_data)
- 
-# join all data, filter by year before making maps
-nc_diabetes_map <- nc_county_map %>% 
-  left_join(nc_diabetes_data, by = c('subregion' = 'county'))
-
 
 
 # ---- g1 ----------------------------------------------------------------------
@@ -107,3 +102,120 @@ nc_diabetes_data %>%
   )
     
 
+# ---- g2 -----------------------------------------------------------------
+
+d <- nc_diabetes_data %>% 
+  select(-us_pct) %>% 
+  mutate(
+    pct_rural  = if_else(rural == TRUE, percentage, NULL)
+    ,pct_urban = if_else(rural == FALSE, percentage, NULL)
+  ) %>% 
+  select(-countyfips,-percentage) %>% 
+  group_by(year) %>% 
+  summarise(
+    pct_rural = mean(pct_rural,na.rm = TRUE)
+    ,pct_urban = mean(pct_urban,na.rm = TRUE)
+  ) %>% left_join(us_diabetes_data) %>% 
+  pivot_longer(
+    cols       = c("us_pct", "pct_rural","pct_urban")
+    ,names_to  = "metric"
+    ,values_to = "value"
+    ,values_drop_na = TRUE
+  ) %>% 
+  mutate(
+    metric = factor(metric,
+                    levels  = c("pct_rural","pct_urban","us_pct")
+                    ,labels = c("Rural","Urban","US")
+                    )
+  )
+
+
+
+d %>% ggplot(aes(x = year, y = value, color = metric)) +
+  geom_line() +
+  geom_point(shape = 21, size = 3) +
+  # geom_smooth(method = "lm",se = FALSE) +
+  scale_y_continuous(labels = function(x) paste0(x, "%")) +
+  scale_color_brewer(palette = "Dark2") +
+  labs(
+    x      = NULL
+    ,y     = NULL
+    ,color = NULL
+    ,title = "Percent of Adults (20+) with Diagnosed Diabetes \nDisplaying Rural vs Urban"
+  ) 
+  # ggpmisc::stat_poly_eq(formula = y ~ + x 
+  #                     ,aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~"))
+  #                       ,parse = TRUE
+  #                       )
+
+
+# ---- g3 -----------------------------------------------------------------
+
+# 2006 Map Graph
+
+counties <- st_as_sf(map("county",region = "north carolina", plot = FALSE,fill = TRUE)) %>% 
+  mutate_at("ID", ~stringr::str_remove(.,"north carolina,")) %>% 
+  left_join(nc_diabetes_data, by = c("ID" = "county")) 
+
+
+county_centers <- st_as_sf(county_centers, coords = c("long","lat")
+                           ,remove = FALSE, agr = "constant", crs = 4326)  
+
+
+county_centers <- county_centers  %>% 
+  left_join(nc_diabetes_data)
+
+county_centers_2006 <- county_centers %>% filter(year == 2006)
+county_centers_2016 <- county_centers %>% filter(year == 2016)
+
+
+counties %>% 
+  filter(year == 2006) %>% 
+  ggplot() +
+  geom_sf(aes(fill = rural)) +
+  geom_sf(data = county_centers_2006
+          ,aes(size = percentage)
+          ,shape = 21
+          ,fill = "#0571b0"
+          ,color = "black"
+          ,alpha = 0.8) +
+  scale_size(range = c(1,10)) +
+  scale_fill_viridis_d(alpha = 0.5, direction = -1) +
+  guides(
+    fill = guide_legend(title = "Rural")
+    ,size = guide_legend(title = "Percentage")
+  ) +
+  labs(
+    title = "Diagnosied Diabetes by County 2006"
+  )
+
+
+# ---- g4 -----------------------------------------------------------------
+
+#2016 Map
+
+counties %>% 
+  filter(year == 2016) %>% 
+  ggplot() +
+  geom_sf(aes(fill = rural)) +
+  geom_sf(data = county_centers_2016
+          ,aes(size = percentage)
+          ,shape = 21
+          ,fill = "#0571b0"
+          ,color = "black"
+          ,alpha = 0.8) +
+  scale_size(range = c(1,10)) +
+  scale_fill_viridis_d(alpha = 0.5, direction = -1) +
+  guides(
+    fill = guide_legend(title = "Rural")
+    ,size = guide_legend(title = "Percentage")
+  ) +
+  labs(
+    title = "Diagnosied Diabetes by County 2016"
+  )
+
+
+  
+
+
+         

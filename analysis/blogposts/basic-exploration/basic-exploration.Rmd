@@ -1,7 +1,7 @@
 ---
-title: "Title"
-author: "Author"
-date: 
+title: "Exploration of Diabetes in Rural North Carolina"
+author: "Kyle Belanger"
+date: "5/06/2020"
 output:
   html_document:
     theme: simplex
@@ -53,8 +53,10 @@ read_chunk("./analysis/blogposts/basic-exploration/basic-exploration.R")
 
 In Progress 
 
+# Enviroment 
+
 <!-- Load packages to be used in this report. --> 
-```{r load-packages, echo=echoChunks, message=FALSE}
+```{r load-packages, echo=echoChunks, message=FALSE, warning=FALSE}
 ```
 
 
@@ -88,7 +90,7 @@ The data for this exploration comes from several different sources:
 
 # Data Tweaks
 
-The Diabetes data comes quite tidy from the CDC, the script to combine each year can be found here <!-- INSERT LINK TO GIT HUB SCRIPT -->
+The Diabetes data comes quite tidy from the CDC, the script to combine each year can be found [here]() <!-- INSERT LINK TO GIT HUB SCRIPT -->
 The only tweaks done here are to combine the rural countines column, and the map data for creating maps.
 
 <!-- Tweak the datasets.   -->
@@ -102,6 +104,25 @@ When examining North Carolina as a whole we can see that NC has been trending mu
 
 ```{r g1, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
 ```
+
+When examing the further breakdown of Urban Vs Rural we see that while all of North Carolina has a higher percentage of diagnosied cases than the US average, Rural North Carolina has a higher percetage of cases vs Urban NC. 
+
+```{r g2, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
+```
+
+
+# By County
+
+```{r g3, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px"}
+```
+
+
+
+```{r g4, echo=echoChunks, results='show', message=FALSE, fig.width=9, fig.height=5, out.width="900px"}
+```
+
+
+
 
 
 
