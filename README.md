@@ -5,4 +5,4 @@ This repo is a countiuned exploration of the data
 
 # Reports
 
-[.anaylsis/blogposts/basic-exploration](https://raw.githack.com/mmmmtoasty19/nc-diabetes-epidemic-2020/master/analysis/blogposts/basic-exploration/basic-exploration.html)  In Progress (state as of 5/6/2020) 
+[.anaylsis/blogposts/basic-exploration](https://raw.githack.com/mmmmtoasty19/nc-diabetes-epidemic-2020/master/analysis/blogposts/basic-exploration/basic-exploration.html)  In Progress (state as of 5/14/2020) 
