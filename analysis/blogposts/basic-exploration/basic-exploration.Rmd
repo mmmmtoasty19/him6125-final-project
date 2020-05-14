@@ -51,7 +51,11 @@ read_chunk("./analysis/blogposts/basic-exploration/basic-exploration.R")
 
 # Abstract
 
-In Progress 
+This post serves as an introduction into an exploration of the Diabetes Epidemic in North Carolina.  Through a series of post the project will evovle to explore the data avialable and provide possible solutions to the problem.  This idea is based off a report written as my Masters Capstone. This post will answer the following questions
+
+> 1.  What is the overall trend of diabetes in North Carolina.
+
+> 2. 
 
 # Enviroment 
 
@@ -113,16 +117,19 @@ When examing the further breakdown of Urban Vs Rural we see that while all of No
 
 # By County
 
-```{r g3, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px"}
+```{r g3, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
 ```
 
 
 
-```{r g4, echo=echoChunks, results='show', message=FALSE, fig.width=9, fig.height=5, out.width="900px"}
+```{r g4, echo=echoChunks, results='show', message=FALSE, fig.width=9, fig.height=5, out.width="900px",warning=FALSE}
 ```
 
 
+```{r animate, echo=echoChunks, results='hide', message=FALSE, fig.width=9, fig.height=5, out.width="900px",warning=FALSE}
+```
 
+![](./figure_rmd/animate_1.gif)
 
 
 

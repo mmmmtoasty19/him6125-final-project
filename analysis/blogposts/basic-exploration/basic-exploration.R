@@ -163,9 +163,12 @@ county_centers <- st_as_sf(county_centers, coords = c("long","lat")
 
 
 county_centers <- county_centers  %>% 
-  left_join(nc_diabetes_data)
+  left_join(nc_diabetes_data) %>% 
+  mutate(
+    rural = if_else(rural,"R","U")
+  )
 
-county_centers_2006 <- county_centers %>% filter(year == 2006)
+county_centers_2006 <- county_centers %>% filter(year == 2006) 
 county_centers_2016 <- county_centers %>% filter(year == 2016)
 
 
@@ -187,6 +190,23 @@ counties %>%
   ) +
   labs(
     title = "Diagnosied Diabetes by County 2006"
+  )
+
+
+
+
+
+counties %>% 
+  filter(year == 2006) %>% 
+  ggplot() +
+  geom_sf(aes(fill = percentage)) +
+  scale_fill_viridis_c(alpha = 0.6, direction = -1) +
+  geom_sf_text(aes(label = rural), data = county_centers_2006, color = "#666666") +
+  labs(
+    title = "Diagnosied Diabetes by County 2006"
+    ,x    = NULL
+    ,y    = NULL
+    ,fill = "Percentage"
   )
 
 
@@ -215,7 +235,38 @@ counties %>%
   )
 
 
-  
+counties %>% 
+  filter(year == 2016) %>% 
+  mutate(
+   percentage = if_else(percentage <25,percentage, NULL)
+  ) %>% 
+  ggplot() +
+  geom_sf(aes(fill = percentage)) +
+  scale_fill_viridis_c(alpha = 0.6
+                       ,direction = -1
+  ) +
+  geom_sf_text(aes(label = rural), data = county_centers_2016, color = "#666666") +
+  labs(
+    title = "Diagnosied Diabetes by County 2016"
+    ,x    = NULL
+    ,y    = NULL
+    ,fill = "Percentage"
+    ,caption = "Note : Jones County = 27.1%"
+  )
+
+# ---- animate ---------
+
+g <- counties %>% 
+  ggplot() +
+  geom_sf(aes(fill = percentage)) +
+  scale_fill_viridis_c(alpha = 0.6
+                       ,direction = -1
+  ) +
+  transition_manual(year)
+
+g <-  animate(g,end_pause = 10)
+
+anim_save("./analysis/blogposts/basic-exploration/figure_rmd/animate_1.gif")
 
 
          
