@@ -1,7 +1,7 @@
 ---
 title: "Exploration of Diabetes in Rural North Carolina"
 author: "Kyle Belanger"
-date: "5/06/2020"
+date: "`r Sys.Date()`"
 output:
   html_document:
     theme: simplex
@@ -51,7 +51,7 @@ read_chunk("./analysis/blogposts/basic-exploration/basic-exploration.R")
 
 # Abstract
 
-This post serves as an introduction into an exploration of the Diabetes Epidemic in North Carolina.  Through a series of post the project will evovle to explore the data avialable and provide possible solutions to the problem.  This idea is based off a report written as my Masters Capstone. This post will answer the following questions
+This post serves as an introduction into an exploration of the Diabetes Epidemic in North Carolina.  Through a series of post the project will evolve to explore the data available and provide possible solutions to the problem.  This idea is based off a report written as my Masters Capstone. This post will answer the following questions
 
 > 1.  What is the overall trend of diabetes in North Carolina.
 
@@ -73,69 +73,83 @@ This post serves as an introduction into an exploration of the Diabetes Epidemic
 ```{r declare-globals, echo=echoChunks, results='show', message=FALSE}
 ```
 
-<!-- Declare any global functions specific to a Rmd output.  Suppress the output. --> 
-```{r, echo=echoChunks, message=FALSE}
-#Put code in here.  It doesn't call a chunk in the codebehind file.
-```
 
 # Data
 
 The data for this exploration comes from several different sources:
 
-1. The Diabetes data was taken from the US Diabetes Surveillance System; www.cdc.gov/diabetes/data; Division of Diabetes Translation - Centers for Disease Control and Prevention.  The data was downloaded by year, and compiled into one set.
+1. The Diabetes data was taken from the US Diabetes Surveillance System; Division of Diabetes Translation - [Centers for Disease Control and Prevention](www.cdc.gov/diabetes/data).  The data was downloaded by year, and compiled into one set.
 
-2. The list of rural counties is compiled from The US Census Bureau, it includes all North Carolina Counties that are at least 90% rural, more on the topic can be found here [Rural America](https://gis-portal.data.census.gov/arcgis/apps/MapSeries/index.html?appid=7a41374f6b03456e9d138cb014711e01)
+2. The data set for National level data was taken from the CDC's National Health Interview Survey [(NHIS)](https://www.cdc.gov/nchs/nhis/index.htm)
+
+3. The list of rural counties is compiled from The US Census Bureau, it includes all North Carolina Counties that are at least 90% rural, more on the topic can be found here [Rural America](https://gis-portal.data.census.gov/arcgis/apps/MapSeries/index.html?appid=7a41374f6b03456e9d138cb014711e01)
 
 <!-- Load the datasets.   -->
 ```{r load-data, echo=echoChunks, results='show', message=FALSE, warning=FALSE}
 ```
 
-
+<!-- load map data -->
+```{r load-map-data, echo=echoChunks, results='show', message=FALSE, warning=FALSE}
+```
 
 # Data Tweaks
 
 The Diabetes data comes quite tidy from the CDC, the script to combine each year can be found [here]() <!-- INSERT LINK TO GIT HUB SCRIPT -->
-The only tweaks done here are to combine the rural countines column, and the map data for creating maps.
+The only tweaks done here are to combine the rural counties column, and the map data for creating maps.
 
 <!-- Tweak the datasets.   -->
 ```{r tweak-data, echo=echoChunks, results='show', message=FALSE}
 ```
 
+<!-- Merge datasets -->
 
-# Overall
-
-When examining North Carolina as a whole we can see that NC has been trending much higher than the United States as a whole.  We see that in 2016 there was a large spike in diagnosied cases, unfortunally this is the last year of data available to see if this upward trend contiunes. 
-
-```{r g1, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
+```{r merge-data, echo=echoChunks, results='show', message=FALSE, warning=FALSE}
 ```
 
-When examing the further breakdown of Urban Vs Rural we see that while all of North Carolina has a higher percentage of diagnosied cases than the US average, Rural North Carolina has a higher percetage of cases vs Urban NC. 
+# Overall - National Level
 
-```{r g2, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
+```{r o-g1, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
+```
+
+Overall the national average for diagnosed diabetes sharply rose through the early 2000's, leveling off starting in 2010.  These numbers however are estimates based on the CDC's National Health Interview Survey.  The estimates are based off the question, whether a health professional had ever told them that they had diabetes.  It is estimated however that 1 in 5 adults have never been diagnosed with diabetes and are thus unaware they have the disease, because of this it is believed the NHIS underestimates the true prevalence of diabetes. <!-- Insert Citation -->
+
+# Overall - State Level
+
+```{r s-g1, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
+```
+
+```{r s-g2, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
+```
+
+# Overall - North Carolina 
+
+When examining North Carolina as a whole we can see that NC has been trending much higher than the United States as a whole.  We see that in 2016 there was a large spike in diagnosed cases, unfortunately this is the last year of data available to see if this upward trend continues. 
+
+```{r nc-g1, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
+```
+
+When examining the further breakdown of Urban Vs Rural we see that while all of North Carolina has a higher percentage of diagnosed cases than the US average, Rural North Carolina has a higher percentage of cases vs Urban NC. 
+
+```{r nc-g2, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
 ```
 
 
 # By County
 
-```{r g3, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
+If we exam all county trends plotted together we notice something odd happens to the data in 2016, I am unable to find any evidence that the method of data collection changed in 2016, and unfortunately data from beyond 2016 is not yet avaliable.  
+
+```{r nc-g3, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
 ```
 
 
 
-```{r g4, echo=echoChunks, results='show', message=FALSE, fig.width=9, fig.height=5, out.width="900px",warning=FALSE}
-```
-
-
-```{r animate, echo=echoChunks, results='hide', message=FALSE, fig.width=9, fig.height=5, out.width="900px",warning=FALSE}
-```
-
-![](./figure_rmd/animate_1.gif)
 
 
 
 
 
-session information
+# Session information
+
 ===========================================================================
 
 For the sake of documentation and reproducibility, the current report was rendered in the following environment.  Click the line below to expand.

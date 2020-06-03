@@ -11,7 +11,7 @@ library(tidyr)    # data tidying
 library(maps)
 library(mapdata)
 library(sf)
-library(gganimate)
+library(readr)
 
 
 
@@ -38,8 +38,22 @@ rural_counties <- readr::read_csv("./data-public/metadata/rural-counties.csv")
 
 county_centers_raw <- readxl::read_xlsx("./data-public/raw/nc_county_centers.xlsx", col_names = c("county", "lat","long"))
   
+diabetes_atlas_data_raw <- read_csv("data-public/raw/DiabetesAtlasData.csv", 
+                              col_types = cols(LowerLimit = col_skip(), 
+                                               UpperLimit = col_skip(),
+                                               Percentage = col_double()), skip = 2)
 
 
+
+
+# ---- load-map-data ----------------------------------------------------------
+
+# load in both US State Map and NC County Map
+
+nc_counties_map <- st_as_sf(map("county",region = "north carolina", plot = FALSE,fill = TRUE)) %>% 
+  mutate_at("ID", ~stringr::str_remove(.,"north carolina,"))
+
+state_map_raw <- st_as_sf(map("state",plot = FALSE,fill = TRUE ))
 
 
 # ---- tweak-data --------------------------------------------------------------
@@ -56,12 +70,27 @@ county_centers <- county_centers_raw %>%
   mutate_at("county", tolower)
 
 
+
+
 us_diabetes_data <- us_diabetes_data_raw %>% 
-  filter(Year >= 2006) %>% 
+  filter(Year >= 2000) %>% 
   select( "Year","Total - Percentage") %>% 
   rename(year = Year , us_pct = `Total - Percentage`)
 
-#join us totals
+diabetes_atlas_data <- diabetes_atlas_data_raw %>% 
+  mutate_at("State", tolower) %>% 
+  filter(Year >= 2000)
+
+state_map_abb <- state_map_raw %>% 
+  left_join(read_csv("./data-public/metadata/state-abb.csv") %>% 
+              mutate_at("state", tolower)
+            ,by = c("ID" = "state") )
+  
+
+
+# ---- merge-data ---------------------------------------------------------
+
+#join US totals to NC data 
 
 nc_diabetes_data <- nc_diabetes_data_raw %>% 
   mutate(
@@ -71,7 +100,83 @@ nc_diabetes_data <- nc_diabetes_data_raw %>%
   left_join(us_diabetes_data)
 
 
-# ---- g1 ----------------------------------------------------------------------
+nc_counties_map <- nc_counties_map %>% 
+  left_join(nc_diabetes_data, by = c("ID" = "county")) %>% 
+  left_join(county_centers, by = c("ID" = "county")) %>% 
+  rename(
+    center_long = long
+    ,center_lat = lat)
+
+state_map <- state_map_abb %>% 
+  left_join(diabetes_atlas_data, by = c("ID" = "State")) %>% 
+  rename_all(tolower)
+  
+
+
+# ---- o-g1 ------------------------------------------------------------------
+
+o_g1 <- us_diabetes_data %>% 
+  ggplot(aes(x = year, y = us_pct)) +
+  geom_line(color= "#D95F02") +
+  geom_point(shape = 21, size = 3,color= "#D95F02") +
+  labs(
+    title    = "Percentage of Diagnosed Diabetes in Adults (18+), National Level"
+    ,x       = NULL
+    ,y       = NULL
+    ,caption = "Note: Data from the CDC's National Health Interview Survey (NHIS)"
+  )
+
+o_g1
+
+
+
+# ---- s-g1 -----------------------------------------------------------------
+
+
+s_g1 <- state_map %>% 
+  st_drop_geometry() %>% 
+  ggplot(aes(x = year, y = percentage, color = region)) +
+  geom_line(aes(group = id ),na.rm = TRUE) +
+  geom_vline(xintercept = 2011, linetype = "dashed", color = "gray") +
+  scale_color_brewer(palette    = "Dark2"
+                     ,direction = -1
+                     ,labels    = snakecase::to_title_case
+                     ) +
+  labs(
+    title    = "Percentage of Diagnosed Diabetes in Adults (18+) \nby State and Region"
+    ,x       = NULL
+    ,y       = NULL
+    ,color   = "Region"
+    ,caption = "Regions from US Census Bureau"
+  ) 
+
+s_g1
+
+
+
+
+# ---- s-g2 ---------------------------------------------------------------
+
+s_g2 <- state_map %>% 
+  st_drop_geometry() %>% 
+  filter(region == "south") %>% 
+  mutate_at("id", ~snakecase::to_title_case(.)) %>% 
+  ggplot(aes(x = year, y = percentage)) +
+  geom_line(aes(group = id ),na.rm = TRUE, color= "#D95F02") +
+  gghighlight::gghighlight(id == "North Carolina", label_params = list(vjust = 3)) +
+  labs(
+    title    = "Percentage of Diagnosed Diabetes in Adults (18+) \nSouth Region"
+    ,x       = NULL
+    ,y       = NULL
+    ,caption = "Regions from US Census Bureau"
+    
+  )
+
+s_g2
+
+
+
+# ---- nc-g1 ----------------------------------------------------------------------
 
 nc_diabetes_data %>% 
   group_by(year) %>% 
@@ -102,7 +207,7 @@ nc_diabetes_data %>%
   )
     
 
-# ---- g2 -----------------------------------------------------------------
+# ---- nc-g2 -----------------------------------------------------------------
 
 d <- nc_diabetes_data %>% 
   select(-us_pct) %>% 
@@ -149,7 +254,20 @@ d %>% ggplot(aes(x = year, y = value, color = metric)) +
   #                       )
 
 
-# ---- g3 -----------------------------------------------------------------
+# ---- nc-g3 ---------
+
+g3 <- nc_diabetes_data %>% 
+  ggplot(aes(x = year, y = percentage, group = county)) +
+  geom_line() +
+  scale_x_continuous(breaks = seq(2006,2017,1)) +
+  labs(
+    x  = NULL
+    ,y = "Percentage"
+  )
+g3
+
+
+# ---- testing -----------------------------------------------------------------
 
 # 2006 Map Graph
 
@@ -172,17 +290,22 @@ county_centers_2006 <- county_centers %>% filter(year == 2006)
 county_centers_2016 <- county_centers %>% filter(year == 2016)
 
 
+# label with text instead of bubbles, size depends on percentage
+
 counties %>% 
   filter(year == 2006) %>% 
   ggplot() +
   geom_sf(aes(fill = rural)) +
-  geom_sf(data = county_centers_2006
-          ,aes(size = percentage)
-          ,shape = 21
-          ,fill = "#0571b0"
-          ,color = "black"
-          ,alpha = 0.8) +
-  scale_size(range = c(1,10)) +
+  # geom_sf(data = county_centers_2006
+  #         ,aes(size = percentage)
+  #         ,shape = 21
+  #         ,fill = "#0571b0"
+  #         ,color = "black"
+  #         ,alpha = 0.8) +
+  geom_text(data = county_centers_2006
+            ,aes(x = long, y = lat, label = percentage, size = percentage)
+            ,color = "black") +
+  scale_size(range = c(1,5)) +
   scale_fill_viridis_d(alpha = 0.5, direction = -1) +
   guides(
     fill = guide_legend(title = "Rural")
@@ -192,6 +315,54 @@ counties %>%
     title = "Diagnosied Diabetes by County 2006"
   )
 
+
+# text labels, over color gradient, with outlines
+
+counties %>% 
+  filter(year == 2006) %>% 
+  ggplot() +
+  geom_sf(aes(fill = percentage, color = rural)) +
+  # geom_sf(data = county_centers_2006
+  #         ,aes(size = percentage)
+  #         ,shape = 21
+  #         ,fill = "#0571b0"
+  #         ,color = "black"
+  #         ,alpha = 0.8) +
+  # geom_text(data = county_centers_2006
+  #           ,aes(x = long, y = lat, label = percentage
+  #                # ,size = percentage
+  #                )
+            # ,color = "#353839") +
+  scale_size(range = c(1,5)) +
+  scale_fill_viridis_c(alpha = 0.6, direction = -1) +
+  scale_color_manual(
+    values = c(
+      "TRUE" = "black"
+      ,"FALSE" = "lightgrey"
+    )) +
+  guides(
+    fill = guide_legend(title = "Rural")
+    ,size = guide_legend(title = "Percentage")
+  ) +
+  labs(
+    title = "Diagnosied Diabetes by County 2006"
+  )
+
+
+
+#seperate scales for rural and urban
+
+counties %>% 
+  filter(year == 2006) %>% 
+  mutate(
+    percentage = if_else(rural, percentage, percentage * -1 ) ) %>% 
+  ggplot() +
+    geom_sf(aes(fill = percentage)) +
+  scale_fill_gradient2(
+    low = "#fc8d59"
+    ,mid = "white"
+    ,high = "#91bfdb"
+  )
 
 
 
@@ -210,12 +381,27 @@ counties %>%
   )
 
 
-# ---- g4 -----------------------------------------------------------------
+counties %>% 
+  filter(year == 2006) %>% 
+  ggplot() +
+  geom_sf(aes(fill = percentage, color = rural)) +
+  scale_fill_viridis_c(alpha = 0.6, direction = -1) +
+  scale_color_manual(values = c("TRUE" = "black", "FALSE" = "white")) +
+  # geom_sf_text(aes(label = rural), data = county_centers_2006, color = "#666666") +
+  labs(
+    title = "Diagnosied Diabetes by County 2006"
+    ,x    = NULL
+    ,y    = NULL
+    ,fill = "Percentage"
+  )
 
 #2016 Map
 
 counties %>% 
   filter(year == 2016) %>% 
+  mutate(
+    percentage = if_else(percentage <25,percentage, NULL)
+  ) %>% 
   ggplot() +
   geom_sf(aes(fill = rural)) +
   geom_sf(data = county_centers_2016
@@ -254,19 +440,79 @@ counties %>%
     ,caption = "Note : Jones County = 27.1%"
   )
 
-# ---- animate ---------
+# animate
 
-g <- counties %>% 
-  ggplot() +
-  geom_sf(aes(fill = percentage)) +
-  scale_fill_viridis_c(alpha = 0.6
-                       ,direction = -1
-  ) +
-  transition_manual(year)
+# g <- counties %>% 
+#   mutate(
+#     percentage = if_else(percentage <25,percentage, NULL)
+#   ) %>% 
+#   ggplot() +
+#   geom_sf(aes(fill = percentage)) +
+#   scale_fill_viridis_c(alpha = 0.6
+#                        ,direction = -1
+#   ) +
+#   geom_sf_text(aes(label = rural), data = county_centers, color = "#666666") +
+#   labs(
+#     title = "Year: {current_frame}"
+#   ) +
+#   transition_manual(year)
+# 
+# g <-  animate(g,end_pause = 10, duration = 15)
+# 
+# anim_save("./analysis/blogposts/basic-exploration/figure_rmd/animate_1.gif")
 
-g <-  animate(g,end_pause = 10)
 
-anim_save("./analysis/blogposts/basic-exploration/figure_rmd/animate_1.gif")
+#testing different graphs
+
+g10 <- nc_diabetes_data %>% 
+  filter(year == 2006) %>% 
+  ggplot(aes(x = reorder(county, percentage), y = percentage, fill = rural)) +
+  geom_col() +
+  coord_flip()
+
+g10
+
+g11 <- nc_diabetes_data %>% 
+  filter(year == 2006) %>% 
+  ggplot(aes(x = percentage, fill = rural)) +
+  # geom_histogram() +
+  geom_freqpoly(aes(color = rural))
+g11
 
 
-         
+g12 <- nc_diabetes_data %>% 
+  mutate(
+    percentage = if_else(percentage <25,percentage, NULL)
+  ) %>% 
+  ggplot(aes(x = county, y = year, fill = percentage)) +
+  geom_tile() +
+  scale_y_continuous(breaks = seq(2006,2017,1)) +
+  scale_fill_viridis_c()
+g12
+
+
+g15 <- nc_diabetes_data %>% 
+  ggplot(aes(x = year, y = percentage, group = county)) +
+  geom_line() +
+  scale_x_continuous(breaks = seq(2006,2017,1)) 
+g15
+
+
+g13 <- nc_diabetes_data %>% 
+  mutate(
+    percentage = if_else(percentage <25,percentage, NULL)
+  ) %>% 
+  ggplot(aes(x = year, y = percentage, group = year)) +
+  geom_boxplot()
+
+g13
+
+
+g14 <- diabetes_atlas_data %>% 
+  ggplot(aes(x = Year, y = Percentage, group = State)) +
+  geom_line(na.rm = TRUE, color = "#2b83ba", size = 1) +
+  gghighlight::gghighlight(State == "North Carolina", use_direct_label = FALSE)
+
+g14
+
+
