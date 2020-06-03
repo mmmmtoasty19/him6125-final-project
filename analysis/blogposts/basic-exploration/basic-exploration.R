@@ -13,8 +13,6 @@ library(mapdata)
 library(sf)
 library(readr)
 
-
-
 # ---- load-sources ---------------------------------------------------
 
 
@@ -28,13 +26,13 @@ ggplot2::theme_set(theme_bw())
 
 # load the data, and have all column names in lowercase
 
-nc_diabetes_data_raw <- readr::read_rds("./data-public/derived/nc-diabetes-data.rds") %>% 
+nc_diabetes_data_raw <- read_rds("./data-public/derived/nc-diabetes-data.rds") %>% 
   rename_all(tolower)
 
-us_diabetes_data_raw <- readr::read_csv("data-public/raw/us_diabetes_totals.csv", 
+us_diabetes_data_raw <- read_csv("data-public/raw/us_diabetes_totals.csv", 
                                         skip = 2)
 
-rural_counties <- readr::read_csv("./data-public/metadata/rural-counties.csv")
+rural_counties <- read_csv("./data-public/metadata/rural-counties.csv")
 
 county_centers_raw <- readxl::read_xlsx("./data-public/raw/nc_county_centers.xlsx", col_names = c("county", "lat","long"))
   
@@ -178,7 +176,7 @@ s_g2
 
 # ---- nc-g1 ----------------------------------------------------------------------
 
-nc_diabetes_data %>% 
+d1 <- nc_diabetes_data %>% 
   group_by(year) %>% 
   summarise(
     pct = mean(percentage)
@@ -193,10 +191,13 @@ nc_diabetes_data %>%
     metric = factor(metric
                     ,levels = c("pct","us_pct")
                     ,labels = c("NC", "National"))
-  ) %>% 
+  )
+
+nc_g1 <- d1 %>% 
   ggplot(aes(x = year, y = values, color = metric)) +
   geom_line() +
   geom_point(shape = 21, size = 3) +
+  geom_vline(xintercept = 2011, linetype = "dashed", color = "gray") +
   scale_y_continuous(labels = function(x) paste0(x, "%")) +
   scale_color_brewer(palette = "Dark2") +
   labs(
@@ -205,11 +206,12 @@ nc_diabetes_data %>%
     ,color = NULL
     ,title = "Percent of Adults (20+) with Diagnosed Diabetes"
   )
-    
+   
+nc_g1 
 
 # ---- nc-g2 -----------------------------------------------------------------
 
-d <- nc_diabetes_data %>% 
+d2 <- nc_diabetes_data %>% 
   select(-us_pct) %>% 
   mutate(
     pct_rural  = if_else(rural == TRUE, percentage, NULL)
@@ -234,12 +236,10 @@ d <- nc_diabetes_data %>%
                     )
   )
 
-
-
-d %>% ggplot(aes(x = year, y = value, color = metric)) +
+nc_g2 <- d2 %>% ggplot(aes(x = year, y = value, color = metric)) +
   geom_line() +
   geom_point(shape = 21, size = 3) +
-  # geom_smooth(method = "lm",se = FALSE) +
+  geom_vline(xintercept = 2011, linetype = "dashed", color = "gray") +
   scale_y_continuous(labels = function(x) paste0(x, "%")) +
   scale_color_brewer(palette = "Dark2") +
   labs(
@@ -247,24 +247,116 @@ d %>% ggplot(aes(x = year, y = value, color = metric)) +
     ,y     = NULL
     ,color = NULL
     ,title = "Percent of Adults (20+) with Diagnosed Diabetes \nDisplaying Rural vs Urban"
-  ) 
-  # ggpmisc::stat_poly_eq(formula = y ~ + x 
-  #                     ,aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~"))
-  #                       ,parse = TRUE
-  #                       )
-
-
-# ---- nc-g3 ---------
-
-g3 <- nc_diabetes_data %>% 
-  ggplot(aes(x = year, y = percentage, group = county)) +
-  geom_line() +
-  scale_x_continuous(breaks = seq(2006,2017,1)) +
-  labs(
-    x  = NULL
-    ,y = "Percentage"
   )
-g3
+
+nc_g2
+
+
+# ---- c-g1 --------------------------------------------------------------
+
+
+nc_counties_map_binned <- nc_counties_map %>% 
+  filter(year < 2016) %>% 
+  mutate(
+    bin = dlookr::binning(.$percentage, nbins = 6 ,type = "equal")
+    ,bin = forcats::fct_recode(bin
+      ,"6.5 - 7.97"  =  "[6.5,7.97]"
+      ,"7.97 - 9.43" =  "(7.97,9.43]" 
+      ,"9.43 - 10.9" =  "(9.43,10.9]" 
+      ,"10.9 - 12.4" =  "(10.9,12.4]"
+      ,"12.4 - 13.8" =  "(12.4,13.8]"  
+      ,"13.8 - 15.3" =  "(13.8,15.3]"
+    )
+  )
+
+c_g1 <- nc_counties_map_binned %>% 
+  filter(year == 2006) %>% 
+  ggplot() +
+  geom_sf(aes(fill = bin, color = rural)) +
+  scale_size(range = c(1,5)) +
+  scale_fill_viridis_d(alpha = 0.6, direction = -1) +
+  scale_color_manual(
+    values = c(
+      "TRUE" = "black"
+      ,"FALSE" = "lightgrey"
+      
+    ),guide = 'none') +
+  labs(
+    title = "Diagnosied Diabetes (Adults 20+) by County 2006"
+    ,fill = "Rural"
+  )
+
+c_g1
+
+
+
+
+
+  
+
+# ---- c-g2  --------------------------------------------------------------
+
+c_g2 <- nc_counties_map_binned %>% 
+  filter(year == 2011) %>% 
+  ggplot() +
+  geom_sf(aes(fill = bin, color = rural)) +
+  scale_size(range = c(1,5)) +
+  scale_fill_viridis_d(alpha = 0.6, direction = -1) +
+  scale_color_manual(
+    values = c(
+      "TRUE" = "black"
+      ,"FALSE" = "lightgrey"
+    ),guide = 'none') +
+  labs(
+    title = "Diagnosied Diabetes (Adults 20+) by County 2011"
+    ,fill = "Rural"
+  )
+
+c_g2
+
+# ---- c-g3 -------------------------------------------------------------
+
+c_g3 <- nc_counties_map_binned %>% 
+  filter(year == 2012) %>% 
+  ggplot() +
+  geom_sf(aes(fill = bin, color = rural)) +
+  scale_size(range = c(1,5)) +
+  scale_fill_viridis_d(alpha = 0.6, direction = -1) +
+  scale_color_manual(
+    values = c(
+      "TRUE" = "black"
+      ,"FALSE" = "lightgrey"
+    ),guide = 'none') +
+  labs(
+    title = "Diagnosied Diabetes (Adults 20+) by County 2012"
+    ,fill = "Rural"
+  )
+
+c_g3
+
+
+# ----c-g4 ----------------------------------------------------------------
+
+c_g4 <- nc_counties_map_binned %>% 
+  filter(year == 2015) %>% 
+  ggplot() +
+  geom_sf(aes(fill = bin, color = rural)) +
+  scale_size(range = c(1,5)) +
+  scale_fill_viridis_d(alpha = 0.6, direction = -1) +
+  scale_color_manual(
+    values = c(
+      "TRUE" = "black"
+      ,"FALSE" = "lightgrey"
+    ),guide = 'none') +
+  labs(
+    title = "Diagnosied Diabetes (Adults 20+) by County 2015"
+    ,fill = "Rural"
+  )
+
+c_g4
+
+
+
 
 
 # ---- testing -----------------------------------------------------------------
