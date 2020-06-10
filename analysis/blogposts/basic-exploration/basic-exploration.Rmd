@@ -1,19 +1,24 @@
 ---
-title: "Exploration of Diabetes in Rural North Carolina"
+title: "Diabetes in Rural North Carolina : Exploring Prevalence Trends"
 author: "Kyle Belanger"
 date: "`r Sys.Date()`"
 output:
   html_document:
     theme: simplex
-    toc: true
+    toc: yes
     toc_depth: 3
-    keep_md: false
-    toc_float: true
+    keep_md: no
+    toc_float: yes
     code_folding: hide
+  word_document:
+    toc: yes
+    toc_depth: '3'
+bibliography: ./bib/basic_bib.bib
+csl: ./bib/apa.csl
 ---
 
 <!-- These two chunks should be added in the beginning of every .Rmd that you want to source an .R script -->
-<!--  The 1st mandatory chunck  -->
+<!--  The 1st mandatory chunk  -->
 <!--  Set the working directory to the repository's base directory -->
 ```{r, echo=F, message=F} 
 #Don't combine this call with any other chunk 
@@ -23,7 +28,7 @@ output:
   knitr::opts_knit$set(root.dir='../../../') 
 ```
 
-<!--  The 2nd mandatory chunck  -->
+<!--  The 2nd mandatory chunk  -->
 <!-- Set the report-wide options, and point to the external code file. -->
 ```{r set_options, echo=F}
 # set options shared by all chunks
@@ -37,13 +42,15 @@ opts_chunk$set(
   out.width = "550px",
   fig.path = 'figure_rmd/',     
   dev = "png",
-  dpi = 400
+  dpi = 400,
+  warning = FALSE
   # fig.path = 'figure_pdf/',     
   # dev = "pdf"#,
   # dev.args=list(pdf = list(colormodel = 'cmyk'))
 )
-echoChunks <- TRUE
-options(width=120) #So the output is 50% wider than the default.
+echoChunks <- FALSE
+options(width=120
+        ,knitr.table.format = "pandoc") #So the output is 50% wider than the default.
 # connect to the file with the underlying R script  
 read_chunk("./analysis/blogposts/basic-exploration/basic-exploration.R") 
 ```
@@ -51,38 +58,42 @@ read_chunk("./analysis/blogposts/basic-exploration/basic-exploration.R")
 
 # Abstract
 
-This post serves as an introduction into an exploration of the Diabetes Epidemic in North Carolina.  Through a series of post the project will evolve to explore the data available and provide possible solutions to the problem.  This idea is based off a report written as my Masters Capstone. This post will answer the following questions
+Diabetes is growing at an epidemic rate in the United States, and what's true nationwide is also true in North Carolina.  It is estimated that Diabetes and prediabetes cost an
+estimated $10.9 billion in North Carolina each year [@ADA2015]. This post introduces the exploration of the Diabetes epidemic in North Carolina. Through a series of posts this project will examine various public data available on diabetes and explore possible solutions to address the rise of diabetes in North Carolina. This investigation stems from the Capstone project of my Health Care Informatics Masters program.  This post will answer the following questions:
 
-> 1.  What is the overall trend of diabetes in North Carolina.
 
-> 2. 
+> 1. What is the overall trend of diabetes prevalence in the United States?
+
+> 2. What is the trend of diabetes at a State LevelHow does diabetes prevalence vary by state and region?
+
+> 3. How do trends in diabetes prevalence vary across counties of North Carolina? 
+
+> 4. In which counties of North Carolia the most change in diabetes prevalence occur?
+
+> 5. How does change in diabetes prevalence compares between rural and urban counties?
 
 # Enviroment 
 
+___This section contains technical information for deeper analysis and reproduction. Casual readers are invited to skip it.___  
+
+Packages used in this report. 
 <!-- Load packages to be used in this report. --> 
 ```{r load-packages, echo=echoChunks, message=FALSE, warning=FALSE}
 ```
-
-
-<!-- Load the sources.  Suppress the output when loading sources. --> 
-```{r load-sources, echo=echoChunks, message=FALSE}
-```
-
-
+Definitions of global object (file paths,  factor levels, object groups ) used throughout the report. 
 <!-- Load any Global functions and variables declared in the R file.  Suppress the output. --> 
 ```{r declare-globals, echo=echoChunks, results='show', message=FALSE}
 ```
 
-
 # Data
 
-The data for this exploration comes from several different sources:
+The data for this exploration comes from several sources:
 
-1. The Diabetes data was taken from the US Diabetes Surveillance System; Division of Diabetes Translation - [Centers for Disease Control and Prevention](www.cdc.gov/diabetes/data).  The data was downloaded by year, and compiled into one set.
+1. The Diabetes data set for state and county levels were sourced from the US Diabetes Surveillance System; Division of Diabetes Translation - [Centers for Disease Control and Prevention](www.cdc.gov/diabetes/data).  The data was downloaded one year per file, and compiled into a single data set for analysis.
 
-2. The data set for National level data was taken from the CDC's National Health Interview Survey [(NHIS)](https://www.cdc.gov/nchs/nhis/index.htm)
+2. The Diabetes data set for National level data were sourced from the CDC's National Health Interview Survey [(NHIS)](https://www.cdc.gov/nchs/nhis/index.htm)
 
-3. The list of rural counties is compiled from The US Census Bureau, it includes all North Carolina Counties that are at least 90% rural, more on the topic can be found here [Rural America](https://gis-portal.data.census.gov/arcgis/apps/MapSeries/index.html?appid=7a41374f6b03456e9d138cb014711e01).  The list also contains any additional counties found to be rural according to The Office of Rural Health Policy, the list is available [here](https://www.hrsa.gov/sites/default/files/hrsa/ruralhealth/resources/forhpeligibleareas.pdf)
+3. The list of rural counties was taken from The Office of Rural Health Policy, the list is available [here](https://www.hrsa.gov/sites/default/files/hrsa/ruralhealth/resources/forhpeligibleareas.pdf)
 
 <!-- Load the datasets.   -->
 ```{r load-data, echo=echoChunks, results='show', message=FALSE, warning=FALSE}
@@ -94,8 +105,8 @@ The data for this exploration comes from several different sources:
 
 # Data Manipulation
 
-The Diabetes data comes quite tidy from the CDC, the script to combine each year can be found [here]() <!-- INSERT LINK TO GIT HUB SCRIPT -->
-The only tweaks done here are to combine the rural counties column, and the map data for creating maps.
+The combined data used in this anaylsis can be downloaded [here](https://github.com/mmmmtoasty19/nc-diabetes-epidemic-2020/blob/master/data-public/derived/nc-diabetes-data.csv).
+The only tweaks done here are to combine the rural counties column, and the data for creating maps.
 
 ### Tweaks
 
@@ -114,59 +125,79 @@ The only tweaks done here are to combine the rural counties column, and the map 
 ```{r o-g1, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
 ```
 
-Overall the national average for diagnosed diabetes sharply rose through the early 2000's, leveling off starting in 2010.  These numbers however are estimates based on the CDC's National Health Interview Survey.  The estimates are based off the question, whether a health professional had ever told them that they had diabetes.  It is estimated however that 1 in 5 adults have never been diagnosed with diabetes and are thus unaware they have the disease, because of this it is believed the NHIS underestimates the true prevalence of diabetes. <!-- Insert Citation -->
+Overall, the national average for diagnosed diabetes sharply rose through the early 2000's, leveling off around 2010.  These numbers however, are estimates based on the response to the CDC's National Health Interview Survey, and do not represent the actual confirmed diagnoses. The CDC estimates that 1 in 5 adults have undiagnosed diabetes, therefore the numbers reported by the NHIS are likely to underestimate the true prevalence [@CDCP2020].
 
 # Overall - State Level
 
-State and County level data is taken from the CDC's Behavioral Risk Factor Surveillance System [(BRFSS)](https://www.cdc.gov/brfss/index.html).  Again these results are based on the question "Has a doctor, nurse, or other health professional ever told you that you have diabetes?.  It is also worth noting that women who only experienced diabetes during pregnancy were not counting as having diabetes. The BRFSS is an ongoing, monthly telephone survey of the non-institutionalized adult (aged 18 years or older) population in each state.  2011 saw a major change to the survey as for the first time cellphone only homes into the survey.  This change was expected to increase coverage of lower income, lower educational levels, and younger age groups, because these groups more often exclusively rely on cellular telephones for personal communication.<!-- CITATION -->
+State and County level data on diabetes prevalence are taken from the CDC's Behavioral Risk Factor Surveillance System [(BRFSS)](https://www.cdc.gov/brfss/index.html). These results are based on the question "Has a doctor, nurse, or other health professional ever told you that you have diabetes?".  Women who only experienced diabetes during pregnancy were excluded from the counts. The BRFSS is an ongoing, monthly telephone survey of the non-institutionalized adult (aged 18 years or older) population in each state.  The year 2011 saw a major change to the methodology of the survey, which started to include homes without a landline phone.  This change was expected to increase coverage of lower income, lower educational levels, and younger age groups, because these groups more often exclusively rely on cellular telephones for personal communication.[@Pierannunzi2012]
 
 
 ```{r s-g1, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
 ```
 
-The data was separated into region based on the US Census [regions](https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf).  We can note that all states considered in the south have the highest prevalence of diabetes.  
+The above graph shows  diabetes prevalence trends by state, grouped into regions based on the US Census classification [regions](https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf). While all regions of the United states show positive growth in diabetes prevalence, the south exhibits a slightly higher growth rate, as well as the highest prevalence. 
 
 ```{r s-g2, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
 ```
 
-When focused just on the south region we can see that North Carolina falls in the middle of the pack for states in the south region.  
+When focusing on the south region, North Carolina falls close to the middle of Diabetes prevalence. 
 
 # Overall - North Carolina 
 
-When examining North Carolina as a whole we can see that NC has been trending much higher than the United States as a whole.  We see that in 2016 there was a large spike in diagnosed cases, unfortunately this is the last year of data available to see if this upward trend continues. It is worth noting that this data was complied using the county level data, which normalizes itself to 20 plus, for categorizing adults.  This is why we see a slightly higher percentage than previously has more cases of diabetes happen in the older population, so removing two years has adjusted the data slightly upwards. 
+When examining North Carolina as a whole we can see that NC has been trending much higher than the United States as a whole.  We see that in 2016 there was a large spike in diagnosed cases, unfortunately this is the last year of data available to see if this upward trend continues. The data below was complied by taking the average of all county level data in North Carolina. It can be noted that this trend line is slightly higher then in the previous graphs, this is due to the age cut offs used for National and State level data vs County Level data. The previous data used the cut off of 18 years of age for classifying adults, whereas the county level data uses 20 years of age to classify adults. By removing 18 and 19 year olds from the population, who typically have less diagnosed cases of diabetes then those of older ages, the data shifts slight up.
 
 ```{r nc-g1, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
 ```
 
-When examining the further breakdown of Urban Vs Rural we see that while all of North Carolina has a higher percentage of diagnosed cases than the US average, Rural North Carolina has a higher percentage of cases vs Urban NC. It is worth noting that after 2011 Rural NC was actually trending downward, while Urban NC was relativity steady.  This could be explained by the addition of cell phones to the BRFSS as many rural areas are often lower income areas and may only rely on a cell phone for communication.  As mentioned previously there is an odd spike in case in 2016 that can't be explained by current documentation. For the purpose of this evaluation 2016 will be excluded from the county level data since the odd trend can not be explained and no further data is available to determine if this is a real spike or some kind of data artifact. 
+We see a spike in 2016, the last year for which the data are available. However, we should be careful with our interpretation of this pattern, because the examination of the county-level trajectories reveals an aberration in the trend that requires a more rigorous investigation.
+
+
+```{r nc-data-aberration, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
+```
+
+While all of North Carolina has a higher prevalence than the national average, rural counties have systematically higher prevalence of diabetes than urban counties.  Note that after 2011 both Urban and Rural counties break the upward trend exhibited in the previous 5 years.  This could be explained by the addition of cell phones to the BRFS Survey as many rural areas are often lower income areas and may only rely on a cell phone for communication. As mentioned previously there is an odd spike in case in 2016 that can’t be explained by current documentation.  For the purpose of this evaluation 2016 will be excluded from the county level data since the odd trend can not be explained and no further data is available to determine if this is a real spike or could be attributed to methodology change or data quality. 
+
 
 ```{r nc-g2, echo=echoChunks, results='show', message=FALSE, fig.width=9, out.width="900px"}
 ```
 
 
-# By County
+# By County - Geographical  
 
-County level data first became available in 2004, three years of data is used to build these estimates. For example 2006 data was complied from 2005,2006,and 2007 BRFSS survey data. The county-level estimates were based on indirect model-dependent estimates using Bayesian multilevel modeling techniques.<!--CITATION:3-5--> This model-dependent approach employs a statistical model that "borrows strength" in making an estimate for one county from BRFSS data collected in other counties and states. Multilevel Binomial regression models with random effects of demographic variables (age 20-44, 45-64, >=65; race/ethnicity; sex) at the county-level were developed. Estimates were age adjusted to the 2000 US standard population using age groups, 20-44, 45-64, and 65 or older. <!-- Citation:6 -->  To keep the scale consistent across years the data has been binned into 6 equal categories. 
+County level data first became available in 2004, three years of data is used to build these estimates. For example, the 2006 estimates were computed using the date from 2005, 2006, and 2007 BRFS survey rounds. The county-level estimates were based on indirect model-dependent estimates using Bayesian multilevel modeling techniques[@Rao2003 ; @Barker2013]. This model-dependent approach employs a statistical model that "borrows strength" in making an estimate for one county from BRFSS data collected in other counties and states. Multilevel Binomial regression models with random effects of demographic variables (age 20-44, 45-64, >=65; race/ethnicity; sex) at the county-level were developed. Estimates were  adjusted for age to the 2000 US standard population using age groups of 20-44, 45-64, and 65 or older[@Klein2001].
+
+```{r spaghetti-plot, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
+```
+
+HOW DO I EXPLAIN THE ABOVE GRAPH?
+
+The following graphs displays the total estimated prevalence of Diabetes in each off the 100 North Carolina counties. To keep the scaling consistent between the graphs, we binned the estimates into 6 intervals of the same size.  Rural counties are highlighted with a stronger border line as well as a letter “R” in respective geographic centers. These graphs allow us to view geographical clusters of diabetes prevalence.   
 
 ```{r c-g1, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
 ```
 
-In 2006 the highest prevalence of diabetes is contained in the counties on the eastern half of the state close to the Virginia boarder.  We notice that the rural mountain counties (the western half of North Carolina) do not seem to have a high prevalence of diabetes in 2006. We also note a small cluster of higher then average cases in Robinson and Hoke counties
+We can see from the following histogram, the change in prevalence between 2006 to 2014. In 2006 their were 41 Rural counties in the bottom half of the bins.  In 2014 only 29 rural counties remain in the bottom half.    
 
-```{r c-g2, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
+```{r county-distribution-histogram, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
 ```
 
-2011 is the first year that the new survey data including cell phones would have been used to calculate the county estimates.  This data would include 2010, 2011, and 2012.  The area of high prevalence near Virginia still exists however, the overall percentage seems to have slightly gone down.  The cluster of counties around Robinson in the southeast part of the state have grown, and we begin to see a slight rise in the western portion of the state. 
+# By County - Percent Change
 
-```{r c-g3, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
+The following graphs display the overall change in estimated prevalence between 2006 to 2014.  
+
+```{r c-g3, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=6, out.width="900px", warning=FALSE}
 ```
 
-2012 is the first year that all three years used in the calculation would include cell phones (2011,2012,2013). While most of the rural areas stay the same, an overall increase of cases throughout the state can be noted.  This slight spike was expected as the use of cell phones for the survey data was believed to increase under represented populations. 
 
-```{r c-g4, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
+```{r pct_p-histogram, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
 ```
 
-2015 which contains the last year of data to observe appears to have a slightly lower amount of diagnosed diabetes then 2012.  This downward trend was seen in the overall graph above.  The cluster of rural areas in the western part of the state have dropped, however the areas in the east with higher amounts of cases are still noticeable. 
+```{r pct-table, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
+```
+
+By examining the trends, we see that both Urban and Rural saw similar increase in estimated prevalence between 2006 - 2014. While showing an similar increases rural counties suffer a higher overall prevalence of diabetes then there Urban counterparts. 
+
+
 
 # Next Steps
 
@@ -190,3 +221,6 @@ if( requireNamespace("devtools", quietly = TRUE) ) {
   sessionInfo()
 } 
 ```
+
+# References
+
