@@ -380,6 +380,7 @@ c_g1
 
 # ---- county-distribution-histogram ------------------------------------
 
+# Not USED
 c_g1a <- nc_counties_map_binned %>% 
   mutate(
     rural = factor(rural
@@ -407,21 +408,32 @@ c_g1a <- nc_counties_map_binned %>%
 
 c_g1a
 
-# testing other graphs
+# ---- county-boxplot ----
 
-c_g1b <- nc_counties_map %>% 
-  filter(year %in% c(2006,2014)) %>% 
-  ggplot(aes(x = rural, y = percentage)) +
-  geom_boxplot() +
-  # geom_jitter(width = 0.1) +
-  geom_count() +
-  facet_wrap(~year)
+c_g1c <- nc_counties_map %>% 
+  mutate(
+    rural = factor(rural
+                   ,levels = c(TRUE,FALSE)
+                   ,labels = c("Rural", "Urban")
+    )) %>% 
+  filter(year < 2015) %>%
+  ggplot(aes(x = year, y = percentage, group = interaction(year,rural), fill = rural)) +
+  geom_boxplot(alpha = 0.5) +
+  scale_fill_brewer(palette = "Dark2") +
+  scale_x_continuous(breaks = seq(2004,2014,2)) +
+  labs(
+    x      = NULL
+    ,y     = NULL
+    ,fill  = NULL
+    ,title = "Distribution  of Estimated Cases by County 2006 - 2014"
+  )
 
-c_g1b
+c_g1c
 
 
-# ---- c-g3 -------------------------------------------------------------------
 
+
+# ---- c-g4 ---------------------------------------------------------------
 d3 <- nc_counties_map %>% 
   st_drop_geometry() %>% 
   filter(year %in% c(2006,2014)) %>% 
@@ -434,87 +446,6 @@ d3 <- nc_counties_map %>%
   ) %>% 
   left_join(nc_counties_map_raw) %>% 
   st_as_sf()
-
-
-
-c_g3 <- d3 %>% 
-  ggplot() +
-  geom_sf() + #blank geom_sf keeps gridlines from overlapping map
-  geom_sf(aes(fill = pct_p ,color = rural)) +
-  geom_sf(data = nc_cities) +
-  ggrepel::geom_text_repel(data = nc_cities, 
-                           aes(x = long, y = lat, label = city)
-                           ,nudge_y = c(-1,1,1,-1,1)
-                           ,nudge_x = c(0,0,0,-1,0)
-  ) +
-  geom_text(data = . %>% filter(rural == TRUE)
-            ,aes(x = center_long, y = center_lat)
-            ,label = "R"
-            ,color = "#696969"
-  ) +
-  # scale_fill_viridis_c(alpha = 0.6, direction = -1) +
-  scale_fill_gradient2(
-    low = "#d01c8b"
-    ,mid = "#f7f7f7"
-    ,high = "#4dac26"
-    ,midpoint = 0
-  ) +
-  scale_color_manual(
-    values = c(
-      "FALSE" = "gray"
-      ,"TRUE" = "black"
-    ),guide = 'none') +
-  labs(
-    title = "Percentage Point Change of estimated Diabetes 2006-2014"
-    ,fill = "Percent Point"
-    ,y    = NULL
-    ,x    = NULL
-  ) +
-  theme(
-    panel.background = element_rect(fill = "aliceblue")
-    ,panel.grid.major = element_line(color = "#D4D4D4", linetype = "dashed", 
-                                     size = 0.5)
-  )
-
-c_g3
-
-
-# ---- pct_p-histogram ----------------------------------------------------------
-
-d4 <- d3 %>% 
-  st_drop_geometry() %>% 
-  mutate(
-    rural = factor(rural
-                   ,levels = c(TRUE,FALSE)
-                   ,labels = c("Rural", "Urban")
-    )
-  )
-
-g51 <- d4 %>% 
-  ggplot(aes(x = pct_p, fill = rural)) +
-  geom_histogram(binwidth = 0.5, position = "dodge", alpha = 0.8) +
-  geom_vline(xintercept = 0, linetype = "dashed", color = "#696969") +
-  scale_x_continuous(minor_breaks = seq(-2,4,0.5), breaks = seq(-2,4,1)) +
-  stat_bin(binwidth = 0.5
-           ,geom = "text"
-           ,aes(label = if_else(..count.. > 0 , ..count.., NA_real_))
-           ,position = position_dodge(width = 0.5 )
-           ,vjust = -0.4
-           ,size = 5
-           ,na.rm = TRUE) +
-  scale_fill_brewer(palette = "Dark2") +
-  labs(
-    x     = "Percentage Point Change"
-    ,y    = "Total Count"
-    ,fill = NULL
-  )
-
-g51
-
-
-
-# ---- c-g4 ---------------------------------------------------------------
-
 
 
 c_g4 <- d3 %>% 
@@ -559,22 +490,60 @@ c_g4 <- d3 %>%
 c_g4
 
 
+# ---- pct_p-histogram ----------------------------------------------------------
 
 
-# ---- pct-table ---- 
 
+
+d4 <- d3 %>% 
+  st_drop_geometry() %>% 
+  mutate(
+    rural = factor(rural
+                   ,levels = c(TRUE,FALSE)
+                   ,labels = c("Rural", "Urban")
+    )
+  )
+
+
+mean_d4 <- d4 %>% 
+  group_by(rural) %>% 
+  summarise(.groups = "keep"
+            ,pct_c = mean(pct_c)
+  )
+
+g51 <-  d4 %>% 
+  ggplot(aes(x = pct_c, fill = rural, y = ..density.., color = rural)) +
+  geom_histogram(binwidth = 5, position = "identity", alpha = 0.3) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~rural, ncol = 1)  +
+  geom_vline(aes(xintercept = pct_c), data = mean_d4) +
+  geom_text(aes(x = pct_c, y = 0.038, label = round(pct_c, 2))
+            ,data  = mean_d4
+            ,hjust = -0.15
+            ,size  = 5
+            ,color = "#000000") +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "#696969") +
+  scale_color_brewer(palette = "Dark2", guide = NULL) +
+  scale_fill_brewer(palette = "Dark2", guide = NULL) +
+  labs(
+    x = "Percentage Change"
+    ,y = "Density"
+    ,fill = NULL
+  )
+g51
+
+
+
+# ---- stats table ----
 
 pct_table <- d4 %>% 
   group_by(rural) %>% 
   summarise(.groups = "keep"
-    ,pos = sum(pct_p>0)
-    ,neg = sum(pct_p<0)
-    ,no_c = sum(pct_p == 0)
-  ) %>% ungroup() %>% knitr::kable()
+            ,pos = sum(pct_p>0)
+            ,neg = sum(pct_p<0)
+            ,no_c = sum(pct_p == 0)
+  ) %>% ungroup()
 
-
-
-pct_table 
 
 
 

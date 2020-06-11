@@ -3,6 +3,9 @@ title: "Diabetes in Rural North Carolina : Exploring Prevalence Trends"
 author: "Kyle Belanger"
 date: "`r Sys.Date()`"
 output:
+  word_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     theme: simplex
     toc: yes
@@ -10,9 +13,6 @@ output:
     keep_md: no
     toc_float: yes
     code_folding: hide
-  word_document:
-    toc: yes
-    toc_depth: '3'
 bibliography: ./bib/basic_bib.bib
 csl: ./bib/apa.csl
 ---
@@ -169,52 +169,44 @@ County level data first became available in 2004, three years of data is used to
 ```{r spaghetti-plot, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
 ```
 
-HOW DO I EXPLAIN THE ABOVE GRAPH?
+HOW DO I EXPLAIN THE ABOVE GRAPH? - I don't know how to describe the loess line.
 
 The following graphs displays the total estimated prevalence of Diabetes in each off the 100 North Carolina counties. To keep the scaling consistent between the graphs, we binned the estimates into 6 intervals of the same size.  Rural counties are highlighted with a stronger border line as well as a letter “R” in respective geographic centers. These graphs allow us to view geographical clusters of diabetes prevalence.   
 
 ```{r c-g1, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
 ```
 
-We can see from the following histogram, the change in prevalence between 2006 to 2014. In 2006 their were 41 Rural counties in the bottom half of the bins.  In 2014 only 29 rural counties remain in the bottom half.    
+The following box plot displays the distribution of estimated cases by county from 2006 to 2014.  For all years of current data the mean of rural counties is higher then that of their Urban counterparts. 
+  
 
-```{r county-distribution-histogram, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
+```{r county-boxplot, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
 ```
 
 # By County - Percent Change
 
 The following graphs display the overall change in estimated prevalence between 2006 to 2014.  
 
-```{r c-g3, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=6, out.width="900px", warning=FALSE}
+```{r c-g4, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=6, out.width="900px", warning=FALSE}
 ```
 
+The following chart displays the density curve of the percentage change for both rural and urban counties.  It is notable that the mean of change for Urban counties is actually higher then the mean for rural counties.  However, we also see that most change for both regions is positive growth. In fact only 16 rural, and 10 Urban counties experienced negative change in the given time frame.  While 35 rural and 34 urban counties experience growth in the same period. 
 
 ```{r pct_p-histogram, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
 ```
 
-```{r pct-table, echo=echoChunks, results='show', message=FALSE, fig.width=9,fig.height=5, out.width="900px", warning=FALSE}
-```
 
-By examining the trends, we see that both Urban and Rural saw similar increase in estimated prevalence between 2006 - 2014. While showing an similar increases rural counties suffer a higher overall prevalence of diabetes then there Urban counterparts. 
+# Conclusion and Next Steps
 
-
-
-# Next Steps
-
-This concludes the first post discussing the Diabetes Epidemic in Rural North Carolina, in future posts we will look at risk factors for diabetes, how population growth and decline could be affecting the trends, as well as looking at various prevention methods for diabetes.
-
-
+The original hypothesis of this report was that rural counties were growing at a higher rate then there urban counterparts.  Through out this post it has been shown that this hypothesis is incorrect, just being a rural county does not indicate diabetes growth, in fact the growth rate throughout North Carolina has been consistent. Further posts will explore other reasons for these trends. 
 
 
 # Session information
 
 ===========================================================================
 
-For the sake of documentation and reproducibility, the current report was rendered in the following environment.  Click the line below to expand.
+For the sake of documentation and reproducibility, the current report was rendered in the following environment.
 
-<details>
-  <summary>Environment <span class="glyphicon glyphicon-plus-sign"></span></summary>
-```{r session-info, echo=FALSE}
+```{r session-info, echo=echoChunks}
 if( requireNamespace("devtools", quietly = TRUE) ) {
   devtools::session_info()
 } else {
