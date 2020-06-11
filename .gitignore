@@ -43,3 +43,6 @@ vignettes/*.pdf
 *.docx
 *.twbr
 *.png
+
+
+data-unshared/*
