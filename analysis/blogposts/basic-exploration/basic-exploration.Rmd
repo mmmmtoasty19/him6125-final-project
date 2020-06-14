@@ -3,16 +3,16 @@ title: "Diabetes in Rural North Carolina : Exploring Prevalence Trends"
 author: "Kyle Belanger"
 date: "`r Sys.Date()`"
 output:
-  word_document:
-    toc: yes
-    toc_depth: '3'
   html_document:
-    theme: simplex
+    theme: journal
     toc: yes
     toc_depth: 3
     keep_md: no
     toc_float: yes
     code_folding: hide
+  word_document:
+    toc: yes
+    toc_depth: '3'
 bibliography: ./bib/basic_bib.bib
 csl: ./bib/apa.csl
 ---
@@ -48,7 +48,7 @@ opts_chunk$set(
   # dev = "pdf"#,
   # dev.args=list(pdf = list(colormodel = 'cmyk'))
 )
-echoChunks <- FALSE
+echoChunks <- TRUE
 options(width=120
         ,knitr.table.format = "pandoc") #So the output is 50% wider than the default.
 # connect to the file with the underlying R script  
