@@ -12,7 +12,7 @@ library(maps)
 library(mapdata)
 library(sf)
 library(readr)
-library(flextable) #tables
+
 
 # ---- load-sources ---------------------------------------------------
 
@@ -135,10 +135,10 @@ us_diabetes_data <- us_diabetes_data %>%
 
 o_g1 <- us_diabetes_data %>% 
   ggplot(aes(x = year, y = us_pct)) +
-  # geom_line(color= "#D95F02") +
-  geom_line(aes(color = change, group = 1)) +
-  # geom_point(shape = 21, size = 3,color= "#D95F02") +
-  geom_point(aes(color = change),shape = 21, size = 3) +
+  geom_line(color= "#D95F02") +
+  # geom_line(aes(color = change, group = 1)) +
+  geom_point(shape = 21, size = 3,color= "#D95F02") +
+  # geom_point(aes(color = change),shape = 21, size = 3) +
   scale_color_manual(values = c(
     "TRUE" = "#D95F02"
     ,"FALSE" = "#7570B3"
