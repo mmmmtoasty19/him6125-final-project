@@ -10,7 +10,7 @@ cat("\f") # clear console
 # ---- load-packages -----------------------------------------------------------
 # Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 
-library(tidyverse) # enables piping : %>% 
+library(tidyverse)
 
 # ---- declare-globals ---------------------------------------------------------
 
@@ -69,26 +69,80 @@ import_data <- function(path_folder){
 
 county_rankings <- import_data(folder_path)
 
+# ---- filter-data -----
+
+# filtering for diabetes risk factors
+
+
+risk_factors <- list()
+
+for (item in seq_along(county_rankings)){
+  name <- names(county_rankings[item])
+  d <- county_rankings[[item]] %>% 
+    select(1:3
+           ,year
+           ,contains(c(
+             "smoking"
+             ,"obesity"
+             ,"inactivity"))) %>% 
+    select(         # remove unneeded columns
+      -contains(c(
+          "ci_low"
+          ,"ci_high"
+          ,"z_score"
+          ,"sample_size"
+          )
+        )
+      ) %>% 
+    rename_with(.fn = ~str_extract(.,"adult_smoking|adult_obesity|physical_inactivity") 
+                ,.cols = contains(c(
+                  "smoking"
+                  ,"obesity"
+                  ,"inactivity"
+                  ))) %>% 
+    rename_with(
+      .cols = contains(c(
+        "smoking"
+        ,"obesity"
+        ,"inactivity"))
+      ,.fn = ~paste0(.,"_percent")) %>% 
+    rename_with(tolower)
+                      
+  risk_factors[[name]] <- d 
+}
+
+
+
+risk_factors_ds <- bind_rows(risk_factors)
+
+# save to disk
+
+risk_factors_ds %>% write_rds("./data-public/derived/nc-diabetes-risk-factors-2010-2020.rds"
+                            ,compress = "gz")
+risk_factors_ds %>% write_csv("./data-public/derived/nc-diabetes-risk-factors-2010-2020.csv")
+
+
+ # ---- testing single file ----
+# 
+# list.files(file_path)
+# 
+# 
+# ds0 <- readxl::read_excel(paste0(folder_path,"/","2013 County Health Ranking North Carolina Data - v1_0.xls"),sheet = 5, n_max = 2, col_names = FALSE)
+# 
+# 
+# 
+# ds1 <- data.frame(t(apply(ds0,1, zoo::na.locf,na.rm = FALSE))) #version 1, ds2 in use
+# 
+# 
+# ds2 <- ds0 %>% t() %>% as_tibble() %>% fill(V1) %>% mutate(name = paste(V1,V2, sep = "_")) %>% 
+#   mutate(across(name, ~ stringr::str_remove_all(.,"NA_"))) %>% pull(name)
+# 
+# names <- ds1 %>% t() %>% as_tibble() %>% mutate(name = paste(V1,V2, sep = "_")) %>% 
+#   mutate(across(name, ~ stringr::str_remove_all(.,"NA_"))) %>% pull(name)
+# ds3 <- readxl::read_excel(paste0(file_path,"/","2010 County Health Ranking North Carolina Data - v2.xls"),sheet = 4, skip = 2, col_names = names)
+# 
+# 
 
 
 
 
-
-# ---- testing single file ----
-
-list.files(file_path)
-
-
-ds0 <- readxl::read_excel(paste0(folder_path,"/","2013 County Health Ranking North Carolina Data - v1_0.xls"),sheet = 5, n_max = 2, col_names = FALSE)
-
-
-
-ds1 <- data.frame(t(apply(ds0,1, zoo::na.locf,na.rm = FALSE))) #version 1, ds2 in use
-
-
-ds2 <- ds0 %>% t() %>% as_tibble() %>% fill(V1) %>% mutate(name = paste(V1,V2, sep = "_")) %>% 
-  mutate(across(name, ~ stringr::str_remove_all(.,"NA_"))) %>% pull(name)
-
-names <- ds1 %>% t() %>% as_tibble() %>% mutate(name = paste(V1,V2, sep = "_")) %>% 
-  mutate(across(name, ~ stringr::str_remove_all(.,"NA_"))) %>% pull(name)
-ds3 <- readxl::read_excel(paste0(file_path,"/","2010 County Health Ranking North Carolina Data - v2.xls"),sheet = 4, skip = 2, col_names = names)
