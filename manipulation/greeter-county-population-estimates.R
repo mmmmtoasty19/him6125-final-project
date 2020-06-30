@@ -13,34 +13,37 @@ library(tidyverse) # enables piping : %>%
 
 # ---- load-data ---------------------------------------------------------------
 
-nc_risk_factors_raw <- read_rds("./data-public/derived/nc-diabetes-risk-factors-2010-2020.rds")
-
-nc_diabetes_data_raw <- read_rds("./data-public/derived/nc-diabetes-data.rds")
-
+ds0 <- readxl::read_excel("./data-unshared/raw/nc_county_population_estimates_2010_2019.xlsx", skip = 3)
 
 # ---- tweak-data -------------------------------------------------------------
 
-risk_factor_ds <- nc_risk_factors_raw %>% 
-  select(-state) %>% 
-  mutate(
-    across(year, as.numeric)
-  )
-
-nc_diabetes_ds <- nc_diabetes_data_raw %>% 
-  filter(year > 2009) %>% 
-  rename_with(tolower) %>% 
+ds1 <- ds0 %>% 
+  select(-Census,-`Estimates Base`) %>% 
   rename(
-    diabetes_percentage = percentage
+    county = ...1
+  ) %>% 
+  mutate(
+    across(
+      county
+      ,~str_remove_all(.,"County, North Carolina")
+    )
+  ) %>% 
+  filter(county != "North Carolina") %>% 
+  drop_na(`2010`) %>% 
+  mutate(
+      across(
+        county
+        ,~str_remove_all(.,"^.")
+      )
+    ) %>% 
+  pivot_longer(
+    cols = c(`2010`:`2019`)
+    ,names_to = "year"
+    ,values_to = "population"
   )
 
+# ---- save-to-disk -----------------------------------------------------------
 
-# ---- merge-data -------------------------------------------------------------
-
-ds_combine <- nc_diabetes_ds %>% 
-  left_join(risk_factor_ds) %>% 
-  select(-fips)
-
-
-# ---- save-data --------------------------------------------------------------
-
-ds_combine %>% write_rds("./data-public/derived/nc_risk_factors.rds")
+ds1 %>% write_rds("./data-public/derived/county-population-estimates.rds")
+    
+  
