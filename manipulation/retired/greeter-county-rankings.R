@@ -2,7 +2,8 @@
 rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
 cat("\f") # clear console 
 
-# IN PROGRESS
+# This script has been retired in favor of using the National Analytic data
+# vs using individual states excel sheets
 
 
 # ---- load-sources ------------------------------------------------------------

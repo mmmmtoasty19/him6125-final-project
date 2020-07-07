@@ -28,7 +28,8 @@ ds1 <- ds0 %>%
     pct_75_over = `pct_75+`
   ) %>% 
   rename_with(~str_replace_all(.,"-","_")) %>% 
-  drop_na()
+  drop_na() %>% 
+  mutate(across(rural, as_factor))
 
 set.seed(1234)
 
@@ -48,6 +49,7 @@ diabetes_dt1 <- rpart(
 diabetes_dt1
 
 rpart.plot(diabetes_dt1)
+summary(diabetes_dt1)
 
 # ---- random-forest ----------------------------------------------------------
 
@@ -64,6 +66,7 @@ diabetes_rf1 <- ranger(
   mtry = floor(n_features / 3),
   seed = 1234,
   importance = "impurity"
+  ,respect.unordered.factors = TRUE
 )
 
 

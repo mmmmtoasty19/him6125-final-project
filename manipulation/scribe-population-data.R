@@ -1,13 +1,16 @@
+#' ---
+#' author: Kyle Belanger
+#' date: "`r format(Sys.time(), '%d %B, %Y')`"
+#' 
+#' ---
 #These first few lines run only when the file is run in RStudio, !!NOT when an Rmd/Rnw file calls it!!
 rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
 cat("\f") # clear console 
-
 # ---- knitr-opts --------------------------------------------------------------
-knitr::opts_knit$set(root.dir='../')
-
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+knitr::opts_knit$set(root.dir = "../")
 
 # ---- load-sources ------------------------------------------------------------
-
 # ---- load-packages -----------------------------------------------------------
 # Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 
@@ -144,12 +147,4 @@ ds_combine_all <- ds4 %>%
 
 ds_combine_all %>% write_rds("./data-public/derived/combined-population-data.rds", compress = "gz")
 
-
-# ---- publish -----
-
-# rmarkdown::render(
-#   "./manipulation/scribe-population-data.R"
-#   ,output_dir = "./manipulation/publish"
-#   ,knit_root_dir = "../"
-# )
 
