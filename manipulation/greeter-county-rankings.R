@@ -17,6 +17,7 @@ library(tidyverse)
 folder_path <- "./data-unshared/raw/county_health_rankings_nc"
 
 
+
 import_data <- function(path_folder){
   # browser()
   files <- list.files(path_folder, full.names = TRUE)

@@ -13,6 +13,8 @@ library(tidyverse) # enables piping : %>%
 
 # ---- load-data ---------------------------------------------------------------
 
+
+
 nc_risk_factors_raw <- read_rds("./data-public/derived/nc-diabetes-risk-factors-2010-2020.rds")
 
 nc_diabetes_data_raw <- read_rds("./data-public/derived/nc-diabetes-data.rds")
@@ -44,3 +46,9 @@ ds_combine <- nc_diabetes_ds %>%
 # ---- save-data --------------------------------------------------------------
 
 ds_combine %>% write_rds("./data-public/derived/nc_risk_factors.rds")
+
+# ---- publish ----------------------------------------------------------------
+
+rmarkdown::render(
+  "./manipulation/scribe-risk-factors.R"
+)

@@ -2,6 +2,10 @@
 rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
 cat("\f") # clear console 
 
+# ---- knitr-opts --------------------------------------------------------------
+knitr::opts_knit$set(root.dir='../')
+
+
 # ---- load-sources ------------------------------------------------------------
 
 # ---- load-packages -----------------------------------------------------------
@@ -10,6 +14,8 @@ cat("\f") # clear console
 library(tidyverse) # enables piping : %>% 
 
 # ---- declare-globals ---------------------------------------------------------
+
+
 
 # ---- load-data ---------------------------------------------------------------
 
@@ -137,3 +143,13 @@ ds_combine_all <- ds4 %>%
 # ---- save-to-disk -----------------------------------------------------------
 
 ds_combine_all %>% write_rds("./data-public/derived/combined-population-data.rds", compress = "gz")
+
+
+# ---- publish -----
+
+# rmarkdown::render(
+#   "./manipulation/scribe-population-data.R"
+#   ,output_dir = "./manipulation/publish"
+#   ,knit_root_dir = "../"
+# )
+

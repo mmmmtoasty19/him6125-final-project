@@ -12,3 +12,25 @@ library(tidyverse) # enables piping : %>%
 # ---- declare-globals ---------------------------------------------------------
 
 # ---- load-data ---------------------------------------------------------------
+
+ds_risk_factors <- read_rds("./data-public/derived/nc_risk_factors.rds")
+ds_population   <- read_rds("./data-public/derived/combined-population-data.rds")
+rural_counties  <- read_csv("./data-public/metadata/rural-counties.csv")
+
+# ---- merge-data --------------------------------------------------------------
+
+ds_risk_factors_population <- ds_population %>% 
+  mutate(
+    across(county, trimws)
+  ) %>% 
+  left_join(ds_risk_factors) %>% 
+  mutate(
+    rural = county %in% rural_counties$rural_counties
+  )
+
+# ---- save-data --------------------------------------------------------------
+
+ds_risk_factors_population %>% write_rds("./data-public/derived/population-risk-factors.rds", compress = "gz")
+
+
+ds_risk_factors_population %>% write_csv("./data-public/derived/population-risk-factors.csv")
