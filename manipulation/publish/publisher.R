@@ -22,3 +22,5 @@ publish_report <- function(file, format){
 
 # publish_report("./manipulation/scribe-population-data.R", "html_document")
 publish_report("./manipulation/scribe-population-data.R", "github_document")
+publish_report("./manipulation/scribe-risk-factors.R", "github_document")
+

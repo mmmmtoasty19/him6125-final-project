@@ -22,10 +22,16 @@ rural_counties  <- read_csv("./data-public/metadata/rural-counties.csv")
 ds_risk_factors_population <- ds_population %>% 
   mutate(
     across(county, trimws)
+    ,across(county, tolower) 
   ) %>% 
+  relocate(year) %>% 
   left_join(ds_risk_factors) %>% 
   mutate(
-    rural = county %in% rural_counties$rural_counties
+    rural = county %in% tolower(rural_counties$rural_counties)
+  ) %>% 
+  relocate(
+    c(county_fips,diabetes_percentage)
+    ,.after = county
   )
 
 # ---- save-data --------------------------------------------------------------

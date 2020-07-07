@@ -1,31 +1,23 @@
-#' ---
-#' author: Kyle Belanger
-#' date: "`r format(Sys.Date(), '%m/%d/%Y')`"
-#' 
-#' ---
+scribe-risk-factors.R
+================
+Kyle Belanger
+07/07/2020
 
-#These first few lines run only when the file is run in RStudio, !!NOT when an Rmd/Rnw file calls it!!
-rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
-cat("\f") # clear console 
-
-# ---- load-sources ------------------------------------------------------------
-
-# ---- load-packages -----------------------------------------------------------
+``` r
 # Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 
-library(tidyverse) # enables piping : %>% 
+library(tidyverse)
+```
 
-# ---- declare-globals ---------------------------------------------------------
+# Load Data
 
-# ---- load-data ---------------------------------------------------------------
-
+``` r
 national_risk_factors_raw <- read_rds("./data-public/derived/national-diabetes-risk-factors-2010-2020.rds")
 
 nc_diabetes_data_raw <- read_rds("./data-public/derived/nc-diabetes-data.rds")
+```
 
-
-# ---- tweak-data -------------------------------------------------------------
-
+``` r
 # only using NC currently
 
 risk_factor_ds <- national_risk_factors_raw %>% 
@@ -42,25 +34,18 @@ nc_diabetes_ds <- nc_diabetes_data_raw %>%
     diabetes_percentage = percentage
   ) %>% 
   mutate(across(county,tolower))
+```
 
-
-# ---- merge-data -------------------------------------------------------------
-
+``` r
 ds_combine <- nc_diabetes_ds %>% 
   left_join(risk_factor_ds, by = c("county" = "name"
                                    ,"year" = "release_year")
             ) %>% 
   select(-countyfips,-state_abbreviation) %>% 
   relocate(diabetes_percentage, .after = county_fips)
-  
-  
-# ---- save-data --------------------------------------------------------------
+```
 
+``` r
 ds_combine %>% write_rds("./data-public/derived/nc_risk_factors.rds")
 ds_combine %>% write_csv("./data-public/derived/nc_risk_factors.csv")
-
-# ---- publish ----------------------------------------------------------------
-
-rmarkdown::render(
-  "./manipulation/scribe-risk-factors.R"
-)
+```

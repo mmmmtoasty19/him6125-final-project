@@ -63,7 +63,6 @@ for(item in seq_along(county_rankings)){
           "smoking"
           ,"obesity"
           ,"inactivity"
-          ,"food"
         )
       )
     ) %>% 
@@ -83,18 +82,6 @@ for(item in seq_along(county_rankings)){
         )
       )
     )
-  
-  if(str_detect(name, "2012")){
-    d <- d %>% 
-      select(
-      -access_to_healthy_foods_raw_value        
-      ,-access_to_healthy_foods_raw_value_1  
-      )
-  }
-  
-  d <- d %>% 
-    rename_with(~str_remove_all(.,"limited_"))
-  
   
   risk_factors[[name]] <- d
 }
@@ -122,6 +109,6 @@ ds_risk_factors <- ds_risk_factors_raw %>%
 
 # ---- save-to-disk -----------------------------------------------------------
 
-ds_risk_factors %>% write_rds("./data-public/derived/national-diabetes-risk-factors-2010-2020.rds")
+ds_risk_factors %>% write_rds("./data-public/derived/national-diabetes-risk-factors-2010-2020.rds", compress = 'gz')
 
 ds_risk_factors %>% write_csv("./data-public/derived/national-diabetes-risk-factors-2010-2020.csv")
