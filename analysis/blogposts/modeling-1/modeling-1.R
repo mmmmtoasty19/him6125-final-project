@@ -10,20 +10,22 @@ library(rsample)
 library(rpart)
 library(rpart.plot)
 library(caret)
+library(ranger)
 
 # ---- declare-globals ---------------------------------------------------------
+
 knitr::opts_knit$set(root.dir='../../../')
+set.seed(1234)
+
 # ---- load-data ---------------------------------------------------------------
 
+ds0 <- read_rds("./data-public/derived/population-risk-factors.rds")
 
-ds0 <- read_csv("./data-public/derived/population-risk-factors.csv")
+# ---- tweak-&-sample-data ----------------------------------------------------
 
-
-
-# ---- decision-tree ----------------------------------------------------------
-ds1 <- ds0 %>% 
-  filter(year == 2010) %>% 
-  select(-year,-county, -countyfips, -physical_inactivity_percent) %>% 
+ds_modeling <- ds0 %>% 
+   drop_na() %>%  
+  select(-year,-county, -county_fips, -physical_inactivity_percent) %>% 
   rename(
     pct_75_over = `pct_75+`
   ) %>% 
@@ -31,38 +33,60 @@ ds1 <- ds0 %>%
   drop_na() %>% 
   mutate(across(rural, as_factor))
 
-set.seed(1234)
+ds_split <- initial_split(ds_modeling, prop = 0.7, strata = "diabetes_percentage")
+ds_train <- training(ds_split)
+ds_test  <- testing(ds_split)
 
-split_1  <- initial_split(ds1, prop = 0.7)
-train_3  <- training(split_1)
-test_3   <- testing(split_1)
+# ---- glm ------------------------------------------------------------------
 
+diabetes_glm <- glm(diabetes_percentage ~ ., data = ds_train) 
+
+broom::tidy(diabetes_glm)
+
+diabetes_glm_cv <- train(
+  form = diabetes_percentage ~ ., 
+  data = ds_train, 
+  method = "glm",
+  trControl = trainControl(method = "cv", number = 10) 
+)
+
+
+broom::tidy(diabetes_glm_cv$finalModel)
+
+ds2 <- broom::augment(diabetes_glm_cv$finalModel, data = ds_train)
+
+ds2 %>% ggplot(aes(x = .fitted, y = .resid)) +
+  geom_point()
+
+vip::vip(diabetes_glm_cv)
+
+
+# ---- decision-tree ----------------------------------------------------------
 
 
 diabetes_dt1 <- rpart(
   formula = diabetes_percentage ~ .,
-  data    = train_3,
+  data    = ds_train,
   method  = "anova" 
 )
-
 
 diabetes_dt1
 
 rpart.plot(diabetes_dt1)
 summary(diabetes_dt1)
 
+vip::vip(diabetes_dt1)
+
 # ---- random-forest ----------------------------------------------------------
 
 
-library(ranger)
-
 # number of features
-n_features <- length(setdiff(names(train_3), "diabetes_percentage"))
+n_features <- length(setdiff(names(ds_train), "diabetes_percentage"))
 
 # train a default random forest model
 diabetes_rf1 <- ranger(
   diabetes_percentage ~ ., 
-  data = train_3,
+  data = ds_train,
   mtry = floor(n_features / 3),
   seed = 1234,
   importance = "impurity"
@@ -73,47 +97,9 @@ diabetes_rf1 <- ranger(
 (default_rmse <- sqrt(diabetes_rf1$prediction.error))
 
 
-g1 <- vip::vip(diabetes_rf1, geom = "point")
-g1
-
-pred <- predict(diabetes_rf1, data = test_3)
+vip::vip(diabetes_rf1, geom = "point")
 
 
 
-diabetes_predict <- test_3 %>% 
-  bind_cols("predictions" = pred[["predictions"]]) %>% 
-  mutate(
-    residual = predictions -diabetes_percentage
-  ) 
-
-diabetes_predict %>% 
-  ggplot(aes(x = predictions, y = residual)) +
-  geom_point()
 
 
-# ---- glm ------------------------------------------------------------------
-
-diabetes_glm <- glm(diabetes_percentage ~ ., data = train_3) 
-diabetes_glm
-
-broom::tidy(diabetes_glm)
-
-diabetes_glm_cv <- train(
-  form = diabetes_percentage ~ ., 
-  data = train_3, 
-  method = "glm",
-  trControl = trainControl(method = "cv", number = 10) 
-)
-diabetes_glm_cv
-
-ds2 <- broom::augment(diabetes_glm_cv$finalModel, data = train_3)
-
-ds2 %>% ggplot(aes(x = .fitted, y = .resid)) +
-  geom_point()
-
-vip::vip(diabetes_glm_cv)
-
-
-# ---- publish ----------------------------------------------------------------
-
-# rmarkdown::render("./analysis/blogposts/modeling-1/modeling-1.R")

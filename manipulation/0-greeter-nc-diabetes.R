@@ -29,7 +29,7 @@ import_data <- function(path_folder){
   return(dto)
 }
 
-diabetes_list <- import_data("./data-public/raw/nc_diabetes_data") 
+diabetes_list <- import_data("./data-unshared/raw/nc_diabetes_data") 
 
 
 # ---- tweak-data
@@ -47,7 +47,7 @@ diabetes_list <- diabetes_list %>%
 
 # ---- save-data ------------------------------------------------------
 
-readr::write_rds(diabetes_list,"./data-public/derived/nc-diabetes-data.rds")
+readr::write_rds(diabetes_list,"./data-public/derived/nc-diabetes-data.rds", compress = 'gz')
 readr::write_csv(diabetes_list,"./data-public/derived/nc-diabetes-data.csv")
 
 
