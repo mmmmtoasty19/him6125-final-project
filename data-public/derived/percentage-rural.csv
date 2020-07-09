@@ -1,0 +1,3144 @@
+county,state,abb,region,pct_rural,rural
+sebastian county,arkansas,ar,south,20.41,Mostly Urban
+sevier county,arkansas,ar,south,69.29,Mostly Rural
+sharp county,arkansas,ar,south,77.84,Mostly Rural
+stone county,arkansas,ar,south,100,Rural
+union county,arkansas,ar,south,55.07,Mostly Rural
+van buren county,arkansas,ar,south,100,Rural
+washington county,arkansas,ar,south,25.42,Mostly Urban
+white county,arkansas,ar,south,54.89,Mostly Rural
+yell county,arkansas,ar,south,81.36,Mostly Rural
+colusa county,california,ca,west,37.32,Mostly Urban
+butte county,california,ca,west,19.73,Mostly Urban
+alameda county,california,ca,west,0.39,Mostly Urban
+alpine county,california,ca,west,100,Rural
+amador county,california,ca,west,70.65,Mostly Rural
+calaveras county,california,ca,west,82.4,Mostly Rural
+contra costa county,california,ca,west,0.81,Mostly Urban
+del norte county,california,ca,west,40.19,Mostly Urban
+kings county,california,ca,west,12.67,Mostly Urban
+glenn county,california,ca,west,41.9,Mostly Urban
+humboldt county,california,ca,west,32.96,Mostly Urban
+imperial county,california,ca,west,19.09,Mostly Urban
+el dorado county,california,ca,west,36.9,Mostly Urban
+fresno county,california,ca,west,11.49,Mostly Urban
+inyo county,california,ca,west,51.27,Mostly Rural
+kern county,california,ca,west,12.51,Mostly Urban
+mariposa county,california,ca,west,100,Rural
+lake county,california,ca,west,34.4,Mostly Urban
+lassen county,california,ca,west,65.01,Mostly Rural
+los angeles county,california,ca,west,0.7,Mostly Urban
+madera county,california,ca,west,39.32,Mostly Urban
+marin county,california,ca,west,8.46,Mostly Urban
+orange county,california,ca,west,0.17,Mostly Urban
+mendocino county,california,ca,west,51.59,Mostly Rural
+merced county,california,ca,west,15.23,Mostly Urban
+modoc county,california,ca,west,72.73,Mostly Rural
+mono county,california,ca,west,39.48,Mostly Urban
+monterey county,california,ca,west,12.63,Mostly Urban
+napa county,california,ca,west,17.51,Mostly Urban
+nevada county,california,ca,west,46.42,Mostly Urban
+san bernardino county,california,ca,west,7.61,Mostly Urban
+sacramento county,california,ca,west,1.99,Mostly Urban
+san benito county,california,ca,west,27.6,Mostly Urban
+placer county,california,ca,west,19.66,Mostly Urban
+plumas county,california,ca,west,83.43,Mostly Rural
+riverside county,california,ca,west,5.65,Mostly Urban
+autauga county,alabama,al,south,42.89,Mostly Urban
+bibb county,alabama,al,south,76.07,Mostly Rural
+chambers county,alabama,al,south,46.97,Mostly Urban
+cherokee county,alabama,al,south,88.05,Mostly Rural
+clarke county,alabama,al,south,76.76,Mostly Rural
+butler county,alabama,al,south,72.22,Mostly Rural
+blount county,alabama,al,south,90.01,Mostly Rural
+bullock county,alabama,al,south,65.03,Mostly Rural
+chilton county,alabama,al,south,86.83,Mostly Rural
+choctaw county,alabama,al,south,100,Rural
+coosa county,alabama,al,south,100,Rural
+clay county,alabama,al,south,100,Rural
+cleburne county,alabama,al,south,100,Rural
+coffee county,alabama,al,south,48.25,Mostly Urban
+conecuh county,alabama,al,south,82.9,Mostly Rural
+colbert county,alabama,al,south,43.87,Mostly Urban
+escambia county,alabama,al,south,59.57,Mostly Rural
+covington county,alabama,al,south,70.58,Mostly Rural
+crenshaw county,alabama,al,south,100,Rural
+cullman county,alabama,al,south,73.04,Mostly Rural
+dale county,alabama,al,south,51.24,Mostly Rural
+dallas county,alabama,al,south,46.82,Mostly Urban
+dekalb county,alabama,al,south,90.91,Mostly Rural
+elmore county,alabama,al,south,59.85,Mostly Rural
+hale county,alabama,al,south,90.52,Mostly Rural
+etowah county,alabama,al,south,35.92,Mostly Urban
+fayette county,alabama,al,south,81.14,Mostly Rural
+franklin county,alabama,al,south,73.2,Mostly Rural
+geneva county,alabama,al,south,89.75,Mostly Rural
+greene county,alabama,al,south,100,Rural
+lee county,alabama,al,south,27.11,Mostly Urban
+henry county,alabama,al,south,89.03,Mostly Rural
+houston county,alabama,al,south,33.99,Mostly Urban
+jackson county,alabama,al,south,76.5,Mostly Rural
+jefferson county,alabama,al,south,9,Mostly Urban
+lamar county,alabama,al,south,100,Rural
+lauderdale county,alabama,al,south,47.97,Mostly Urban
+lawrence county,alabama,al,south,90.72,Mostly Rural
+monroe county,alabama,al,south,79.74,Mostly Rural
+limestone county,alabama,al,south,60.13,Mostly Rural
+lowndes county,alabama,al,south,100,Rural
+macon county,alabama,al,south,57,Mostly Rural
+madison county,alabama,al,south,15.76,Mostly Urban
+marengo county,alabama,al,south,71.39,Mostly Rural
+marion county,alabama,al,south,89.08,Mostly Rural
+mobile county,alabama,al,south,19.32,Mostly Urban
+marshall county,alabama,al,south,55.29,Mostly Rural
+st. clair county,alabama,al,south,71.18,Mostly Rural
+montgomery county,alabama,al,south,10.39,Mostly Urban
+morgan county,alabama,al,south,38.24,Mostly Urban
+perry county,alabama,al,south,100,Rural
+pickens county,alabama,al,south,100,Rural
+pike county,alabama,al,south,55.01,Mostly Rural
+randolph county,alabama,al,south,82.86,Mostly Rural
+russell county,alabama,al,south,35.17,Mostly Urban
+walker county,alabama,al,south,74.69,Mostly Rural
+shelby county,alabama,al,south,24.18,Mostly Urban
+sumter county,alabama,al,south,100,Rural
+talladega county,alabama,al,south,57.49,Mostly Rural
+tallapoosa county,alabama,al,south,77.58,Mostly Rural
+tuscaloosa county,alabama,al,south,25.01,Mostly Urban
+fairbanks north star borough,alaska,ak,west,35.65,Mostly Urban
+washington county,alabama,al,south,100,Rural
+wilcox county,alabama,al,south,100,Rural
+winston county,alabama,al,south,86.25,Mostly Rural
+aleutians east borough,alaska,ak,west,100,Rural
+aleutians west census area,alaska,ak,west,100,Rural
+denali borough,alaska,ak,west,100,Rural
+dillingham census area,alaska,ak,west,100,Rural
+bristol bay borough,alaska,ak,west,100,Rural
+costilla county,colorado,co,west,100,Rural
+crowley county,colorado,co,west,100,Rural
+custer county,colorado,co,west,100,Rural
+delta county,colorado,co,west,64.88,Mostly Rural
+denver county,colorado,co,west,0,Mostly Urban
+douglas county,colorado,co,west,11.2,Mostly Urban
+dolores county,colorado,co,west,100,Rural
+grand county,colorado,co,west,76.37,Mostly Rural
+elbert county,colorado,co,west,100,Rural
+el paso county,colorado,co,west,8.57,Mostly Urban
+fremont county,colorado,co,west,35.35,Mostly Urban
+garfield county,colorado,co,west,25.44,Mostly Urban
+gilpin county,colorado,co,west,100,Rural
+larimer county,colorado,co,west,15.2,Mostly Urban
+gunnison county,colorado,co,west,73.94,Mostly Rural
+hinsdale county,colorado,co,west,100,Rural
+huerfano county,colorado,co,west,66.96,Mostly Rural
+jackson county,colorado,co,west,100,Rural
+jefferson county,colorado,co,west,7.43,Mostly Urban
+kiowa county,colorado,co,west,100,Rural
+kit carson county,colorado,co,west,58.04,Mostly Rural
+lake county,colorado,co,west,35.64,Mostly Urban
+las animas county,colorado,co,west,46.37,Mostly Urban
+la plata county,colorado,co,west,63.5,Mostly Rural
+morgan county,colorado,co,west,35.15,Mostly Urban
+lincoln county,colorado,co,west,100,Rural
+logan county,colorado,co,west,33.6,Mostly Urban
+mesa county,colorado,co,west,13.18,Mostly Urban
+mineral county,colorado,co,west,100,Rural
+moffat county,colorado,co,west,31.05,Mostly Urban
+montezuma county,colorado,co,west,68.74,Mostly Rural
+montrose county,colorado,co,west,45.2,Mostly Urban
+prowers county,colorado,co,west,38.62,Mostly Urban
+otero county,colorado,co,west,34.17,Mostly Urban
+ouray county,colorado,co,west,100,Rural
+park county,colorado,co,west,100,Rural
+phillips county,colorado,co,west,100,Rural
+pitkin county,colorado,co,west,43.73,Mostly Urban
+san juan county,colorado,co,west,100,Rural
+routt county,colorado,co,west,43.4,Mostly Urban
+saguache county,colorado,co,west,100,Rural
+pueblo county,colorado,co,west,14.37,Mostly Urban
+rio blanco county,colorado,co,west,100,Rural
+rio grande county,colorado,co,west,70.23,Mostly Rural
+fairfield county,connecticut,ct,northeast,4.58,Mostly Urban
+san miguel county,colorado,co,west,100,Rural
+sedgwick county,colorado,co,west,100,Rural
+summit county,colorado,co,west,26.07,Mostly Urban
+teller county,colorado,co,west,69.49,Mostly Rural
+washington county,colorado,co,west,100,Rural
+weld county,colorado,co,west,21.29,Mostly Urban
+yuma county,colorado,co,west,66.59,Mostly Rural
+litchfield county,connecticut,ct,northeast,44.04,Mostly Urban
+hartford county,connecticut,ct,northeast,4.98,Mostly Urban
+middlesex county,connecticut,ct,northeast,22.56,Mostly Urban
+windham county,connecticut,ct,northeast,49.96,Mostly Urban
+kent county,delaware,de,south,27.19,Mostly Urban
+new haven county,connecticut,ct,northeast,3.32,Mostly Urban
+new london county,connecticut,ct,northeast,24.17,Mostly Urban
+tolland county,connecticut,ct,northeast,39.6,Mostly Urban
+sussex county,delaware,de,south,32.09,Mostly Urban
+district of columbia,district of columbia,dc,south,0,Mostly Urban
+new castle county,delaware,de,south,4.38,Mostly Urban
+brevard county,florida,fl,south,4.97,Mostly Urban
+charlotte county,florida,fl,south,8.87,Mostly Urban
+alachua county,florida,fl,south,20.97,Mostly Urban
+bay county,florida,fl,south,11.6,Mostly Urban
+bradford county,florida,fl,south,71.46,Mostly Rural
+broward county,florida,fl,south,0.02,Mostly Urban
+desoto county,florida,fl,south,42.67,Mostly Urban
+baker county,florida,fl,south,58.99,Mostly Rural
+calhoun county,florida,fl,south,77.51,Mostly Rural
+citrus county,florida,fl,south,34.99,Mostly Urban
+clay county,florida,fl,south,16.23,Mostly Urban
+collier county,florida,fl,south,7.2,Mostly Urban
+dixie county,florida,fl,south,87.68,Mostly Rural
+columbia county,florida,fl,south,64.82,Mostly Rural
+gilchrist county,florida,fl,south,90.05,Mostly Rural
+duval county,florida,fl,south,2.54,Mostly Urban
+escambia county,florida,fl,south,9.93,Mostly Urban
+flagler county,florida,fl,south,10.54,Mostly Urban
+franklin county,florida,fl,south,75.79,Mostly Rural
+gadsden county,florida,fl,south,68.46,Mostly Rural
+hillsborough county,florida,fl,south,3.18,Mostly Urban
+glades county,florida,fl,south,80.51,Mostly Rural
+gulf county,florida,fl,south,79.67,Mostly Rural
+hamilton county,florida,fl,south,78.89,Mostly Rural
+hardee county,florida,fl,south,49.16,Mostly Urban
+hendry county,florida,fl,south,38.49,Mostly Urban
+hernando county,florida,fl,south,20.23,Mostly Urban
+highlands county,florida,fl,south,22,Mostly Urban
+lake county,florida,fl,south,18.09,Mostly Urban
+jefferson county,florida,fl,south,100,Rural
+lafayette county,florida,fl,south,100,Rural
+holmes county,florida,fl,south,85.33,Mostly Rural
+indian river county,florida,fl,south,4.19,Mostly Urban
+jackson county,florida,fl,south,81.26,Mostly Rural
+martin county,florida,fl,south,6.69,Mostly Urban
+lee county,florida,fl,south,6.49,Mostly Urban
+leon county,florida,fl,south,11.73,Mostly Urban
+levy county,florida,fl,south,93.35,Mostly Rural
+liberty county,florida,fl,south,100,Rural
+madison county,florida,fl,south,79.35,Mostly Rural
+manatee county,florida,fl,south,3.99,Mostly Urban
+marion county,florida,fl,south,30.54,Mostly Urban
+pasco county,florida,fl,south,8.49,Mostly Urban
+miami-dade county,florida,fl,south,0.36,Mostly Urban
+monroe county,florida,fl,south,11.84,Mostly Urban
+nassau county,florida,fl,south,42.25,Mostly Urban
+osceola county,florida,fl,south,15.01,Mostly Urban
+palm beach county,florida,fl,south,0.91,Mostly Urban
+okaloosa county,florida,fl,south,10.08,Mostly Urban
+okeechobee county,florida,fl,south,35.96,Mostly Urban
+orange county,florida,fl,south,1.95,Mostly Urban
+seminole county,florida,fl,south,2.85,Mostly Urban
+pinellas county,florida,fl,south,0.25,Mostly Urban
+polk county,florida,fl,south,14.28,Mostly Urban
+putnam county,florida,fl,south,58.81,Mostly Rural
+st. johns county,florida,fl,south,22.57,Mostly Urban
+st. lucie county,florida,fl,south,3.56,Mostly Urban
+santa rosa county,florida,fl,south,21.36,Mostly Urban
+sarasota county,florida,fl,south,3.59,Mostly Urban
+wakulla county,florida,fl,south,73.11,Mostly Rural
+sumter county,florida,fl,south,23.15,Mostly Urban
+suwannee county,florida,fl,south,84.65,Mostly Rural
+anchorage municipality,alaska,ak,west,4.86,Mostly Urban
+bethel census area,alaska,ak,west,70.55,Mostly Rural
+kodiak island borough,alaska,ak,west,36.68,Mostly Urban
+haines borough,alaska,ak,west,100,Rural
+hoonah-angoon census area,alaska,ak,west,100,Rural
+juneau city and borough,alaska,ak,west,20.85,Mostly Urban
+kenai peninsula borough,alaska,ak,west,83.96,Mostly Rural
+ketchikan gateway borough,alaska,ak,west,24.07,Mostly Urban
+sitka city and borough,alaska,ak,west,21.65,Mostly Urban
+lake and peninsula borough,alaska,ak,west,100,Rural
+matanuska-susitna borough,alaska,ak,west,60.1,Mostly Rural
+nome census area,alaska,ak,west,65.97,Mostly Rural
+north slope borough,alaska,ak,west,45.2,Mostly Urban
+northwest arctic borough,alaska,ak,west,59.03,Mostly Rural
+petersburg census area,alaska,ak,west,100,Rural
+prince of wales-hyder census area,alaska,ak,west,100,Rural
+wrangell city and borough,alaska,ak,west,100,Rural
+skagway municipality,alaska,ak,west,100,Rural
+southeast fairbanks census area,alaska,ak,west,100,Rural
+valdez-cordova census area,alaska,ak,west,100,Rural
+yakutat city and borough,alaska,ak,west,100,Rural
+wade hampton census area,alaska,ak,west,100,Rural
+graham county,arizona,az,west,40.32,Mostly Urban
+yukon-koyukuk census area,alaska,ak,west,100,Rural
+apache county,arizona,az,west,78.23,Mostly Rural
+cochise county,arizona,az,west,38.7,Mostly Urban
+gila county,arizona,az,west,53.14,Mostly Rural
+coconino county,arizona,az,west,42.58,Mostly Urban
+santa cruz county,arizona,az,west,35.79,Mostly Urban
+greenlee county,arizona,az,west,49.09,Mostly Urban
+la paz county,arizona,az,west,63.97,Mostly Rural
+maricopa county,arizona,az,west,2.39,Mostly Urban
+mohave county,arizona,az,west,25.51,Mostly Urban
+navajo county,arizona,az,west,56.62,Mostly Rural
+pima county,arizona,az,west,7.61,Mostly Urban
+pinal county,arizona,az,west,19.16,Mostly Urban
+carroll county,arkansas,ar,south,77.55,Mostly Rural
+yavapai county,arizona,az,west,35.48,Mostly Urban
+yuma county,arizona,az,west,10.6,Mostly Urban
+arkansas county,arkansas,ar,south,38.84,Mostly Urban
+bradley county,arkansas,ar,south,52.76,Mostly Rural
+boone county,arkansas,ar,south,61.45,Mostly Rural
+ashley county,arkansas,ar,south,52.1,Mostly Rural
+baxter county,arkansas,ar,south,67.85,Mostly Rural
+benton county,arkansas,ar,south,26.57,Mostly Urban
+calhoun county,arkansas,ar,south,100,Rural
+chicot county,arkansas,ar,south,56.78,Mostly Rural
+conway county,arkansas,ar,south,70.34,Mostly Rural
+clark county,arkansas,ar,south,60.93,Mostly Rural
+clay county,arkansas,ar,south,59.33,Mostly Rural
+cleburne county,arkansas,ar,south,80.83,Mostly Rural
+cleveland county,arkansas,ar,south,100,Rural
+columbia county,arkansas,ar,south,58.57,Mostly Rural
+desha county,arkansas,ar,south,34.37,Mostly Urban
+craighead county,arkansas,ar,south,31.9,Mostly Urban
+crawford county,arkansas,ar,south,54.11,Mostly Rural
+crittenden county,arkansas,ar,south,22.98,Mostly Urban
+cross county,arkansas,ar,south,57.44,Mostly Rural
+dallas county,arkansas,ar,south,58.93,Mostly Rural
+hempstead county,arkansas,ar,south,59.35,Mostly Rural
+drew county,arkansas,ar,south,51.07,Mostly Rural
+faulkner county,arkansas,ar,south,37.86,Mostly Urban
+garland county,arkansas,ar,south,33.77,Mostly Urban
+franklin county,arkansas,ar,south,82.32,Mostly Rural
+fulton county,arkansas,ar,south,92.21,Mostly Rural
+grant county,arkansas,ar,south,74.85,Mostly Rural
+greene county,arkansas,ar,south,41.23,Mostly Urban
+jefferson county,arkansas,ar,south,31.44,Mostly Urban
+hot spring county,arkansas,ar,south,67.44,Mostly Rural
+howard county,arkansas,ar,south,68.88,Mostly Rural
+independence county,arkansas,ar,south,69.39,Mostly Rural
+izard county,arkansas,ar,south,100,Rural
+jackson county,arkansas,ar,south,59.58,Mostly Rural
+miller county,arkansas,ar,south,39.41,Mostly Urban
+johnson county,arkansas,ar,south,73.05,Mostly Rural
+lafayette county,arkansas,ar,south,100,Rural
+lawrence county,arkansas,ar,south,64.45,Mostly Rural
+lee county,arkansas,ar,south,57,Mostly Rural
+lincoln county,arkansas,ar,south,100,Rural
+madison county,arkansas,ar,south,100,Rural
+marion county,arkansas,ar,south,100,Rural
+little river county,arkansas,ar,south,70.67,Mostly Rural
+logan county,arkansas,ar,south,69.96,Mostly Rural
+lonoke county,arkansas,ar,south,45.37,Mostly Urban
+ouachita county,arkansas,ar,south,56.92,Mostly Rural
+mississippi county,arkansas,ar,south,34.95,Mostly Urban
+monroe county,arkansas,ar,south,71.92,Mostly Rural
+montgomery county,arkansas,ar,south,100,Rural
+nevada county,arkansas,ar,south,71.14,Mostly Rural
+newton county,arkansas,ar,south,100,Rural
+pike county,arkansas,ar,south,100,Rural
+perry county,arkansas,ar,south,100,Rural
+phillips county,arkansas,ar,south,49.01,Mostly Urban
+banks county,georgia,ga,south,94.39,Mostly Rural
+barrow county,georgia,ga,south,30.48,Mostly Urban
+ben hill county,georgia,ga,south,34.94,Mostly Urban
+camden county,georgia,ga,south,33.87,Mostly Urban
+bleckley county,georgia,ga,south,54.81,Mostly Rural
+baldwin county,georgia,ga,south,35.77,Mostly Urban
+bacon county,georgia,ga,south,70.28,Mostly Rural
+baker county,georgia,ga,south,100,Rural
+bibb county,georgia,ga,south,13,Mostly Urban
+bartow county,georgia,ga,south,35.05,Mostly Urban
+berrien county,georgia,ga,south,75.73,Mostly Rural
+brooks county,georgia,ga,south,70.46,Mostly Rural
+bryan county,georgia,ga,south,54.86,Mostly Rural
+bulloch county,georgia,ga,south,49.35,Mostly Urban
+burke county,georgia,ga,south,76.69,Mostly Rural
+butts county,georgia,ga,south,76.25,Mostly Rural
+calhoun county,georgia,ga,south,100,Rural
+chattahoochee county,georgia,ga,south,47.78,Mostly Urban
+candler county,georgia,ga,south,66.9,Mostly Rural
+carroll county,georgia,ga,south,42.27,Mostly Urban
+catoosa county,georgia,ga,south,26.57,Mostly Urban
+charlton county,georgia,ga,south,60.47,Mostly Rural
+chatham county,georgia,ga,south,4.7,Mostly Urban
+coffee county,georgia,ga,south,64.8,Mostly Rural
+chattooga county,georgia,ga,south,61.19,Mostly Rural
+cherokee county,georgia,ga,south,17.78,Mostly Urban
+clarke county,georgia,ga,south,5.66,Mostly Urban
+clay county,georgia,ga,south,100,Rural
+clayton county,georgia,ga,south,0.86,Mostly Urban
+clinch county,georgia,ga,south,59.99,Mostly Rural
+cobb county,georgia,ga,south,0.23,Mostly Urban
+crisp county,georgia,ga,south,48.82,Mostly Urban
+coweta county,georgia,ga,south,32.82,Mostly Urban
+crawford county,georgia,ga,south,100,Rural
+colquitt county,georgia,ga,south,57.17,Mostly Rural
+columbia county,georgia,ga,south,17.05,Mostly Urban
+cook county,georgia,ga,south,58.97,Mostly Rural
+dooly county,georgia,ga,south,62.94,Mostly Rural
+dade county,georgia,ga,south,76.69,Mostly Rural
+dawson county,georgia,ga,south,83.08,Mostly Rural
+decatur county,georgia,ga,south,56.12,Mostly Rural
+dekalb county,georgia,ga,south,0.26,Mostly Urban
+dodge county,georgia,ga,south,72.72,Mostly Rural
+evans county,georgia,ga,south,62.31,Mostly Rural
+dougherty county,georgia,ga,south,13.87,Mostly Urban
+douglas county,georgia,ga,south,15.13,Mostly Urban
+early county,georgia,ga,south,69.59,Mostly Rural
+echols county,georgia,ga,south,100,Rural
+effingham county,georgia,ga,south,67.58,Mostly Rural
+elbert county,georgia,ga,south,69.48,Mostly Rural
+emanuel county,georgia,ga,south,68.84,Mostly Rural
+san joaquin county,california,ca,west,8.6,Mostly Urban
+fannin county,georgia,ga,south,100,Rural
+fayette county,georgia,ga,south,17.91,Mostly Urban
+floyd county,georgia,ga,south,36.71,Mostly Urban
+forsyth county,georgia,ga,south,10.53,Mostly Urban
+franklin county,georgia,ga,south,90.16,Mostly Rural
+san diego county,california,ca,west,3.54,Mostly Urban
+san francisco county,california,ca,west,0,Mostly Urban
+siskiyou county,california,ca,west,68.43,Mostly Rural
+san luis obispo county,california,ca,west,17.38,Mostly Urban
+san mateo county,california,ca,west,2.23,Mostly Urban
+santa barbara county,california,ca,west,6.15,Mostly Urban
+santa clara county,california,ca,west,1.16,Mostly Urban
+santa cruz county,california,ca,west,13.81,Mostly Urban
+shasta county,california,ca,west,30.97,Mostly Urban
+sierra county,california,ca,west,99.7,Mostly Rural
+yuba county,california,ca,west,30.67,Mostly Urban
+solano county,california,ca,west,3.96,Mostly Urban
+sonoma county,california,ca,west,15.86,Mostly Urban
+stanislaus county,california,ca,west,8.41,Mostly Urban
+sutter county,california,ca,west,15.85,Mostly Urban
+tehama county,california,ca,west,53.31,Mostly Rural
+trinity county,california,ca,west,100,Rural
+ventura county,california,ca,west,3.47,Mostly Urban
+yolo county,california,ca,west,7.51,Mostly Urban
+tulare county,california,ca,west,17.78,Mostly Urban
+tuolumne county,california,ca,west,50.88,Mostly Rural
+bent county,colorado,co,west,46.16,Mostly Urban
+adams county,colorado,co,west,3.74,Mostly Urban
+arapahoe county,colorado,co,west,1.44,Mostly Urban
+archuleta county,colorado,co,west,61.53,Mostly Rural
+baca county,colorado,co,west,100,Rural
+alamosa county,colorado,co,west,38.1,Mostly Urban
+conejos county,colorado,co,west,100,Rural
+boulder county,colorado,co,west,10.81,Mostly Urban
+broomfield county,colorado,co,west,0.57,Mostly Urban
+chaffee county,colorado,co,west,47.29,Mostly Urban
+cheyenne county,colorado,co,west,100,Rural
+clear creek county,colorado,co,west,100,Rural
+eagle county,colorado,co,west,29.96,Mostly Urban
+st. francis county,arkansas,ar,south,61.39,Mostly Rural
+woodruff county,arkansas,ar,south,100,Rural
+pope county,arkansas,ar,south,56.4,Mostly Rural
+pulaski county,arkansas,ar,south,11.71,Mostly Urban
+baldwin county,alabama,al,south,41.58,Mostly Urban
+barbour county,alabama,al,south,66.24,Mostly Rural
+calhoun county,alabama,al,south,32.36,Mostly Urban
+poinsett county,arkansas,ar,south,71.53,Mostly Rural
+polk county,arkansas,ar,south,72.48,Mostly Rural
+prairie county,arkansas,ar,south,100,Rural
+randolph county,arkansas,ar,south,68.23,Mostly Rural
+saline county,arkansas,ar,south,35.57,Mostly Urban
+scott county,arkansas,ar,south,70.34,Mostly Rural
+searcy county,arkansas,ar,south,100,Rural
+ripley county,missouri,mo,south,100,Rural
+st. charles county,missouri,mo,south,5.98,Mostly Urban
+shannon county,missouri,mo,south,100,Rural
+ste. genevieve county,missouri,mo,south,77.4,Mostly Rural
+st. francois county,missouri,mo,south,46.39,Mostly Urban
+st. louis county,missouri,mo,south,1.05,Mostly Urban
+saline county,missouri,mo,south,49.15,Mostly Urban
+schuyler county,missouri,mo,south,100,Rural
+scotland county,missouri,mo,south,100,Rural
+scott county,missouri,mo,south,40.15,Mostly Urban
+texas county,missouri,mo,south,99.28,Mostly Rural
+shelby county,missouri,mo,south,100,Rural
+stoddard county,missouri,mo,south,69.2,Mostly Rural
+stone county,missouri,mo,south,87.97,Mostly Rural
+sullivan county,missouri,mo,south,100,Rural
+taney county,missouri,mo,south,41.54,Mostly Urban
+vernon county,missouri,mo,south,56.11,Mostly Rural
+warren county,missouri,mo,south,65.88,Mostly Rural
+washington county,missouri,mo,south,83.51,Mostly Rural
+wayne county,missouri,mo,south,100,Rural
+webster county,missouri,mo,south,72.05,Mostly Rural
+worth county,missouri,mo,south,100,Rural
+wright county,missouri,mo,south,75.53,Mostly Rural
+st. louis city,missouri,mo,south,0,Mostly Urban
+blaine county,montana,mt,west,100,Rural
+big horn county,montana,mt,west,69.33,Mostly Rural
+beaverhead county,montana,mt,west,59.28,Mostly Rural
+broadwater county,montana,mt,west,100,Rural
+dawson county,montana,mt,west,30.47,Mostly Urban
+carter county,montana,mt,west,100,Rural
+carbon county,montana,mt,west,100,Rural
+cascade county,montana,mt,west,21.03,Mostly Urban
+chouteau county,montana,mt,west,100,Rural
+deer lodge county,montana,mt,west,33.4,Mostly Urban
+fallon county,montana,mt,west,100,Rural
+fergus county,montana,mt,west,46.71,Mostly Urban
+custer county,montana,mt,west,18.31,Mostly Urban
+daniels county,montana,mt,west,100,Rural
+granite county,montana,mt,west,100,Rural
+flathead county,montana,mt,west,55.73,Mostly Rural
+gallatin county,montana,mt,west,37.25,Mostly Urban
+garfield county,montana,mt,west,100,Rural
+glacier county,montana,mt,west,45.72,Mostly Urban
+golden valley county,montana,mt,west,100,Rural
+genesee county,new york,ny,northeast,58.1,Mostly Rural
+greene county,new york,ny,northeast,82.12,Mostly Rural
+livingston county,new york,ny,northeast,53.77,Mostly Rural
+hill county,montana,mt,west,38.59,Mostly Urban
+jefferson county,montana,mt,west,100,Rural
+judith basin county,montana,mt,west,100,Rural
+lake county,montana,mt,west,84.68,Mostly Rural
+herkimer county,new york,ny,northeast,56.21,Mostly Rural
+hamilton county,new york,ny,northeast,100,Rural
+jefferson county,new york,ny,northeast,58.19,Mostly Rural
+kings county,new york,ny,northeast,0,Mostly Urban
+lewis county,new york,ny,northeast,88.85,Mostly Rural
+niagara county,new york,ny,northeast,20.14,Mostly Urban
+madison county,new york,ny,northeast,60.58,Mostly Rural
+monroe county,new york,ny,northeast,5.94,Mostly Urban
+montgomery county,new york,ny,northeast,38.19,Mostly Urban
+nassau county,new york,ny,northeast,0.22,Mostly Urban
+new york county,new york,ny,northeast,0,Mostly Urban
+putnam county,new york,ny,northeast,22.24,Mostly Urban
+oneida county,new york,ny,northeast,33,Mostly Urban
+onondaga county,new york,ny,northeast,12.38,Mostly Urban
+ontario county,new york,ny,northeast,47.32,Mostly Urban
+orange county,new york,ny,northeast,22.53,Mostly Urban
+orleans county,new york,ny,northeast,63.32,Mostly Rural
+otsego county,new york,ny,northeast,77.58,Mostly Rural
+oswego county,new york,ny,northeast,63.98,Mostly Rural
+saratoga county,new york,ny,northeast,31.25,Mostly Urban
+queens county,new york,ny,northeast,0,Mostly Urban
+rensselaer county,new york,ny,northeast,29.74,Mostly Urban
+richmond county,new york,ny,northeast,0,Mostly Urban
+rockland county,new york,ny,northeast,0.76,Mostly Urban
+st. lawrence county,new york,ny,northeast,69.71,Mostly Rural
+tioga county,new york,ny,northeast,65.54,Mostly Rural
+schenectady county,new york,ny,northeast,7.72,Mostly Urban
+schoharie county,new york,ny,northeast,86.95,Mostly Rural
+schuyler county,new york,ny,northeast,81.53,Mostly Rural
+seneca county,new york,ny,northeast,58.15,Mostly Rural
+steuben county,new york,ny,northeast,62.09,Mostly Rural
+suffolk county,new york,ny,northeast,6.87,Mostly Urban
+sullivan county,new york,ny,northeast,81.31,Mostly Rural
+washington county,new york,ny,northeast,69.05,Mostly Rural
+tompkins county,new york,ny,northeast,47.1,Mostly Urban
+ulster county,new york,ny,northeast,50.99,Mostly Rural
+warren county,new york,ny,northeast,47.14,Mostly Urban
+wayne county,new york,ny,northeast,61.73,Mostly Rural
+westchester county,new york,ny,northeast,3.29,Mostly Urban
+wyoming county,new york,ny,northeast,68.41,Mostly Rural
+yates county,new york,ny,northeast,75.03,Mostly Rural
+anson county,north carolina,nc,south,76.9,Mostly Rural
+avery county,north carolina,nc,south,99.14,Mostly Rural
+alexander county,north carolina,nc,south,74.56,Mostly Rural
+bertie county,north carolina,nc,south,88.1,Mostly Rural
+beaufort county,north carolina,nc,south,68.64,Mostly Rural
+alleghany county,north carolina,nc,south,100,Rural
+alamance county,north carolina,nc,south,28.36,Mostly Urban
+ashe county,north carolina,nc,south,88.05,Mostly Rural
+bladen county,north carolina,nc,south,91.08,Mostly Rural
+harrison county,indiana,in,midwest,84.75,Mostly Rural
+jasper county,indiana,in,midwest,65.93,Mostly Rural
+hancock county,indiana,in,midwest,30.17,Mostly Urban
+brunswick county,north carolina,nc,south,40.07,Mostly Urban
+buncombe county,north carolina,nc,south,24.31,Mostly Urban
+burke county,north carolina,nc,south,44.05,Mostly Urban
+hendricks county,indiana,in,midwest,18.56,Mostly Urban
+henry county,indiana,in,midwest,41.79,Mostly Urban
+howard county,indiana,in,midwest,19.01,Mostly Urban
+huntington county,indiana,in,midwest,50.53,Mostly Rural
+jackson county,indiana,in,midwest,43.34,Mostly Urban
+lake county,indiana,in,midwest,3.7,Mostly Urban
+jay county,indiana,in,midwest,51.3,Mostly Rural
+jefferson county,indiana,in,midwest,44.48,Mostly Urban
+jennings county,indiana,in,midwest,57.25,Mostly Rural
+lagrange county,indiana,in,midwest,90.12,Mostly Rural
+kosciusko county,indiana,in,midwest,44.95,Mostly Urban
+johnson county,indiana,in,midwest,13.9,Mostly Urban
+knox county,indiana,in,midwest,36.21,Mostly Urban
+taylor county,florida,fl,south,71.95,Mostly Rural
+union county,florida,fl,south,77.97,Mostly Rural
+volusia county,florida,fl,south,8.71,Mostly Urban
+appling county,georgia,ga,south,71.84,Mostly Rural
+brantley county,georgia,ga,south,99.44,Mostly Rural
+atkinson county,georgia,ga,south,100,Rural
+walton county,florida,fl,south,51.28,Mostly Rural
+washington county,florida,fl,south,83.77,Mostly Rural
+franklin county,missouri,mo,south,54.61,Mostly Rural
+greene county,missouri,mo,south,12.95,Mostly Urban
+daviess county,missouri,mo,south,100,Rural
+dade county,missouri,mo,south,100,Rural
+dallas county,missouri,mo,south,80.67,Mostly Rural
+dekalb county,missouri,mo,south,83.11,Mostly Rural
+dunklin county,missouri,mo,south,50.5,Mostly Rural
+dent county,missouri,mo,south,67.26,Mostly Rural
+gasconade county,missouri,mo,south,83.28,Mostly Rural
+gentry county,missouri,mo,south,100,Rural
+douglas county,missouri,mo,south,78.16,Mostly Rural
+jefferson county,missouri,mo,south,30.36,Mostly Urban
+grundy county,missouri,mo,south,44.57,Mostly Urban
+harrison county,missouri,mo,south,69.78,Mostly Rural
+henry county,missouri,mo,south,49.13,Mostly Urban
+howell county,missouri,mo,south,71.29,Mostly Rural
+iron county,missouri,mo,south,74.07,Mostly Rural
+chariton county,missouri,mo,south,100,Rural
+hickory county,missouri,mo,south,100,Rural
+holt county,missouri,mo,south,100,Rural
+howard county,missouri,mo,south,65.78,Mostly Rural
+jackson county,missouri,mo,south,3.28,Mostly Urban
+jasper county,missouri,mo,south,22.53,Mostly Urban
+lewis county,missouri,mo,south,100,Rural
+johnson county,missouri,mo,south,51.71,Mostly Rural
+knox county,missouri,mo,south,100,Rural
+laclede county,missouri,mo,south,58.7,Mostly Rural
+lafayette county,missouri,mo,south,56.15,Mostly Rural
+lawrence county,missouri,mo,south,58.07,Mostly Rural
+madison county,missouri,mo,south,65.86,Mostly Rural
+lincoln county,missouri,mo,south,75.29,Mostly Rural
+linn county,missouri,mo,south,66.51,Mostly Rural
+livingston county,missouri,mo,south,37.96,Mostly Urban
+mcdonald county,missouri,mo,south,99.99,Mostly Rural
+macon county,missouri,mo,south,67.74,Mostly Rural
+montgomery county,missouri,mo,south,80.18,Mostly Rural
+miller county,missouri,mo,south,79.93,Mostly Rural
+mercer county,missouri,mo,south,100,Rural
+mississippi county,missouri,mo,south,38.21,Mostly Urban
+maries county,missouri,mo,south,100,Rural
+marion county,missouri,mo,south,24.8,Mostly Urban
+moniteau county,missouri,mo,south,54.06,Mostly Rural
+monroe county,missouri,mo,south,100,Rural
+osage county,missouri,mo,south,100,Rural
+morgan county,missouri,mo,south,100,Rural
+new madrid county,missouri,mo,south,56.98,Mostly Rural
+newton county,missouri,mo,south,63.81,Mostly Rural
+nodaway county,missouri,mo,south,48.65,Mostly Urban
+oregon county,missouri,mo,south,80.66,Mostly Rural
+ozark county,missouri,mo,south,100,Rural
+pemiscot county,missouri,mo,south,49.47,Mostly Urban
+perry county,missouri,mo,south,57.38,Mostly Rural
+pettis county,missouri,mo,south,35.3,Mostly Urban
+phelps county,missouri,mo,south,47.03,Mostly Urban
+pike county,missouri,mo,south,60.41,Mostly Rural
+platte county,missouri,mo,south,15.59,Mostly Urban
+warren county,new jersey,nj,northeast,35.51,Mostly Urban
+chaves county,new mexico,nm,west,24.01,Mostly Urban
+salem county,new jersey,nj,northeast,41.92,Mostly Urban
+somerset county,new jersey,nj,northeast,5.81,Mostly Urban
+sussex county,new jersey,nj,northeast,39.08,Mostly Urban
+union county,new jersey,nj,northeast,0,Mostly Urban
+catron county,new mexico,nm,west,100,Rural
+bernalillo county,new mexico,nm,west,3.94,Mostly Urban
+guadalupe county,new mexico,nm,west,56.46,Mostly Rural
+cibola county,new mexico,nm,west,59.21,Mostly Rural
+colfax county,new mexico,nm,west,66.51,Mostly Rural
+curry county,new mexico,nm,west,14.3,Mostly Urban
+de baca county,new mexico,nm,west,100,Rural
+do?a ana county,new mexico,nm,west,18.67,Mostly Urban
+eddy county,new mexico,nm,west,20.32,Mostly Urban
+grant county,new mexico,nm,west,45.38,Mostly Urban
+mora county,new mexico,nm,west,100,Rural
+harding county,new mexico,nm,west,100,Rural
+hidalgo county,new mexico,nm,west,100,Rural
+lea county,new mexico,nm,west,21.15,Mostly Urban
+lincoln county,new mexico,nm,west,53.03,Mostly Rural
+los alamos county,new mexico,nm,west,10.83,Mostly Urban
+luna county,new mexico,nm,west,43.41,Mostly Urban
+otero county,new mexico,nm,west,37.85,Mostly Urban
+mckinley county,new mexico,nm,west,59.34,Mostly Rural
+sierra county,new mexico,nm,west,32.47,Mostly Urban
+quay county,new mexico,nm,west,47.35,Mostly Urban
+rio arriba county,new mexico,nm,west,55.97,Mostly Rural
+roosevelt county,new mexico,nm,west,37.61,Mostly Urban
+sandoval county,new mexico,nm,west,19.06,Mostly Urban
+san juan county,new mexico,nm,west,34.3,Mostly Urban
+san miguel county,new mexico,nm,west,53.38,Mostly Rural
+santa fe county,new mexico,nm,west,25.46,Mostly Urban
+albany county,new york,ny,northeast,9.81,Mostly Urban
+socorro county,new mexico,nm,west,49.47,Mostly Urban
+taos county,new mexico,nm,west,63.35,Mostly Rural
+torrance county,new mexico,nm,west,98.86,Mostly Rural
+union county,new mexico,nm,west,100,Rural
+valencia county,new mexico,nm,west,17.13,Mostly Urban
+cattaraugus county,new york,ny,northeast,65.77,Mostly Rural
+cayuga county,new york,ny,northeast,55.53,Mostly Rural
+erie county,new york,ny,northeast,8.32,Mostly Urban
+broome county,new york,ny,northeast,25.29,Mostly Urban
+allegany county,new york,ny,northeast,85.89,Mostly Rural
+bronx county,new york,ny,northeast,0,Mostly Urban
+chautauqua county,new york,ny,northeast,45.97,Mostly Urban
+chemung county,new york,ny,northeast,23.79,Mostly Urban
+chenango county,new york,ny,northeast,84.04,Mostly Rural
+clinton county,new york,ny,northeast,64.46,Mostly Rural
+columbia county,new york,ny,northeast,75.9,Mostly Rural
+cortland county,new york,ny,northeast,46.54,Mostly Urban
+delaware county,new york,ny,northeast,85.87,Mostly Rural
+dutchess county,new york,ny,northeast,27.68,Mostly Urban
+essex county,new york,ny,northeast,81.74,Mostly Rural
+franklin county,new york,ny,northeast,71.11,Mostly Rural
+fulton county,new york,ny,northeast,55.45,Mostly Rural
+saline county,illinois,il,midwest,42.99,Mostly Urban
+pope county,illinois,il,midwest,100,Rural
+pulaski county,illinois,il,midwest,100,Rural
+putnam county,illinois,il,midwest,100,Rural
+randolph county,illinois,il,midwest,48.19,Mostly Urban
+richland county,illinois,il,midwest,42.51,Mostly Urban
+rock island county,illinois,il,midwest,10.31,Mostly Urban
+st. clair county,illinois,il,midwest,9.46,Mostly Urban
+sangamon county,illinois,il,midwest,12.84,Mostly Urban
+schuyler county,illinois,il,midwest,55.28,Mostly Rural
+stephenson county,illinois,il,midwest,37.81,Mostly Urban
+tazewell county,illinois,il,midwest,19.56,Mostly Urban
+shelby county,illinois,il,midwest,76.56,Mostly Rural
+stark county,illinois,il,midwest,100,Rural
+white county,illinois,il,midwest,62.35,Mostly Rural
+union county,illinois,il,midwest,64.48,Mostly Rural
+scott county,illinois,il,midwest,100,Rural
+vermilion county,illinois,il,midwest,30.51,Mostly Urban
+wabash county,illinois,il,midwest,37.55,Mostly Urban
+warren county,illinois,il,midwest,49.47,Mostly Urban
+washington county,illinois,il,midwest,73.26,Mostly Rural
+wayne county,illinois,il,midwest,66.72,Mostly Rural
+whiteside county,illinois,il,midwest,35.66,Mostly Urban
+will county,illinois,il,midwest,4.29,Mostly Urban
+williamson county,illinois,il,midwest,32.96,Mostly Urban
+winnebago county,illinois,il,midwest,7.86,Mostly Urban
+woodford county,illinois,il,midwest,55.87,Mostly Rural
+carroll county,indiana,in,midwest,78.95,Mostly Rural
+bartholomew county,indiana,in,midwest,31.75,Mostly Urban
+adams county,indiana,in,midwest,43.66,Mostly Urban
+allen county,indiana,in,midwest,10.21,Mostly Urban
+benton county,indiana,in,midwest,100,Rural
+blackford county,indiana,in,midwest,48.24,Mostly Urban
+boone county,indiana,in,midwest,33.63,Mostly Urban
+brown county,indiana,in,midwest,100,Rural
+elkhart county,indiana,in,midwest,17.8,Mostly Urban
+cass county,indiana,in,midwest,45.07,Mostly Urban
+clark county,indiana,in,midwest,19.47,Mostly Urban
+clay county,indiana,in,midwest,60.22,Mostly Rural
+clinton county,indiana,in,midwest,49.96,Mostly Urban
+crawford county,indiana,in,midwest,100,Rural
+daviess county,indiana,in,midwest,55.44,Mostly Rural
+dearborn county,indiana,in,midwest,52.03,Mostly Rural
+decatur county,indiana,in,midwest,52.26,Mostly Rural
+dekalb county,indiana,in,midwest,40.57,Mostly Urban
+delaware county,indiana,in,midwest,22.18,Mostly Urban
+dubois county,indiana,in,midwest,48.54,Mostly Urban
+fulton county,indiana,in,midwest,63.08,Mostly Rural
+fayette county,indiana,in,midwest,34.02,Mostly Urban
+floyd county,indiana,in,midwest,18.68,Mostly Urban
+fountain county,indiana,in,midwest,65.66,Mostly Rural
+gibson county,indiana,in,midwest,51.38,Mostly Rural
+franklin county,indiana,in,midwest,89.38,Mostly Rural
+polk county,missouri,mo,south,68.55,Mostly Rural
+st. clair county,missouri,mo,south,100,Rural
+grant county,indiana,in,midwest,28.41,Mostly Urban
+greene county,indiana,in,midwest,72.63,Mostly Rural
+hamilton county,indiana,in,midwest,5.82,Mostly Urban
+pulaski county,missouri,mo,south,54.81,Mostly Rural
+putnam county,missouri,mo,south,100,Rural
+ralls county,missouri,mo,south,96.68,Mostly Rural
+ray county,missouri,mo,south,72.45,Mostly Rural
+randolph county,missouri,mo,south,46.91,Mostly Urban
+reynolds county,missouri,mo,south,100,Rural
+greene county,north carolina,nc,south,100,Rural
+franklin county,north carolina,nc,south,86.63,Mostly Rural
+gaston county,north carolina,nc,south,19.39,Mostly Urban
+gates county,north carolina,nc,south,100,Rural
+graham county,north carolina,nc,south,100,Rural
+granville county,north carolina,nc,south,61.01,Mostly Rural
+hertford county,north carolina,nc,south,68.73,Mostly Rural
+haywood county,north carolina,nc,south,60.11,Mostly Rural
+henderson county,north carolina,nc,south,34.1,Mostly Urban
+guilford county,north carolina,nc,south,12.07,Mostly Urban
+halifax county,north carolina,nc,south,56.7,Mostly Rural
+harnett county,north carolina,nc,south,57.41,Mostly Rural
+lenoir county,north carolina,nc,south,42.23,Mostly Urban
+hoke county,north carolina,nc,south,43.35,Mostly Urban
+hyde county,north carolina,nc,south,100,Rural
+iredell county,north carolina,nc,south,37.87,Mostly Urban
+jackson county,north carolina,nc,south,83.66,Mostly Rural
+johnston county,north carolina,nc,south,52.69,Mostly Rural
+jones county,north carolina,nc,south,100,Rural
+lee county,north carolina,nc,south,42.63,Mostly Urban
+new hanover county,north carolina,nc,south,2.48,Mostly Urban
+lincoln county,north carolina,nc,south,53.3,Mostly Rural
+macon county,north carolina,nc,south,85.31,Mostly Rural
+madison county,north carolina,nc,south,94.38,Mostly Rural
+martin county,north carolina,nc,south,77.41,Mostly Rural
+mecklenburg county,north carolina,nc,south,1.05,Mostly Urban
+montgomery county,north carolina,nc,south,84.98,Mostly Rural
+mitchell county,north carolina,nc,south,85.23,Mostly Rural
+moore county,north carolina,nc,south,48.05,Mostly Urban
+nash county,north carolina,nc,south,46.29,Mostly Urban
+baylor county,texas,tx,south,100,Rural
+mcdowell county,north carolina,nc,south,71.31,Mostly Rural
+northampton county,north carolina,nc,south,90.52,Mostly Rural
+onslow county,north carolina,nc,south,32.49,Mostly Urban
+orange county,north carolina,nc,south,29.82,Mostly Urban
+anderson county,texas,tx,south,59.6,Mostly Rural
+aransas county,texas,tx,south,29.22,Mostly Urban
+andrews county,texas,tx,south,16.74,Mostly Urban
+angelina county,texas,tx,south,45.76,Mostly Urban
+archer county,texas,tx,south,90.28,Mostly Rural
+armstrong county,texas,tx,south,100,Rural
+austin county,texas,tx,south,68.75,Mostly Rural
+bailey county,texas,tx,south,32.69,Mostly Urban
+bandera county,texas,tx,south,100,Rural
+bastrop county,texas,tx,south,66.27,Mostly Rural
+atascosa county,texas,tx,south,60.98,Mostly Rural
+washington county,tennessee,tn,south,25.38,Mostly Urban
+williamson county,tennessee,tn,south,20.38,Mostly Urban
+wayne county,tennessee,tn,south,100,Rural
+weakley county,tennessee,tn,south,69.97,Mostly Rural
+wilson county,tennessee,tn,south,38.62,Mostly Urban
+bee county,texas,tx,south,40.89,Mostly Urban
+bell county,texas,tx,south,15.17,Mostly Urban
+blanco county,texas,tx,south,100,Rural
+bosque county,texas,tx,south,84.47,Mostly Rural
+brazoria county,texas,tx,south,22.12,Mostly Urban
+brewster county,texas,tx,south,42.76,Mostly Urban
+briscoe county,texas,tx,south,100,Rural
+brooks county,texas,tx,south,34.58,Mostly Urban
+bexar county,texas,tx,south,4.31,Mostly Urban
+brazos county,texas,tx,south,12.02,Mostly Urban
+borden county,texas,tx,south,100,Rural
+bowie county,texas,tx,south,33.69,Mostly Urban
+burleson county,texas,tx,south,81.85,Mostly Rural
+brown county,texas,tx,south,47.01,Mostly Urban
+castro county,texas,tx,south,47.69,Mostly Urban
+callahan county,texas,tx,south,74.76,Mostly Rural
+burnet county,texas,tx,south,58.58,Mostly Rural
+caldwell county,texas,tx,south,45.95,Mostly Urban
+calhoun county,texas,tx,south,59.35,Mostly Rural
+cameron county,texas,tx,south,8.68,Mostly Urban
+camp county,texas,tx,south,66.04,Mostly Rural
+carson county,texas,tx,south,95.33,Mostly Rural
+cass county,texas,tx,south,75.02,Mostly Rural
+collin county,texas,tx,south,5.21,Mostly Urban
+chambers county,texas,tx,south,50,Mostly Rural
+cherokee county,texas,tx,south,68.3,Mostly Rural
+childress county,texas,tx,south,20.4,Mostly Urban
+clay county,texas,tx,south,75.53,Mostly Rural
+cochran county,texas,tx,south,100,Rural
+coke county,texas,tx,south,100,Rural
+coleman county,texas,tx,south,57.5,Mostly Rural
+collingsworth county,texas,tx,south,100,Rural
+colorado county,texas,tx,south,67.78,Mostly Rural
+comal county,texas,tx,south,46.4,Mostly Urban
+comanche county,texas,tx,south,75.51,Mostly Rural
+concho county,texas,tx,south,100,Rural
+cooke county,texas,tx,south,61.1,Mostly Rural
+crane county,texas,tx,south,11.64,Mostly Urban
+coryell county,texas,tx,south,26.02,Mostly Urban
+warren county,indiana,in,midwest,76.36,Mostly Rural
+warrick county,indiana,in,midwest,28.95,Mostly Urban
+washington county,indiana,in,midwest,75.34,Mostly Rural
+wayne county,indiana,in,midwest,30.2,Mostly Urban
+wells county,indiana,in,midwest,47.55,Mostly Urban
+white county,indiana,in,midwest,65.74,Mostly Rural
+whitley county,indiana,in,midwest,70.35,Mostly Rural
+adair county,iowa,ia,midwest,100,Rural
+bremer county,iowa,ia,midwest,67.54,Mostly Rural
+allamakee county,iowa,ia,midwest,75.55,Mostly Rural
+adams county,iowa,ia,midwest,100,Rural
+black hawk county,iowa,ia,midwest,13.2,Mostly Urban
+benton county,iowa,ia,midwest,80.24,Mostly Rural
+audubon county,iowa,ia,midwest,100,Rural
+appanoose county,iowa,ia,midwest,57.76,Mostly Rural
+boone county,iowa,ia,midwest,48.15,Mostly Urban
+buchanan county,iowa,ia,midwest,66.59,Mostly Rural
+cherokee county,iowa,ia,midwest,60.29,Mostly Rural
+buena vista county,iowa,ia,midwest,50.1,Mostly Rural
+butler county,iowa,ia,midwest,100,Rural
+calhoun county,iowa,ia,midwest,100,Rural
+carroll county,iowa,ia,midwest,50.43,Mostly Rural
+cass county,iowa,ia,midwest,52.94,Mostly Rural
+cedar county,iowa,ia,midwest,82.04,Mostly Rural
+cerro gordo county,iowa,ia,midwest,18.62,Mostly Urban
+crawford county,iowa,ia,midwest,57.66,Mostly Rural
+chickasaw county,iowa,ia,midwest,72.48,Mostly Rural
+clarke county,iowa,ia,midwest,47.94,Mostly Urban
+clay county,iowa,ia,midwest,34.22,Mostly Urban
+clayton county,iowa,ia,midwest,96.1,Mostly Rural
+clinton county,iowa,ia,midwest,30.54,Mostly Urban
+benson county,north dakota,nd,midwest,100,Rural
+bottineau county,north dakota,nd,midwest,100,Rural
+billings county,north dakota,nd,midwest,100,Rural
+burleigh county,north dakota,nd,midwest,15.44,Mostly Urban
+cass county,north dakota,nd,midwest,9.31,Mostly Urban
+foster county,north dakota,nd,midwest,100,Rural
+dickey county,north dakota,nd,midwest,100,Rural
+divide county,north dakota,nd,midwest,100,Rural
+dunn county,north dakota,nd,midwest,100,Rural
+eddy county,north dakota,nd,midwest,100,Rural
+emmons county,north dakota,nd,midwest,100,Rural
+cottle county,texas,tx,south,100,Rural
+crockett county,texas,tx,south,34.03,Mostly Urban
+crosby county,texas,tx,south,100,Rural
+delta county,texas,tx,south,100,Rural
+golden valley county,north dakota,nd,midwest,100,Rural
+grand forks county,north dakota,nd,midwest,16.52,Mostly Urban
+grant county,north dakota,nd,midwest,100,Rural
+griggs county,north dakota,nd,midwest,100,Rural
+hettinger county,north dakota,nd,midwest,100,Rural
+logan county,north dakota,nd,midwest,100,Rural
+mcintosh county,north dakota,nd,midwest,100,Rural
+mckenzie county,north dakota,nd,midwest,100,Rural
+culberson county,texas,tx,south,100,Rural
+dallam county,texas,tx,south,24.97,Mostly Urban
+dallas county,texas,tx,south,0.63,Mostly Urban
+dawson county,texas,tx,south,19.31,Mostly Urban
+deaf smith county,texas,tx,south,19.95,Mostly Urban
+duval county,texas,tx,south,70.79,Mostly Rural
+denton county,texas,tx,south,7.01,Mostly Urban
+dewitt county,texas,tx,south,59.23,Mostly Rural
+dickens county,texas,tx,south,100,Rural
+dimmit county,texas,tx,south,46.09,Mostly Urban
+donley county,texas,tx,south,100,Rural
+fannin county,texas,tx,south,76.52,Mostly Rural
+ellis county,texas,tx,south,32.37,Mostly Urban
+edwards county,texas,tx,south,100,Rural
+el paso county,texas,tx,south,2.27,Mostly Urban
+eastland county,texas,tx,south,66.92,Mostly Rural
+ector county,texas,tx,south,8.59,Mostly Urban
+erath county,texas,tx,south,47.4,Mostly Urban
+falls county,texas,tx,south,66.97,Mostly Rural
+franklin county,texas,tx,south,75.08,Mostly Rural
+fayette county,texas,tx,south,73.6,Mostly Rural
+fisher county,texas,tx,south,100,Rural
+floyd county,texas,tx,south,54.23,Mostly Rural
+foard county,texas,tx,south,100,Rural
+fort bend county,texas,tx,south,6.05,Mostly Urban
+glasscock county,texas,tx,south,100,Rural
+freestone county,texas,tx,south,68,Mostly Rural
+frio county,texas,tx,south,32.12,Mostly Urban
+gaines county,texas,tx,south,59.9,Mostly Rural
+galveston county,texas,tx,south,10.41,Mostly Urban
+garza county,texas,tx,south,41.57,Mostly Urban
+goliad county,texas,tx,south,100,Rural
+gillespie county,texas,tx,south,54.83,Mostly Rural
+guadalupe county,texas,tx,south,27.51,Mostly Urban
+gonzales county,texas,tx,south,69.92,Mostly Rural
+gray county,texas,tx,south,15.53,Mostly Urban
+grayson county,texas,tx,south,44.18,Mostly Urban
+gregg county,texas,tx,south,13.78,Mostly Urban
+grimes county,texas,tx,south,75.35,Mostly Rural
+harrison county,texas,tx,south,57.88,Mostly Rural
+hale county,texas,tx,south,26.41,Mostly Urban
+hall county,texas,tx,south,100,Rural
+hamilton county,texas,tx,south,68.64,Mostly Rural
+hansford county,texas,tx,south,42.86,Mostly Urban
+hardeman county,texas,tx,south,100,Rural
+hardin county,texas,tx,south,52.95,Mostly Rural
+harris county,texas,tx,south,1.16,Mostly Urban
+hemphill county,texas,tx,south,30.39,Mostly Urban
+henderson county,texas,tx,south,60.44,Mostly Rural
+hartley county,texas,tx,south,43.68,Mostly Urban
+haskell county,texas,tx,south,61.69,Mostly Rural
+hays county,texas,tx,south,32.92,Mostly Urban
+lyon county,iowa,ia,midwest,100,Rural
+jasper county,iowa,ia,midwest,53.29,Mostly Rural
+jefferson county,iowa,ia,midwest,40.28,Mostly Urban
+johnson county,iowa,ia,midwest,17.39,Mostly Urban
+lee county,iowa,ia,midwest,39.84,Mostly Urban
+linn county,iowa,ia,midwest,11.88,Mostly Urban
+jones county,iowa,ia,midwest,59.29,Mostly Rural
+keokuk county,iowa,ia,midwest,100,Rural
+kossuth county,iowa,ia,midwest,65.03,Mostly Rural
+louisa county,iowa,ia,midwest,100,Rural
+lucas county,iowa,ia,midwest,54.88,Mostly Rural
+mitchell county,iowa,ia,midwest,64.54,Mostly Rural
+madison county,iowa,ia,midwest,66.26,Mostly Rural
+mahaska county,iowa,ia,midwest,42.67,Mostly Urban
+marion county,iowa,ia,midwest,46.93,Mostly Urban
+marshall county,iowa,ia,midwest,35.08,Mostly Urban
+mills county,iowa,ia,midwest,60.86,Mostly Rural
+osceola county,iowa,ia,midwest,59.26,Mostly Rural
+monona county,iowa,ia,midwest,70.9,Mostly Rural
+monroe county,iowa,ia,midwest,57.26,Mostly Rural
+montgomery county,iowa,ia,midwest,46.57,Mostly Urban
+muscatine county,iowa,ia,midwest,25.95,Mostly Urban
+o'brien county,iowa,ia,midwest,66.46,Mostly Rural
+scott county,iowa,ia,midwest,12.77,Mostly Urban
+page county,iowa,ia,midwest,33.94,Mostly Urban
+palo alto county,iowa,ia,midwest,62.94,Mostly Rural
+plymouth county,iowa,ia,midwest,61.91,Mostly Rural
+pocahontas county,iowa,ia,midwest,100,Rural
+polk county,iowa,ia,midwest,4.3,Mostly Urban
+pottawattamie county,iowa,ia,midwest,26.11,Mostly Urban
+poweshiek county,iowa,ia,midwest,57.58,Mostly Rural
+ringgold county,iowa,ia,midwest,100,Rural
+shelby county,iowa,ia,midwest,57.83,Mostly Rural
+sac county,iowa,ia,midwest,100,Rural
+warren county,iowa,ia,midwest,42.43,Mostly Urban
+sioux county,iowa,ia,midwest,53.28,Mostly Rural
+story county,iowa,ia,midwest,17.14,Mostly Urban
+tama county,iowa,ia,midwest,73.37,Mostly Rural
+taylor county,iowa,ia,midwest,100,Rural
+union county,iowa,ia,midwest,38.44,Mostly Urban
+van buren county,iowa,ia,midwest,100,Rural
+wapello county,iowa,ia,midwest,30.6,Mostly Urban
+woodbury county,iowa,ia,midwest,18.38,Mostly Urban
+washington county,iowa,ia,midwest,68.24,Mostly Rural
+wayne county,iowa,ia,midwest,100,Rural
+webster county,iowa,ia,midwest,34.56,Mostly Urban
+winnebago county,iowa,ia,midwest,68.58,Mostly Rural
+winneshiek county,iowa,ia,midwest,61.95,Mostly Rural
+mchenry county,north dakota,nd,midwest,100,Rural
+kidder county,north dakota,nd,midwest,100,Rural
+emmet county,iowa,ia,midwest,41.36,Mostly Urban
+dallas county,iowa,ia,midwest,31.33,Mostly Urban
+davis county,iowa,ia,midwest,100,Rural
+des moines county,iowa,ia,midwest,25.35,Mostly Urban
+decatur county,iowa,ia,midwest,100,Rural
+delaware county,iowa,ia,midwest,71.66,Mostly Rural
+dickinson county,iowa,ia,midwest,39.58,Mostly Urban
+dubuque county,iowa,ia,midwest,24.75,Mostly Urban
+grundy county,iowa,ia,midwest,100,Rural
+fayette county,iowa,ia,midwest,69.46,Mostly Rural
+floyd county,iowa,ia,midwest,50.03,Mostly Rural
+franklin county,iowa,ia,midwest,62.24,Mostly Rural
+fremont county,iowa,ia,midwest,100,Rural
+greene county,iowa,ia,midwest,58.32,Mostly Rural
+humboldt county,iowa,ia,midwest,46.37,Mostly Urban
+guthrie county,iowa,ia,midwest,100,Rural
+hamilton county,iowa,ia,midwest,49.56,Mostly Urban
+hancock county,iowa,ia,midwest,70.92,Mostly Rural
+hardin county,iowa,ia,midwest,71.04,Mostly Rural
+harrison county,iowa,ia,midwest,80.92,Mostly Rural
+henry county,iowa,ia,midwest,59.55,Mostly Rural
+howard county,iowa,ia,midwest,60.93,Mostly Rural
+pender county,north carolina,nc,south,73.47,Mostly Rural
+ida county,iowa,ia,midwest,100,Rural
+iowa county,iowa,ia,midwest,81.57,Mostly Rural
+jackson county,iowa,ia,midwest,52.6,Mostly Rural
+pamlico county,north carolina,nc,south,100,Rural
+pasquotank county,north carolina,nc,south,39.25,Mostly Urban
+richmond county,north carolina,nc,south,44.17,Mostly Urban
+perquimans county,north carolina,nc,south,100,Rural
+person county,north carolina,nc,south,74.52,Mostly Rural
+pitt county,north carolina,nc,south,23.6,Mostly Urban
+polk county,north carolina,nc,south,91.02,Mostly Rural
+randolph county,north carolina,nc,south,56.09,Mostly Rural
+stokes county,north carolina,nc,south,76.98,Mostly Rural
+rutherford county,north carolina,nc,south,63.56,Mostly Rural
+rowan county,north carolina,nc,south,39.12,Mostly Urban
+sampson county,north carolina,nc,south,85.14,Mostly Rural
+robeson county,north carolina,nc,south,61.84,Mostly Rural
+rockingham county,north carolina,nc,south,59.31,Mostly Rural
+scotland county,north carolina,nc,south,45.65,Mostly Urban
+stanly county,north carolina,nc,south,66.57,Mostly Rural
+vance county,north carolina,nc,south,54.05,Mostly Rural
+surry county,north carolina,nc,south,67.23,Mostly Rural
+swain county,north carolina,nc,south,100,Rural
+transylvania county,north carolina,nc,south,65.77,Mostly Rural
+tyrrell county,north carolina,nc,south,100,Rural
+union county,north carolina,nc,south,29.8,Mostly Urban
+wilson county,north carolina,nc,south,37.63,Mostly Urban
+wake county,north carolina,nc,south,5.92,Mostly Urban
+warren county,north carolina,nc,south,100,Rural
+washington county,north carolina,nc,south,69.14,Mostly Rural
+watauga county,north carolina,nc,south,72.22,Mostly Rural
+wayne county,north carolina,nc,south,44.82,Mostly Urban
+yadkin county,north carolina,nc,south,84.71,Mostly Rural
+wilkes county,north carolina,nc,south,73.48,Mostly Rural
+yancey county,north carolina,nc,south,100,Rural
+bowman county,north dakota,nd,midwest,100,Rural
+cavalier county,north dakota,nd,midwest,100,Rural
+adams county,north dakota,nd,midwest,100,Rural
+barnes county,north dakota,nd,midwest,41.41,Mostly Urban
+burke county,north dakota,nd,midwest,100,Rural
+martin county,indiana,in,midwest,71.5,Mostly Rural
+laporte county,indiana,in,midwest,34.34,Mostly Urban
+lawrence county,indiana,in,midwest,56.04,Mostly Rural
+madison county,indiana,in,midwest,21.54,Mostly Urban
+marion county,indiana,in,midwest,0.51,Mostly Urban
+marshall county,indiana,in,midwest,62.85,Mostly Rural
+noble county,indiana,in,midwest,68.83,Mostly Rural
+miami county,indiana,in,midwest,47.08,Mostly Urban
+monroe county,indiana,in,midwest,22.79,Mostly Urban
+montgomery county,indiana,in,midwest,51.21,Mostly Rural
+morgan county,indiana,in,midwest,48.26,Mostly Urban
+newton county,indiana,in,midwest,100,Rural
+posey county,indiana,in,midwest,65.74,Mostly Rural
+ohio county,indiana,in,midwest,100,Rural
+orange county,indiana,in,midwest,83.96,Mostly Rural
+owen county,indiana,in,midwest,100,Rural
+parke county,indiana,in,midwest,81.43,Mostly Rural
+perry county,indiana,in,midwest,49.66,Mostly Urban
+porter county,indiana,in,midwest,20.27,Mostly Urban
+pike county,indiana,in,midwest,100,Rural
+st. joseph county,indiana,in,midwest,8.62,Mostly Urban
+pulaski county,indiana,in,midwest,80.81,Mostly Rural
+putnam county,indiana,in,midwest,65.32,Mostly Rural
+randolph county,indiana,in,midwest,60.21,Mostly Rural
+ripley county,indiana,in,midwest,82.7,Mostly Rural
+rush county,indiana,in,midwest,58.52,Mostly Rural
+tippecanoe county,indiana,in,midwest,13.77,Mostly Urban
+scott county,indiana,in,midwest,50.42,Mostly Rural
+shelby county,indiana,in,midwest,49.87,Mostly Urban
+spencer county,indiana,in,midwest,100,Rural
+starke county,indiana,in,midwest,81.62,Mostly Rural
+steuben county,indiana,in,midwest,69.92,Mostly Rural
+sullivan county,indiana,in,midwest,75.27,Mostly Rural
+switzerland county,indiana,in,midwest,100,Rural
+wabash county,indiana,in,midwest,48.06,Mostly Urban
+vermillion county,indiana,in,midwest,58.99,Mostly Rural
+vigo county,indiana,in,midwest,23.67,Mostly Urban
+tipton county,indiana,in,midwest,60.22,Mostly Rural
+union county,indiana,in,midwest,100,Rural
+vanderburgh county,indiana,in,midwest,7.96,Mostly Urban
+cherokee county,north carolina,nc,south,100,Rural
+cabarrus county,north carolina,nc,south,19.51,Mostly Urban
+caldwell county,north carolina,nc,south,36,Mostly Urban
+camden county,north carolina,nc,south,99.22,Mostly Rural
+carteret county,north carolina,nc,south,27.15,Mostly Urban
+caswell county,north carolina,nc,south,99.11,Mostly Rural
+catawba county,north carolina,nc,south,29.91,Mostly Urban
+chatham county,north carolina,nc,south,66.1,Mostly Rural
+craven county,north carolina,nc,south,27.78,Mostly Urban
+chowan county,north carolina,nc,south,67.22,Mostly Rural
+clay county,north carolina,nc,south,100,Rural
+cleveland county,north carolina,nc,south,55.12,Mostly Rural
+cumberland county,north carolina,nc,south,13,Mostly Urban
+columbus county,north carolina,nc,south,83.01,Mostly Rural
+forsyth county,north carolina,nc,south,7.26,Mostly Urban
+currituck county,north carolina,nc,south,98.44,Mostly Rural
+dare county,north carolina,nc,south,28.4,Mostly Urban
+davidson county,north carolina,nc,south,47.81,Mostly Urban
+davie county,north carolina,nc,south,69.98,Mostly Rural
+duplin county,north carolina,nc,south,85.73,Mostly Rural
+durham county,north carolina,nc,south,5.51,Mostly Urban
+edgecombe county,north carolina,nc,south,44.16,Mostly Urban
+jefferson county,ohio,oh,midwest,38.11,Mostly Urban
+mahoning county,ohio,oh,midwest,13.97,Mostly Urban
+lake county,ohio,oh,midwest,5.92,Mostly Urban
+lawrence county,ohio,oh,midwest,44.04,Mostly Urban
+licking county,ohio,oh,midwest,33.7,Mostly Urban
+madison county,ohio,oh,midwest,52.53,Mostly Rural
+lucas county,ohio,oh,midwest,4.04,Mostly Urban
+logan county,ohio,oh,midwest,47.9,Mostly Urban
+lorain county,ohio,oh,midwest,10.87,Mostly Urban
+monroe county,ohio,oh,midwest,97.7,Mostly Rural
+marion county,ohio,oh,midwest,30.13,Mostly Urban
+medina county,ohio,oh,midwest,28.14,Mostly Urban
+meigs county,ohio,oh,midwest,79.7,Mostly Rural
+mercer county,ohio,oh,midwest,59.38,Mostly Rural
+miami county,ohio,oh,midwest,29.19,Mostly Urban
+perry county,ohio,oh,midwest,75.18,Mostly Rural
+montgomery county,ohio,oh,midwest,3.86,Mostly Urban
+morgan county,ohio,oh,midwest,82.68,Mostly Rural
+morrow county,ohio,oh,midwest,87.35,Mostly Rural
+muskingum county,ohio,oh,midwest,44.93,Mostly Urban
+noble county,ohio,oh,midwest,76.66,Mostly Rural
+ottawa county,ohio,oh,midwest,44.6,Mostly Urban
+paulding county,ohio,oh,midwest,80.67,Mostly Rural
+richland county,ohio,oh,midwest,29.42,Mostly Urban
+pickaway county,ohio,oh,midwest,50.91,Mostly Rural
+pike county,ohio,oh,midwest,71.22,Mostly Rural
+portage county,ohio,oh,midwest,32.27,Mostly Urban
+preble county,ohio,oh,midwest,67.11,Mostly Rural
+putnam county,ohio,oh,midwest,83.42,Mostly Rural
+stark county,ohio,oh,midwest,12.44,Mostly Urban
+ross county,ohio,oh,midwest,60.3,Mostly Rural
+sandusky county,ohio,oh,midwest,42.6,Mostly Urban
+scioto county,ohio,oh,midwest,53.29,Mostly Rural
+seneca county,ohio,oh,midwest,45.44,Mostly Urban
+shelby county,ohio,oh,midwest,48.59,Mostly Urban
+menard county,texas,tx,south,100,Rural
+mills county,texas,tx,south,100,Rural
+summit county,ohio,oh,midwest,3.42,Mostly Urban
+trumbull county,ohio,oh,midwest,24.58,Mostly Urban
+van wert county,ohio,oh,midwest,48.02,Mostly Urban
+tuscarawas county,ohio,oh,midwest,39.86,Mostly Urban
+union county,ohio,oh,midwest,52.39,Mostly Rural
+vinton county,ohio,oh,midwest,100,Rural
+warren county,ohio,oh,midwest,17.41,Mostly Urban
+midland county,texas,tx,south,11.57,Mostly Urban
+milam county,texas,tx,south,57.57,Mostly Rural
+motley county,texas,tx,south,100,Rural
+mitchell county,texas,tx,south,57.33,Mostly Rural
+montague county,texas,tx,south,61.81,Mostly Rural
+montgomery county,texas,tx,south,21.96,Mostly Urban
+moore county,texas,tx,south,18.72,Mostly Urban
+morris county,texas,tx,south,80.53,Mostly Rural
+parker county,texas,tx,south,57.19,Mostly Rural
+nacogdoches county,texas,tx,south,48.62,Mostly Urban
+navarro county,texas,tx,south,55.4,Mostly Rural
+newton county,texas,tx,south,100,Rural
+nolan county,texas,tx,south,34.4,Mostly Urban
+nueces county,texas,tx,south,7.98,Mostly Urban
+ochiltree county,texas,tx,south,15.63,Mostly Urban
+oldham county,texas,tx,south,100,Rural
+orange county,texas,tx,south,32.38,Mostly Urban
+panola county,texas,tx,south,74.51,Mostly Rural
+palo pinto county,texas,tx,south,60.48,Mostly Rural
+rains county,texas,tx,south,92.92,Mostly Rural
+parmer county,texas,tx,south,62.41,Mostly Rural
+pecos county,texas,tx,south,37.49,Mostly Urban
+polk county,texas,tx,south,75.49,Mostly Rural
+potter county,texas,tx,south,8.69,Mostly Urban
+presidio county,texas,tx,south,52.03,Mostly Rural
+robertson county,texas,tx,south,78.7,Mostly Rural
+randall county,texas,tx,south,13.58,Mostly Urban
+reagan county,texas,tx,south,21.21,Mostly Urban
+real county,texas,tx,south,100,Rural
+red river county,texas,tx,south,76.6,Mostly Rural
+reeves county,texas,tx,south,23.69,Mostly Urban
+refugio county,texas,tx,south,63.53,Mostly Rural
+roberts county,texas,tx,south,100,Rural
+san jacinto county,texas,tx,south,100,Rural
+rockwall county,texas,tx,south,15.53,Mostly Urban
+runnels county,texas,tx,south,43.45,Mostly Urban
+rusk county,texas,tx,south,72.61,Mostly Rural
+sabine county,texas,tx,south,100,Rural
+san augustine county,texas,tx,south,100,Rural
+stephens county,texas,tx,south,45.24,Mostly Urban
+san patricio county,texas,tx,south,20.75,Mostly Urban
+san saba county,texas,tx,south,64.05,Mostly Rural
+schleicher county,texas,tx,south,100,Rural
+scurry county,texas,tx,south,29.64,Mostly Urban
+shackelford county,texas,tx,south,100,Rural
+shelby county,texas,tx,south,81.83,Mostly Rural
+sherman county,texas,tx,south,100,Rural
+smith county,texas,tx,south,31.17,Mostly Urban
+starr county,texas,tx,south,26.4,Mostly Urban
+somervell county,texas,tx,south,100,Rural
+sterling county,texas,tx,south,100,Rural
+stonewall county,texas,tx,south,100,Rural
+sutton county,texas,tx,south,27.28,Mostly Urban
+swisher county,texas,tx,south,43.06,Mostly Urban
+mitchell county,kansas,ks,midwest,50.09,Mostly Rural
+montgomery county,kansas,ks,midwest,42.18,Mostly Urban
+morton county,kansas,ks,midwest,100,Rural
+nemaha county,kansas,ks,midwest,73.5,Mostly Rural
+phillips county,kansas,ks,midwest,56.67,Mostly Rural
+neosho county,kansas,ks,midwest,44.88,Mostly Urban
+ness county,kansas,ks,midwest,100,Rural
+norton county,kansas,ks,midwest,42.88,Mostly Urban
+osage county,kansas,ks,midwest,83.37,Mostly Rural
+osborne county,kansas,ks,midwest,100,Rural
+ottawa county,kansas,ks,midwest,100,Rural
+pawnee county,kansas,ks,midwest,32.87,Mostly Urban
+rice county,kansas,ks,midwest,63.32,Mostly Rural
+pottawatomie county,kansas,ks,midwest,60.05,Mostly Rural
+pratt county,kansas,ks,midwest,30,Mostly Urban
+rawlins county,kansas,ks,midwest,100,Rural
+reno county,kansas,ks,midwest,30.44,Mostly Urban
+republic county,kansas,ks,midwest,100,Rural
+seward county,kansas,ks,midwest,12.34,Mostly Urban
+russell county,kansas,ks,midwest,44.19,Mostly Urban
+rush county,kansas,ks,midwest,100,Rural
+saline county,kansas,ks,midwest,14.08,Mostly Urban
+riley county,kansas,ks,midwest,15.84,Mostly Urban
+rooks county,kansas,ks,midwest,100,Rural
+scott county,kansas,ks,midwest,25.26,Mostly Urban
+sedgwick county,kansas,ks,midwest,6.75,Mostly Urban
+stanton county,kansas,ks,midwest,100,Rural
+shawnee county,kansas,ks,midwest,14,Mostly Urban
+sheridan county,kansas,ks,midwest,100,Rural
+lamoure county,north dakota,nd,midwest,100,Rural
+oliver county,north dakota,nd,midwest,100,Rural
+worth county,iowa,ia,midwest,100,Rural
+wright county,iowa,ia,midwest,59.64,Mostly Rural
+allen county,kansas,ks,midwest,58.08,Mostly Rural
+bourbon county,kansas,ks,midwest,48.11,Mostly Urban
+brown county,kansas,ks,midwest,66.85,Mostly Rural
+atchison county,kansas,ks,midwest,35.97,Mostly Urban
+anderson county,kansas,ks,midwest,58.17,Mostly Rural
+barber county,kansas,ks,midwest,100,Rural
+mclean county,north dakota,nd,midwest,100,Rural
+mercer county,north dakota,nd,midwest,67.6,Mostly Rural
+morton county,north dakota,nd,midwest,32.7,Mostly Urban
+mountrail county,north dakota,nd,midwest,100,Rural
+nelson county,north dakota,nd,midwest,100,Rural
+sargent county,north dakota,nd,midwest,100,Rural
+pembina county,north dakota,nd,midwest,100,Rural
+pierce county,north dakota,nd,midwest,37.15,Mostly Urban
+ramsey county,north dakota,nd,midwest,36.14,Mostly Urban
+ransom county,north dakota,nd,midwest,100,Rural
+renville county,north dakota,nd,midwest,100,Rural
+richland county,north dakota,nd,midwest,53.23,Mostly Rural
+rolette county,north dakota,nd,midwest,100,Rural
+stutsman county,north dakota,nd,midwest,29.83,Mostly Urban
+sheridan county,north dakota,nd,midwest,100,Rural
+sioux county,north dakota,nd,midwest,100,Rural
+slope county,north dakota,nd,midwest,100,Rural
+stark county,north dakota,nd,midwest,27.7,Mostly Urban
+steele county,north dakota,nd,midwest,100,Rural
+williams county,north dakota,nd,midwest,35.79,Mostly Urban
+ward county,north dakota,nd,midwest,21.68,Mostly Urban
+wells county,north dakota,nd,midwest,100,Rural
+towner county,north dakota,nd,midwest,100,Rural
+traill county,north dakota,nd,midwest,100,Rural
+walsh county,north dakota,nd,midwest,64.42,Mostly Rural
+belmont county,ohio,oh,midwest,51.37,Mostly Rural
+allen county,ohio,oh,midwest,24.2,Mostly Urban
+adams county,ohio,oh,midwest,88.87,Mostly Rural
+ashtabula county,ohio,oh,midwest,43.63,Mostly Urban
+ashland county,ohio,oh,midwest,60.04,Mostly Rural
+athens county,ohio,oh,midwest,49.27,Mostly Urban
+brown county,ohio,oh,midwest,74.77,Mostly Rural
+auglaize county,ohio,oh,midwest,37.66,Mostly Urban
+butler county,ohio,oh,midwest,9.06,Mostly Urban
+carroll county,ohio,oh,midwest,70.82,Mostly Rural
+champaign county,ohio,oh,midwest,68.11,Mostly Rural
+darke county,ohio,oh,midwest,62.4,Mostly Rural
+clark county,ohio,oh,midwest,22.08,Mostly Urban
+clermont county,ohio,oh,midwest,22.11,Mostly Urban
+clinton county,ohio,oh,midwest,51.69,Mostly Rural
+columbiana county,ohio,oh,midwest,42.6,Mostly Urban
+coshocton county,ohio,oh,midwest,58.56,Mostly Rural
+crawford county,ohio,oh,midwest,32.3,Mostly Urban
+cuyahoga county,ohio,oh,midwest,0.5,Mostly Urban
+franklin county,ohio,oh,midwest,1.17,Mostly Urban
+defiance county,ohio,oh,midwest,42,Mostly Urban
+delaware county,ohio,oh,midwest,19.62,Mostly Urban
+erie county,ohio,oh,midwest,24.78,Mostly Urban
+fayette county,ohio,oh,midwest,45.92,Mostly Urban
+fairfield county,ohio,oh,midwest,32.9,Mostly Urban
+hidalgo county,texas,tx,south,4.86,Mostly Urban
+hunt county,texas,tx,south,54.85,Mostly Rural
+fulton county,ohio,oh,midwest,55,Mostly Rural
+gallia county,ohio,oh,midwest,79.81,Mostly Rural
+hill county,texas,tx,south,79.14,Mostly Rural
+hockley county,texas,tx,south,40.93,Mostly Urban
+hood county,texas,tx,south,31.18,Mostly Urban
+hopkins county,texas,tx,south,58.61,Mostly Rural
+houston county,texas,tx,south,75.89,Mostly Rural
+howard county,texas,tx,south,24.4,Mostly Urban
+hudspeth county,texas,tx,south,100,Rural
+jim wells county,texas,tx,south,41.7,Mostly Urban
+hutchinson county,texas,tx,south,22.41,Mostly Urban
+irion county,texas,tx,south,100,Rural
+jack county,texas,tx,south,65.27,Mostly Rural
+jefferson county,texas,tx,south,8.5,Mostly Urban
+jim hogg county,texas,tx,south,22.29,Mostly Urban
+jackson county,texas,tx,south,62.79,Mostly Rural
+jasper county,texas,tx,south,79.01,Mostly Rural
+jeff davis county,texas,tx,south,100,Rural
+kerr county,texas,tx,south,43.31,Mostly Urban
+johnson county,texas,tx,south,38.68,Mostly Urban
+jones county,texas,tx,south,79.94,Mostly Rural
+karnes county,texas,tx,south,54.57,Mostly Rural
+kaufman county,texas,tx,south,51.27,Mostly Rural
+kendall county,texas,tx,south,58.56,Mostly Rural
+kenedy county,texas,tx,south,100,Rural
+kent county,texas,tx,south,100,Rural
+lamar county,texas,tx,south,44.99,Mostly Urban
+kimble county,texas,tx,south,62.44,Mostly Rural
+king county,texas,tx,south,100,Rural
+kinney county,texas,tx,south,26.44,Mostly Urban
+kleberg county,texas,tx,south,19.69,Mostly Urban
+knox county,texas,tx,south,100,Rural
+limestone county,texas,tx,south,62.85,Mostly Rural
+lamb county,texas,tx,south,58.58,Mostly Rural
+lampasas county,texas,tx,south,69.02,Mostly Rural
+la salle county,texas,tx,south,39.66,Mostly Urban
+lavaca county,texas,tx,south,84.74,Mostly Rural
+lee county,texas,tx,south,75.42,Mostly Rural
+leon county,texas,tx,south,100,Rural
+liberty county,texas,tx,south,67.6,Mostly Rural
+lubbock county,texas,tx,south,10.92,Mostly Urban
+lipscomb county,texas,tx,south,100,Rural
+live oak county,texas,tx,south,100,Rural
+llano county,texas,tx,south,50.97,Mostly Rural
+lynn county,texas,tx,south,56.84,Mostly Rural
+loving county,texas,tx,south,100,Rural
+martin county,texas,tx,south,100,Rural
+mcculloch county,texas,tx,south,42.14,Mostly Urban
+mclennan county,texas,tx,south,23.04,Mostly Urban
+mcmullen county,texas,tx,south,100,Rural
+madison county,texas,tx,south,66.84,Mostly Rural
+marion county,texas,tx,south,100,Rural
+mason county,texas,tx,south,100,Rural
+matagorda county,texas,tx,south,45.73,Mostly Urban
+maverick county,texas,tx,south,9.44,Mostly Urban
+medina county,texas,tx,south,62.26,Mostly Rural
+barton county,kansas,ks,midwest,32.55,Mostly Urban
+chase county,kansas,ks,midwest,100,Rural
+butler county,kansas,ks,midwest,40.92,Mostly Urban
+ellis county,kansas,ks,midwest,25.44,Mostly Urban
+clay county,kansas,ks,midwest,46.91,Mostly Urban
+clark county,kansas,ks,midwest,100,Rural
+cloud county,kansas,ks,midwest,46.06,Mostly Urban
+chautauqua county,kansas,ks,midwest,100,Rural
+cherokee county,kansas,ks,midwest,47.19,Mostly Urban
+cheyenne county,kansas,ks,midwest,100,Rural
+coffey county,kansas,ks,midwest,68.97,Mostly Rural
+comanche county,kansas,ks,midwest,100,Rural
+cowley county,kansas,ks,midwest,31.43,Mostly Urban
+crawford county,kansas,ks,midwest,34.76,Mostly Urban
+decatur county,kansas,ks,midwest,100,Rural
+dickinson county,kansas,ks,midwest,63.91,Mostly Rural
+doniphan county,kansas,ks,midwest,71.56,Mostly Rural
+edwards county,kansas,ks,midwest,100,Rural
+elk county,kansas,ks,midwest,100,Rural
+gove county,kansas,ks,midwest,100,Rural
+ellsworth county,kansas,ks,midwest,66.81,Mostly Rural
+finney county,kansas,ks,midwest,18.7,Mostly Urban
+ford county,kansas,ks,midwest,22.62,Mostly Urban
+franklin county,kansas,ks,midwest,51.53,Mostly Rural
+geary county,kansas,ks,midwest,12.09,Mostly Urban
+douglas county,kansas,ks,midwest,10.93,Mostly Urban
+jackson county,kansas,ks,midwest,72.19,Mostly Rural
+graham county,kansas,ks,midwest,100,Rural
+grant county,kansas,ks,midwest,21.12,Mostly Urban
+gray county,kansas,ks,midwest,100,Rural
+greeley county,kansas,ks,midwest,100,Rural
+greenwood county,kansas,ks,midwest,65.88,Mostly Rural
+hamilton county,kansas,ks,midwest,100,Rural
+harper county,kansas,ks,midwest,100,Rural
+harvey county,kansas,ks,midwest,29.93,Mostly Urban
+jefferson county,kansas,ks,midwest,98.88,Mostly Rural
+haskell county,kansas,ks,midwest,100,Rural
+hodgeman county,kansas,ks,midwest,100,Rural
+jewell county,kansas,ks,midwest,100,Rural
+johnson county,kansas,ks,midwest,3.53,Mostly Urban
+linn county,kansas,ks,midwest,100,Rural
+kearny county,kansas,ks,midwest,100,Rural
+kingman county,kansas,ks,midwest,62.02,Mostly Rural
+kiowa county,kansas,ks,midwest,100,Rural
+labette county,kansas,ks,midwest,51.17,Mostly Rural
+lane county,kansas,ks,midwest,100,Rural
+leavenworth county,kansas,ks,midwest,29.51,Mostly Urban
+lincoln county,kansas,ks,midwest,100,Rural
+meade county,kansas,ks,midwest,100,Rural
+logan county,kansas,ks,midwest,100,Rural
+lyon county,kansas,ks,midwest,25.69,Mostly Urban
+mcpherson county,kansas,ks,midwest,42.53,Mostly Urban
+marion county,kansas,ks,midwest,81.32,Mostly Rural
+marshall county,kansas,ks,midwest,69.67,Mostly Rural
+geauga county,ohio,oh,midwest,60.48,Mostly Rural
+knox county,ohio,oh,midwest,53.23,Mostly Rural
+morris county,kansas,ks,midwest,100,Rural
+miami county,kansas,ks,midwest,50.52,Mostly Rural
+greene county,ohio,oh,midwest,13.7,Mostly Urban
+guernsey county,ohio,oh,midwest,60.54,Mostly Rural
+hamilton county,ohio,oh,midwest,1.92,Mostly Urban
+hancock county,ohio,oh,midwest,28.14,Mostly Urban
+hardin county,ohio,oh,midwest,56.22,Mostly Rural
+harrison county,ohio,oh,midwest,85.07,Mostly Rural
+henry county,ohio,oh,midwest,66.13,Mostly Rural
+highland county,ohio,oh,midwest,71.44,Mostly Rural
+hocking county,ohio,oh,midwest,72.32,Mostly Rural
+holmes county,ohio,oh,midwest,90.25,Mostly Rural
+huron county,ohio,oh,midwest,48.51,Mostly Urban
+jackson county,ohio,oh,midwest,62.23,Mostly Rural
+haskell county,oklahoma,ok,south,78.43,Mostly Rural
+hughes county,oklahoma,ok,south,64.56,Mostly Rural
+jackson county,oklahoma,ok,south,25.7,Mostly Urban
+jefferson county,oklahoma,ok,south,100,Rural
+johnston county,oklahoma,ok,south,100,Rural
+kay county,oklahoma,ok,south,24.24,Mostly Urban
+kingfisher county,oklahoma,ok,south,71.46,Mostly Rural
+mcclain county,oklahoma,ok,south,76.67,Mostly Rural
+logan county,oklahoma,ok,south,55.51,Mostly Rural
+love county,oklahoma,ok,south,100,Rural
+latimer county,oklahoma,ok,south,74.41,Mostly Rural
+le flore county,oklahoma,ok,south,74.17,Mostly Rural
+lincoln county,oklahoma,ok,south,91.94,Mostly Rural
+tarrant county,texas,tx,south,1.35,Mostly Urban
+taylor county,texas,tx,south,16.18,Mostly Urban
+tom green county,texas,tx,south,15.3,Mostly Urban
+mccurtain county,oklahoma,ok,south,70.64,Mostly Rural
+mcintosh county,oklahoma,ok,south,91.06,Mostly Rural
+major county,oklahoma,ok,south,100,Rural
+marshall county,oklahoma,ok,south,82.69,Mostly Rural
+mayes county,oklahoma,ok,south,78.29,Mostly Rural
+murray county,oklahoma,ok,south,49.38,Mostly Urban
+muskogee county,oklahoma,ok,south,38.59,Mostly Urban
+terrell county,texas,tx,south,100,Rural
+terry county,texas,tx,south,27.44,Mostly Urban
+throckmorton county,texas,tx,south,100,Rural
+titus county,texas,tx,south,53.17,Mostly Rural
+uvalde county,texas,tx,south,38.97,Mostly Urban
+travis county,texas,tx,south,5.33,Mostly Urban
+trinity county,texas,tx,south,80.87,Mostly Rural
+tyler county,texas,tx,south,88.51,Mostly Rural
+upshur county,texas,tx,south,79.32,Mostly Rural
+upton county,texas,tx,south,100,Rural
+webb county,texas,tx,south,3.32,Mostly Urban
+val verde county,texas,tx,south,16.73,Mostly Urban
+van zandt county,texas,tx,south,76.02,Mostly Rural
+victoria county,texas,tx,south,27,Mostly Urban
+walker county,texas,tx,south,49.5,Mostly Urban
+waller county,texas,tx,south,67.5,Mostly Rural
+ward county,texas,tx,south,29.59,Mostly Urban
+washington county,texas,tx,south,59.04,Mostly Rural
+williamson county,texas,tx,south,11.89,Mostly Urban
+wilbarger county,texas,tx,south,22.21,Mostly Urban
+willacy county,texas,tx,south,41.41,Mostly Urban
+wharton county,texas,tx,south,50.59,Mostly Rural
+wheeler county,texas,tx,south,100,Rural
+wichita county,texas,tx,south,8.15,Mostly Urban
+young county,texas,tx,south,36.48,Mostly Urban
+wilson county,texas,tx,south,87.22,Mostly Rural
+winkler county,texas,tx,south,17.48,Mostly Urban
+wise county,texas,tx,south,74.46,Mostly Rural
+wood county,texas,tx,south,76.61,Mostly Rural
+yoakum county,texas,tx,south,39.46,Mostly Urban
+zapata county,texas,tx,south,35.64,Mostly Urban
+zavala county,texas,tx,south,39.62,Mostly Urban
+beaver county,utah,ut,west,59.8,Mostly Rural
+box elder county,utah,ut,west,31.6,Mostly Urban
+carbon county,utah,ut,west,38.92,Mostly Urban
+daggett county,utah,ut,west,100,Rural
+juab county,utah,ut,west,45.69,Mostly Urban
+davis county,utah,ut,west,0.87,Mostly Urban
+cache county,utah,ut,west,15.92,Mostly Urban
+duchesne county,utah,ut,west,78.77,Mostly Rural
+emery county,utah,ut,west,74.11,Mostly Rural
+garfield county,utah,ut,west,100,Rural
+grand county,utah,ut,west,34.63,Mostly Urban
+iron county,utah,ut,west,33.23,Mostly Urban
+sanpete county,utah,ut,west,53.99,Mostly Rural
+kane county,utah,ut,west,74.89,Mostly Rural
+millard county,utah,ut,west,75.5,Mostly Rural
+rich county,utah,ut,west,100,Rural
+morgan county,utah,ut,west,61.71,Mostly Rural
+piute county,utah,ut,west,100,Rural
+salt lake county,utah,ut,west,1.27,Mostly Urban
+san juan county,utah,ut,west,81.53,Mostly Rural
+sevier county,utah,ut,west,67.66,Mostly Rural
+livingston county,kentucky,ky,south,95.85,Mostly Rural
+meade county,kentucky,ky,south,83.85,Mostly Rural
+fairfax county,virginia,va,south,1.31,Mostly Urban
+fauquier county,virginia,va,south,60.3,Mostly Rural
+floyd county,virginia,va,south,100,Rural
+fluvanna county,virginia,va,south,60.47,Mostly Rural
+franklin county,virginia,va,south,90.23,Mostly Rural
+frederick county,virginia,va,south,46.66,Mostly Urban
+logan county,kentucky,ky,south,73.63,Mostly Rural
+lyon county,kentucky,ky,south,100,Rural
+mccracken county,kentucky,ky,south,25.37,Mostly Urban
+magoffin county,kentucky,ky,south,100,Rural
+marion county,kentucky,ky,south,68.32,Mostly Rural
+marshall county,kentucky,ky,south,86.73,Mostly Rural
+mccreary county,kentucky,ky,south,100,Rural
+mclean county,kentucky,ky,south,100,Rural
+madison county,kentucky,ky,south,37.97,Mostly Urban
+martin county,kentucky,ky,south,100,Rural
+mason county,kentucky,ky,south,52.05,Mostly Rural
+nelson county,kentucky,ky,south,56.14,Mostly Rural
+menifee county,kentucky,ky,south,100,Rural
+mercer county,kentucky,ky,south,58.26,Mostly Rural
+metcalfe county,kentucky,ky,south,100,Rural
+monroe county,kentucky,ky,south,100,Rural
+montgomery county,kentucky,ky,south,56.81,Mostly Rural
+morgan county,kentucky,ky,south,100,Rural
+muhlenberg county,kentucky,ky,south,66.64,Mostly Rural
+owsley county,kentucky,ky,south,100,Rural
+nicholas county,kentucky,ky,south,100,Rural
+ohio county,kentucky,ky,south,73.59,Mostly Rural
+oldham county,kentucky,ky,south,22.24,Mostly Urban
+pendleton county,kentucky,ky,south,100,Rural
+owen county,kentucky,ky,south,100,Rural
+russell county,kentucky,ky,south,100,Rural
+perry county,kentucky,ky,south,73.15,Mostly Rural
+pike county,kentucky,ky,south,87.96,Mostly Rural
+powell county,kentucky,ky,south,67.15,Mostly Rural
+pulaski county,kentucky,ky,south,56.72,Mostly Rural
+robertson county,kentucky,ky,south,100,Rural
+rockcastle county,kentucky,ky,south,83.33,Mostly Rural
+rowan county,kentucky,ky,south,73.62,Mostly Rural
+todd county,kentucky,ky,south,100,Rural
+scott county,kentucky,ky,south,32.43,Mostly Urban
+shelby county,kentucky,ky,south,48.26,Mostly Urban
+simpson county,kentucky,ky,south,43.73,Mostly Urban
+spencer county,kentucky,ky,south,100,Rural
+taylor county,kentucky,ky,south,51.6,Mostly Rural
+woodford county,kentucky,ky,south,37.35,Mostly Urban
+trigg county,kentucky,ky,south,82.25,Mostly Rural
+trimble county,kentucky,ky,south,94.43,Mostly Rural
+union county,kentucky,ky,south,71.42,Mostly Rural
+warren county,kentucky,ky,south,31,Mostly Urban
+washington county,kentucky,ky,south,100,Rural
+wayne county,kentucky,ky,south,71.76,Mostly Rural
+webster county,kentucky,ky,south,100,Rural
+whitley county,kentucky,ky,south,64.86,Mostly Rural
+acadia parish,louisiana,la,south,49.48,Mostly Urban
+wolfe county,kentucky,ky,south,100,Rural
+union county,oregon,or,west,43.07,Mostly Urban
+wallowa county,oregon,or,west,100,Rural
+beaver county,pennsylvania,pa,northeast,23.59,Mostly Urban
+assumption parish,louisiana,la,south,47.97,Mostly Urban
+allen parish,louisiana,la,south,74.6,Mostly Rural
+ascension parish,louisiana,la,south,14.15,Mostly Urban
+beauregard parish,louisiana,la,south,67.67,Mostly Rural
+wasco county,oregon,or,west,37.53,Mostly Urban
+washington county,oregon,or,west,5.44,Mostly Urban
+wheeler county,oregon,or,west,100,Rural
+yamhill county,oregon,or,west,24.11,Mostly Urban
+adams county,pennsylvania,pa,northeast,54.87,Mostly Rural
+bracken county,kentucky,ky,south,100,Rural
+campbell county,kentucky,ky,south,13.69,Mostly Urban
+bullitt county,kentucky,ky,south,30.46,Mostly Urban
+butler county,kentucky,ky,south,100,Rural
+caldwell county,kentucky,ky,south,53.59,Mostly Rural
+carlisle county,kentucky,ky,south,100,Rural
+calloway county,kentucky,ky,south,51.1,Mostly Rural
+crittenden county,kentucky,ky,south,71.07,Mostly Rural
+carroll county,kentucky,ky,south,52.47,Mostly Rural
+carter county,kentucky,ky,south,80.74,Mostly Rural
+casey county,kentucky,ky,south,100,Rural
+christian county,kentucky,ky,south,30.87,Mostly Urban
+clark county,kentucky,ky,south,27.24,Mostly Urban
+clay county,kentucky,ky,south,84.99,Mostly Rural
+clinton county,kentucky,ky,south,100,Rural
+fayette county,kentucky,ky,south,3.02,Mostly Urban
+cumberland county,kentucky,ky,south,100,Rural
+daviess county,kentucky,ky,south,24.86,Mostly Urban
+edmonson county,kentucky,ky,south,100,Rural
+elliott county,kentucky,ky,south,100,Rural
+estill county,kentucky,ky,south,74.49,Mostly Rural
+graves county,kentucky,ky,south,68.37,Mostly Rural
+fleming county,kentucky,ky,south,78.24,Mostly Rural
+floyd county,kentucky,ky,south,83.41,Mostly Rural
+franklin county,kentucky,ky,south,25.04,Mostly Urban
+gallatin county,kentucky,ky,south,100,Rural
+fulton county,kentucky,ky,south,61.21,Mostly Rural
+garrard county,kentucky,ky,south,76.52,Mostly Rural
+grant county,kentucky,ky,south,67.34,Mostly Rural
+harlan county,kentucky,ky,south,53.7,Mostly Rural
+grayson county,kentucky,ky,south,79.03,Mostly Rural
+green county,kentucky,ky,south,100,Rural
+greenup county,kentucky,ky,south,38.97,Mostly Urban
+hancock county,kentucky,ky,south,88.94,Mostly Rural
+hardin county,kentucky,ky,south,33.78,Mostly Urban
+kenton county,kentucky,ky,south,6.35,Mostly Urban
+harrison county,kentucky,ky,south,63.62,Mostly Rural
+hart county,kentucky,ky,south,87.21,Mostly Rural
+henderson county,kentucky,ky,south,35.7,Mostly Urban
+henry county,kentucky,ky,south,100,Rural
+hickman county,kentucky,ky,south,100,Rural
+hopkins county,kentucky,ky,south,45.67,Mostly Urban
+jackson county,kentucky,ky,south,100,Rural
+jefferson county,kentucky,ky,south,1.27,Mostly Urban
+johnson county,kentucky,ky,south,72.11,Mostly Rural
+jessamine county,kentucky,ky,south,26.76,Mostly Urban
+lee county,kentucky,ky,south,100,Rural
+knott county,kentucky,ky,south,100,Rural
+knox county,kentucky,ky,south,62.11,Mostly Rural
+larue county,kentucky,ky,south,76.28,Mostly Rural
+laurel county,kentucky,ky,south,55.8,Mostly Rural
+lawrence county,kentucky,ky,south,76.86,Mostly Rural
+noble county,oklahoma,ok,south,52.84,Mostly Rural
+pittsburg county,oklahoma,ok,south,58.28,Mostly Rural
+leslie county,kentucky,ky,south,100,Rural
+letcher county,kentucky,ky,south,100,Rural
+lewis county,kentucky,ky,south,100,Rural
+lincoln county,kentucky,ky,south,81.48,Mostly Rural
+nowata county,oklahoma,ok,south,56.4,Mostly Rural
+okfuskee county,oklahoma,ok,south,72.68,Mostly Rural
+oklahoma county,oklahoma,ok,south,5.71,Mostly Urban
+okmulgee county,oklahoma,ok,south,47.11,Mostly Urban
+osage county,oklahoma,ok,south,62.06,Mostly Rural
+ottawa county,oklahoma,ok,south,50.48,Mostly Rural
+payne county,oklahoma,ok,south,33.85,Mostly Urban
+pawnee county,oklahoma,ok,south,81.16,Mostly Rural
+stephens county,oklahoma,ok,south,42.5,Mostly Urban
+pontotoc county,oklahoma,ok,south,51.27,Mostly Rural
+pottawatomie county,oklahoma,ok,south,48.24,Mostly Urban
+pushmataha county,oklahoma,ok,south,100,Rural
+roger mills county,oklahoma,ok,south,100,Rural
+rogers county,oklahoma,ok,south,50.85,Mostly Rural
+seminole county,oklahoma,ok,south,64.27,Mostly Rural
+sequoyah county,oklahoma,ok,south,67,Mostly Rural
+washita county,oklahoma,ok,south,75.12,Mostly Rural
+texas county,oklahoma,ok,south,48.43,Mostly Urban
+tillman county,oklahoma,ok,south,52.02,Mostly Rural
+tulsa county,oklahoma,ok,south,4.37,Mostly Urban
+wagoner county,oklahoma,ok,south,40.32,Mostly Urban
+washington county,oklahoma,ok,south,22.56,Mostly Urban
+deschutes county,oregon,or,west,35.31,Mostly Urban
+woods county,oklahoma,ok,south,41.58,Mostly Urban
+woodward county,oklahoma,ok,south,38.85,Mostly Urban
+baker county,oregon,or,west,49.04,Mostly Urban
+benton county,oregon,or,west,18.72,Mostly Urban
+clackamas county,oregon,or,west,17.97,Mostly Urban
+clatsop county,oregon,or,west,40.29,Mostly Urban
+columbia county,oregon,or,west,44.56,Mostly Urban
+coos county,oregon,or,west,39.27,Mostly Urban
+crook county,oregon,or,west,52.13,Mostly Rural
+curry county,oregon,or,west,41.11,Mostly Urban
+douglas county,oregon,or,west,41.63,Mostly Urban
+gilliam county,oregon,or,west,100,Rural
+grant county,oregon,or,west,100,Rural
+lane county,oregon,or,west,17.84,Mostly Urban
+harney county,oregon,or,west,44.95,Mostly Urban
+hood river county,oregon,or,west,47.47,Mostly Urban
+jackson county,oregon,or,west,20.31,Mostly Urban
+klamath county,oregon,or,west,42.99,Mostly Urban
+lake county,oregon,or,west,65.51,Mostly Rural
+jefferson county,oregon,or,west,65.54,Mostly Rural
+josephine county,oregon,or,west,45.56,Mostly Urban
+multnomah county,oregon,or,west,1.26,Mostly Urban
+lincoln county,oregon,or,west,36.18,Mostly Urban
+linn county,oregon,or,west,31.45,Mostly Urban
+malheur county,oregon,or,west,45.76,Mostly Urban
+marion county,oregon,or,west,13.52,Mostly Urban
+morrow county,oregon,or,west,54.75,Mostly Rural
+summit county,utah,ut,west,53.55,Mostly Rural
+tooele county,utah,ut,west,19,Mostly Urban
+weber county,utah,ut,west,8.24,Mostly Urban
+polk county,oregon,or,west,20.12,Mostly Urban
+sherman county,oregon,or,west,100,Rural
+tillamook county,oregon,or,west,80.76,Mostly Rural
+umatilla county,oregon,or,west,30.1,Mostly Urban
+uintah county,utah,ut,west,46.09,Mostly Urban
+utah county,utah,ut,west,3.84,Mostly Urban
+wasatch county,utah,ut,west,41.71,Mostly Urban
+washington county,utah,ut,west,19.25,Mostly Urban
+wayne county,utah,ut,west,100,Rural
+lamoille county,vermont,vt,northeast,100,Rural
+addison county,vermont,vt,northeast,84,Mostly Rural
+bennington county,vermont,vt,northeast,73.02,Mostly Rural
+caledonia county,vermont,vt,northeast,77.46,Mostly Rural
+chittenden county,vermont,vt,northeast,26.21,Mostly Urban
+essex county,vermont,vt,northeast,100,Rural
+franklin county,vermont,vt,northeast,72.45,Mostly Rural
+grand isle county,vermont,vt,northeast,100,Rural
+windham county,vermont,vt,northeast,76.54,Mostly Rural
+orange county,vermont,vt,northeast,97.31,Mostly Rural
+orleans county,vermont,vt,northeast,88.6,Mostly Rural
+rutland county,vermont,vt,northeast,66.65,Mostly Rural
+windsor county,vermont,vt,northeast,79.95,Mostly Rural
+washington county,vermont,vt,northeast,56.98,Mostly Rural
+brunswick county,virginia,va,south,88.27,Mostly Rural
+buchanan county,virginia,va,south,100,Rural
+botetourt county,virginia,va,south,66.82,Mostly Rural
+accomack county,virginia,va,south,100,Rural
+albemarle county,virginia,va,south,46.71,Mostly Urban
+alleghany county,virginia,va,south,52.54,Mostly Rural
+amelia county,virginia,va,south,100,Rural
+amherst county,virginia,va,south,66.08,Mostly Rural
+appomattox county,virginia,va,south,100,Rural
+arlington county,virginia,va,south,0,Mostly Urban
+bath county,virginia,va,south,100,Rural
+bland county,virginia,va,south,100,Rural
+augusta county,virginia,va,south,67.87,Mostly Rural
+bedford county,virginia,va,south,80.89,Mostly Rural
+clarke county,virginia,va,south,70.51,Mostly Rural
+buckingham county,virginia,va,south,100,Rural
+campbell county,virginia,va,south,60.88,Mostly Rural
+charles city county,virginia,va,south,100,Rural
+caroline county,virginia,va,south,78.54,Mostly Rural
+carroll county,virginia,va,south,97.45,Mostly Rural
+charlotte county,virginia,va,south,100,Rural
+chesterfield county,virginia,va,south,5.79,Mostly Urban
+essex county,virginia,va,south,78.62,Mostly Rural
+craig county,virginia,va,south,100,Rural
+culpeper county,virginia,va,south,60.45,Mostly Rural
+cumberland county,virginia,va,south,95.5,Mostly Rural
+dickenson county,virginia,va,south,100,Rural
+dinwiddie county,virginia,va,south,73.6,Mostly Rural
+sherman county,kansas,ks,midwest,23.51,Mostly Urban
+smith county,kansas,ks,midwest,100,Rural
+stafford county,kansas,ks,midwest,100,Rural
+wyandotte county,kansas,ks,midwest,5.92,Mostly Urban
+stevens county,kansas,ks,midwest,32,Mostly Urban
+sumner county,kansas,ks,midwest,61.55,Mostly Rural
+thomas county,kansas,ks,midwest,30.29,Mostly Urban
+trego county,kansas,ks,midwest,100,Rural
+wabaunsee county,kansas,ks,midwest,100,Rural
+wallace county,kansas,ks,midwest,100,Rural
+washington county,kansas,ks,midwest,100,Rural
+wichita county,kansas,ks,midwest,100,Rural
+woodson county,kansas,ks,midwest,100,Rural
+wilson county,kansas,ks,midwest,73.47,Mostly Rural
+bath county,kentucky,ky,south,100,Rural
+allen county,kentucky,ky,south,78.03,Mostly Rural
+ballard county,kentucky,ky,south,100,Rural
+bell county,kentucky,ky,south,60.57,Mostly Rural
+anderson county,kentucky,ky,south,41.22,Mostly Urban
+adair county,kentucky,ky,south,77.81,Mostly Rural
+barren county,kentucky,ky,south,61.08,Mostly Rural
+boone county,kentucky,ky,south,13.22,Mostly Urban
+boyd county,kentucky,ky,south,23.41,Mostly Urban
+boyle county,kentucky,ky,south,33.59,Mostly Urban
+bourbon county,kentucky,ky,south,43.96,Mostly Urban
+washington county,ohio,oh,midwest,54.84,Mostly Rural
+blaine county,oklahoma,ok,south,71.67,Mostly Rural
+breathitt county,kentucky,ky,south,80.24,Mostly Rural
+breckinridge county,kentucky,ky,south,100,Rural
+wayne county,ohio,oh,midwest,45.94,Mostly Urban
+williams county,ohio,oh,midwest,61.41,Mostly Rural
+wood county,ohio,oh,midwest,28.59,Mostly Urban
+wyandot county,ohio,oh,midwest,54.2,Mostly Rural
+adair county,oklahoma,ok,south,82.66,Mostly Rural
+alfalfa county,oklahoma,ok,south,100,Rural
+beaver county,oklahoma,ok,south,100,Rural
+atoka county,oklahoma,ok,south,100,Rural
+beckham county,oklahoma,ok,south,35.33,Mostly Urban
+bryan county,oklahoma,ok,south,62.58,Mostly Rural
+caddo county,oklahoma,ok,south,81.11,Mostly Rural
+choctaw county,oklahoma,ok,south,67.05,Mostly Rural
+cimarron county,oklahoma,ok,south,100,Rural
+coal county,oklahoma,ok,south,100,Rural
+comanche county,oklahoma,ok,south,20.46,Mostly Urban
+cherokee county,oklahoma,ok,south,62.75,Mostly Rural
+ellis county,oklahoma,ok,south,100,Rural
+canadian county,oklahoma,ok,south,22.52,Mostly Urban
+carter county,oklahoma,ok,south,54.77,Mostly Rural
+cleveland county,oklahoma,ok,south,15.37,Mostly Urban
+cotton county,oklahoma,ok,south,60.48,Mostly Rural
+craig county,oklahoma,ok,south,61.11,Mostly Rural
+creek county,oklahoma,ok,south,53.32,Mostly Rural
+custer county,oklahoma,ok,south,32.19,Mostly Urban
+delaware county,oklahoma,ok,south,82.62,Mostly Rural
+garfield county,oklahoma,ok,south,21.45,Mostly Urban
+dewey county,oklahoma,ok,south,100,Rural
+harper county,oklahoma,ok,south,100,Rural
+garvin county,oklahoma,ok,south,66.73,Mostly Rural
+grady county,oklahoma,ok,south,62.18,Mostly Rural
+grant county,oklahoma,ok,south,100,Rural
+greer county,oklahoma,ok,south,45.62,Mostly Urban
+harmon county,oklahoma,ok,south,100,Rural
+kiowa county,oklahoma,ok,south,64.42,Mostly Rural
+green county,wisconsin,wi,midwest,57.56,Mostly Rural
+green lake county,wisconsin,wi,midwest,78.99,Mostly Rural
+iowa county,wisconsin,wi,midwest,80.19,Mostly Rural
+iron county,wisconsin,wi,midwest,78.83,Mostly Rural
+jackson county,wisconsin,wi,midwest,77.03,Mostly Rural
+de witt county,illinois,il,midwest,47.91,Mostly Urban
+douglas county,illinois,il,midwest,59.68,Mostly Rural
+fulton county,illinois,il,midwest,62.9,Mostly Rural
+mercer county,new jersey,nj,northeast,3.34,Mostly Urban
+middlesex county,new jersey,nj,northeast,0.68,Mostly Urban
+monmouth county,new jersey,nj,northeast,3.3,Mostly Urban
+oakland county,michigan,mi,midwest,4.13,Mostly Urban
+juneau county,wisconsin,wi,midwest,86.5,Mostly Rural
+kenosha county,wisconsin,wi,midwest,10.57,Mostly Urban
+midland county,michigan,mi,midwest,41.06,Mostly Urban
+missaukee county,michigan,mi,midwest,100,Rural
+monroe county,michigan,mi,midwest,35.74,Mostly Urban
+montcalm county,michigan,mi,midwest,84.87,Mostly Rural
+montmorency county,michigan,mi,midwest,100,Rural
+muskegon county,michigan,mi,midwest,22.93,Mostly Urban
+newaygo county,michigan,mi,midwest,84.02,Mostly Rural
+otsego county,michigan,mi,midwest,70.67,Mostly Rural
+oceana county,michigan,mi,midwest,93.06,Mostly Rural
+ogemaw county,michigan,mi,midwest,100,Rural
+ontonagon county,michigan,mi,midwest,100,Rural
+osceola county,michigan,mi,midwest,100,Rural
+oscoda county,michigan,mi,midwest,100,Rural
+schoolcraft county,michigan,mi,midwest,69.03,Mostly Rural
+ottawa county,michigan,mi,midwest,19.56,Mostly Urban
+presque isle county,michigan,mi,midwest,85.8,Mostly Rural
+roscommon county,michigan,mi,midwest,64.83,Mostly Rural
+saginaw county,michigan,mi,midwest,29.58,Mostly Urban
+st. clair county,michigan,mi,midwest,35.8,Mostly Urban
+st. joseph county,michigan,mi,midwest,56.2,Mostly Rural
+sanilac county,michigan,mi,midwest,86.8,Mostly Rural
+wayne county,michigan,mi,midwest,0.62,Mostly Urban
+shiawassee county,michigan,mi,midwest,53.74,Mostly Rural
+tuscola county,michigan,mi,midwest,83.67,Mostly Rural
+van buren county,michigan,mi,midwest,70.45,Mostly Rural
+wexford county,michigan,mi,midwest,65.17,Mostly Rural
+washtenaw county,michigan,mi,midwest,15.29,Mostly Urban
+blue earth county,minnesota,mn,midwest,27.81,Mostly Urban
+brown county,minnesota,mn,midwest,35.08,Mostly Urban
+big stone county,minnesota,mn,midwest,100,Rural
+aitkin county,minnesota,mn,midwest,100,Rural
+anoka county,minnesota,mn,midwest,12.65,Mostly Urban
+beltrami county,minnesota,mn,midwest,69.73,Mostly Rural
+becker county,minnesota,mn,midwest,77.18,Mostly Rural
+benton county,minnesota,mn,midwest,36.73,Mostly Urban
+clay county,minnesota,mn,midwest,28.57,Mostly Urban
+carlton county,minnesota,mn,midwest,59.31,Mostly Rural
+carver county,minnesota,mn,midwest,18.47,Mostly Urban
+cass county,minnesota,mn,midwest,100,Rural
+chippewa county,minnesota,mn,midwest,48.35,Mostly Urban
+chisago county,minnesota,mn,midwest,55.45,Mostly Rural
+faribault county,minnesota,mn,midwest,77.5,Mostly Rural
+clearwater county,minnesota,mn,midwest,100,Rural
+cook county,minnesota,mn,midwest,100,Rural
+cottonwood county,minnesota,mn,midwest,62.1,Mostly Rural
+crow wing county,minnesota,mn,midwest,72.87,Mostly Rural
+dakota county,minnesota,mn,midwest,4.59,Mostly Urban
+dodge county,minnesota,mn,midwest,52.23,Mostly Rural
+douglas county,minnesota,mn,midwest,56.77,Mostly Rural
+grainger county,tennessee,tn,south,100,Rural
+hamilton county,tennessee,tn,south,9.58,Mostly Urban
+hawkins county,tennessee,tn,south,58.81,Mostly Rural
+morris county,new jersey,nj,northeast,6.28,Mostly Urban
+ocean county,new jersey,nj,northeast,2.54,Mostly Urban
+dupage county,illinois,il,midwest,0.04,Mostly Urban
+edgar county,illinois,il,midwest,50.56,Mostly Rural
+ford county,illinois,il,midwest,41.52,Mostly Urban
+franklin county,illinois,il,midwest,47.37,Mostly Urban
+edwards county,illinois,il,midwest,100,Rural
+effingham county,illinois,il,midwest,57.19,Mostly Rural
+fayette county,illinois,il,midwest,70.08,Mostly Rural
+hardin county,illinois,il,midwest,100,Rural
+gallatin county,illinois,il,midwest,100,Rural
+greene county,illinois,il,midwest,69.57,Mostly Rural
+grundy county,illinois,il,midwest,25.4,Mostly Urban
+hamilton county,illinois,il,midwest,66.69,Mostly Rural
+hancock county,illinois,il,midwest,71.86,Mostly Rural
+kankakee county,illinois,il,midwest,25.97,Mostly Urban
+henderson county,illinois,il,midwest,99.71,Mostly Rural
+henry county,illinois,il,midwest,49.47,Mostly Urban
+iroquois county,illinois,il,midwest,71.86,Mostly Rural
+jackson county,illinois,il,midwest,35.37,Mostly Urban
+jasper county,illinois,il,midwest,67.53,Mostly Rural
+jefferson county,illinois,il,midwest,53.44,Mostly Rural
+jersey county,illinois,il,midwest,59.62,Mostly Rural
+jo daviess county,illinois,il,midwest,76.59,Mostly Rural
+johnson county,illinois,il,midwest,100,Rural
+kane county,illinois,il,midwest,3.81,Mostly Urban
+lasalle county,illinois,il,midwest,27.86,Mostly Urban
+lawrence county,illinois,il,midwest,49.25,Mostly Urban
+lee county,illinois,il,midwest,54.87,Mostly Rural
+mclean county,illinois,il,midwest,16.78,Mostly Urban
+kendall county,illinois,il,midwest,11.15,Mostly Urban
+knox county,illinois,il,midwest,26.43,Mostly Urban
+lake county,illinois,il,midwest,1.48,Mostly Urban
+livingston county,illinois,il,midwest,42.37,Mostly Urban
+logan county,illinois,il,midwest,44.6,Mostly Urban
+mcdonough county,illinois,il,midwest,31.48,Mostly Urban
+mchenry county,illinois,il,midwest,10.35,Mostly Urban
+mason county,illinois,il,midwest,78.27,Mostly Rural
+macon county,illinois,il,midwest,14.21,Mostly Urban
+macoupin county,illinois,il,midwest,58.33,Mostly Rural
+madison county,illinois,il,midwest,12.23,Mostly Urban
+marion county,illinois,il,midwest,42.83,Mostly Urban
+marshall county,illinois,il,midwest,100,Rural
+ogle county,illinois,il,midwest,47.5,Mostly Urban
+massac county,illinois,il,midwest,47.88,Mostly Urban
+menard county,illinois,il,midwest,73.35,Mostly Rural
+mercer county,illinois,il,midwest,77.11,Mostly Rural
+morgan county,illinois,il,midwest,37.33,Mostly Urban
+moultrie county,illinois,il,midwest,65.88,Mostly Rural
+monroe county,illinois,il,midwest,40.97,Mostly Urban
+montgomery county,illinois,il,midwest,44.27,Mostly Urban
+pike county,illinois,il,midwest,74.64,Mostly Rural
+peoria county,illinois,il,midwest,13.28,Mostly Urban
+perry county,illinois,il,midwest,47.05,Mostly Urban
+piatt county,illinois,il,midwest,66.45,Mostly Rural
+allegheny county,pennsylvania,pa,northeast,2.21,Mostly Urban
+armstrong county,pennsylvania,pa,northeast,65.32,Mostly Rural
+bedford county,pennsylvania,pa,northeast,82.91,Mostly Rural
+blair county,pennsylvania,pa,northeast,22.41,Mostly Urban
+berks county,pennsylvania,pa,northeast,23.82,Mostly Urban
+fulton county,pennsylvania,pa,northeast,100,Rural
+bradford county,pennsylvania,pa,northeast,72.72,Mostly Rural
+bucks county,pennsylvania,pa,northeast,9.3,Mostly Urban
+carbon county,pennsylvania,pa,northeast,49.05,Mostly Urban
+centre county,pennsylvania,pa,northeast,36.68,Mostly Urban
+chester county,pennsylvania,pa,northeast,12.79,Mostly Urban
+cambria county,pennsylvania,pa,northeast,30.33,Mostly Urban
+cameron county,pennsylvania,pa,northeast,67.88,Mostly Rural
+clinton county,pennsylvania,pa,northeast,53.92,Mostly Rural
+crawford county,pennsylvania,pa,northeast,65.25,Mostly Rural
+cumberland county,pennsylvania,pa,northeast,21.17,Mostly Urban
+dauphin county,pennsylvania,pa,northeast,12.22,Mostly Urban
+delaware county,pennsylvania,pa,northeast,0.45,Mostly Urban
+elk county,pennsylvania,pa,northeast,61.26,Mostly Rural
+erie county,pennsylvania,pa,northeast,19.29,Mostly Urban
+fayette county,pennsylvania,pa,northeast,47.67,Mostly Urban
+forest county,pennsylvania,pa,northeast,100,Rural
+franklin county,pennsylvania,pa,northeast,38.34,Mostly Urban
+butler county,pennsylvania,pa,northeast,41.47,Mostly Urban
+clarion county,pennsylvania,pa,northeast,80.33,Mostly Rural
+clearfield county,pennsylvania,pa,northeast,57.85,Mostly Rural
+columbia county,pennsylvania,pa,northeast,43.37,Mostly Urban
+lackawanna county,pennsylvania,pa,northeast,16.72,Mostly Urban
+greene county,pennsylvania,pa,northeast,70.33,Mostly Rural
+huntingdon county,pennsylvania,pa,northeast,77.86,Mostly Rural
+indiana county,pennsylvania,pa,northeast,60.84,Mostly Rural
+jefferson county,pennsylvania,pa,northeast,62.62,Mostly Rural
+juniata county,pennsylvania,pa,northeast,82.58,Mostly Rural
+montgomery county,pennsylvania,pa,northeast,2.82,Mostly Urban
+lancaster county,pennsylvania,pa,northeast,18.02,Mostly Urban
+lawrence county,pennsylvania,pa,northeast,38.49,Mostly Urban
+lebanon county,pennsylvania,pa,northeast,25.55,Mostly Urban
+lehigh county,pennsylvania,pa,northeast,7.74,Mostly Urban
+luzerne county,pennsylvania,pa,northeast,19.55,Mostly Urban
+lycoming county,pennsylvania,pa,northeast,38.23,Mostly Urban
+mifflin county,pennsylvania,pa,northeast,48.06,Mostly Urban
+monroe county,pennsylvania,pa,northeast,45.4,Mostly Urban
+mckean county,pennsylvania,pa,northeast,65.84,Mostly Rural
+mercer county,pennsylvania,pa,northeast,44.19,Mostly Urban
+giles county,virginia,va,south,67.18,Mostly Rural
+gloucester county,virginia,va,south,65.07,Mostly Rural
+hanover county,virginia,va,south,39.59,Mostly Urban
+montour county,pennsylvania,pa,northeast,49.92,Mostly Urban
+northampton county,pennsylvania,pa,northeast,12.86,Mostly Urban
+northumberland county,pennsylvania,pa,northeast,31.63,Mostly Urban
+perry county,pennsylvania,pa,northeast,88.1,Mostly Rural
+grayson county,virginia,va,south,99.9,Mostly Rural
+goochland county,virginia,va,south,96.89,Mostly Rural
+greene county,virginia,va,south,55.32,Mostly Rural
+greensville county,virginia,va,south,85.82,Mostly Rural
+halifax county,virginia,va,south,77.87,Mostly Rural
+king william county,virginia,va,south,82.63,Mostly Rural
+henrico county,virginia,va,south,4.19,Mostly Urban
+henry county,virginia,va,south,60.34,Mostly Rural
+highland county,virginia,va,south,100,Rural
+haywood county,tennessee,tn,south,48.01,Mostly Urban
+lake county,tennessee,tn,south,100,Rural
+fillmore county,minnesota,mn,midwest,93.6,Mostly Rural
+freeborn county,minnesota,mn,midwest,41.37,Mostly Urban
+goodhue county,minnesota,mn,midwest,44.45,Mostly Urban
+hubbard county,minnesota,mn,midwest,87.46,Mostly Rural
+grant county,minnesota,mn,midwest,100,Rural
+hennepin county,minnesota,mn,midwest,1.87,Mostly Urban
+hickman county,tennessee,tn,south,100,Rural
+houston county,tennessee,tn,south,100,Rural
+humphreys county,tennessee,tn,south,82.76,Mostly Rural
+jackson county,tennessee,tn,south,100,Rural
+jefferson county,tennessee,tn,south,62.68,Mostly Rural
+johnson county,tennessee,tn,south,85.44,Mostly Rural
+knox county,tennessee,tn,south,10.49,Mostly Urban
+hardin county,tennessee,tn,south,71.94,Mostly Rural
+henry county,tennessee,tn,south,69.27,Mostly Rural
+marshall county,tennessee,tn,south,64.13,Mostly Rural
+lauderdale county,tennessee,tn,south,54.86,Mostly Rural
+lawrence county,tennessee,tn,south,73.09,Mostly Rural
+lewis county,tennessee,tn,south,70,Mostly Rural
+lincoln county,tennessee,tn,south,71.54,Mostly Rural
+loudon county,tennessee,tn,south,39.81,Mostly Urban
+mcminn county,tennessee,tn,south,58.35,Mostly Rural
+macon county,tennessee,tn,south,78.4,Mostly Rural
+mcnairy county,tennessee,tn,south,84.87,Mostly Rural
+madison county,tennessee,tn,south,26.01,Mostly Urban
+marion county,tennessee,tn,south,77.01,Mostly Rural
+morgan county,tennessee,tn,south,99.83,Mostly Rural
+maury county,tennessee,tn,south,38.96,Mostly Urban
+meigs county,tennessee,tn,south,100,Rural
+monroe county,tennessee,tn,south,76.61,Mostly Rural
+montgomery county,tennessee,tn,south,19.25,Mostly Urban
+moore county,tennessee,tn,south,99.9,Mostly Rural
+scott county,tennessee,tn,south,78.96,Mostly Rural
+obion county,tennessee,tn,south,60.6,Mostly Rural
+overton county,tennessee,tn,south,84.12,Mostly Rural
+perry county,tennessee,tn,south,100,Rural
+pickett county,tennessee,tn,south,100,Rural
+polk county,tennessee,tn,south,100,Rural
+putnam county,tennessee,tn,south,35.27,Mostly Urban
+rhea county,tennessee,tn,south,71.12,Mostly Rural
+roane county,tennessee,tn,south,51.03,Mostly Rural
+rutherford county,tennessee,tn,south,16.57,Mostly Urban
+robertson county,tennessee,tn,south,52.88,Mostly Rural
+sullivan county,tennessee,tn,south,25.31,Mostly Urban
+sequatchie county,tennessee,tn,south,75.25,Mostly Rural
+sevier county,tennessee,tn,south,64.97,Mostly Rural
+shelby county,tennessee,tn,south,2.5,Mostly Urban
+smith county,tennessee,tn,south,82.34,Mostly Rural
+stewart county,tennessee,tn,south,100,Rural
+van buren county,tennessee,tn,south,100,Rural
+warren county,tennessee,tn,south,59.96,Mostly Rural
+white county,tennessee,tn,south,77.66,Mostly Rural
+kewaunee county,wisconsin,wi,midwest,68.38,Mostly Rural
+manitowoc county,wisconsin,wi,midwest,36.55,Mostly Urban
+sumner county,tennessee,tn,south,27.47,Mostly Urban
+tipton county,tennessee,tn,south,55.89,Mostly Rural
+trousdale county,tennessee,tn,south,100,Rural
+unicoi county,tennessee,tn,south,46.65,Mostly Urban
+union county,tennessee,tn,south,100,Rural
+langlade county,wisconsin,wi,midwest,68.32,Mostly Rural
+isle of wight county,virginia,va,south,57.9,Mostly Rural
+james city county,virginia,va,south,14.82,Mostly Urban
+king and queen county,virginia,va,south,100,Rural
+king george county,virginia,va,south,74.2,Mostly Rural
+madison county,virginia,va,south,100,Rural
+lancaster county,virginia,va,south,100,Rural
+lee county,virginia,va,south,99.49,Mostly Rural
+loudoun county,virginia,va,south,13.33,Mostly Urban
+louisa county,virginia,va,south,100,Rural
+lunenburg county,virginia,va,south,100,Rural
+northumberland county,virginia,va,south,100,Rural
+mathews county,virginia,va,south,100,Rural
+mecklenburg county,virginia,va,south,81.35,Mostly Rural
+middlesex county,virginia,va,south,100,Rural
+montgomery county,virginia,va,south,26.66,Mostly Urban
+nelson county,virginia,va,south,100,Rural
+new kent county,virginia,va,south,100,Rural
+northampton county,virginia,va,south,100,Rural
+powhatan county,virginia,va,south,99.46,Mostly Rural
+nottoway county,virginia,va,south,59.05,Mostly Rural
+orange county,virginia,va,south,56.06,Mostly Rural
+page county,virginia,va,south,80.83,Mostly Rural
+pittsylvania county,virginia,va,south,86.94,Mostly Rural
+patrick county,virginia,va,south,100,Rural
+richmond county,virginia,va,south,100,Rural
+prince edward county,virginia,va,south,70.26,Mostly Rural
+prince george county,virginia,va,south,63.85,Mostly Rural
+prince william county,virginia,va,south,4.47,Mostly Urban
+pulaski county,virginia,va,south,49.23,Mostly Urban
+rappahannock county,virginia,va,south,100,Rural
+southampton county,virginia,va,south,97.87,Mostly Rural
+roanoke county,virginia,va,south,18.21,Mostly Urban
+rockbridge county,virginia,va,south,92.1,Mostly Rural
+rockingham county,virginia,va,south,61.64,Mostly Rural
+russell county,virginia,va,south,87.64,Mostly Rural
+scott county,virginia,va,south,81.84,Mostly Rural
+shenandoah county,virginia,va,south,68.84,Mostly Rural
+smyth county,virginia,va,south,75.37,Mostly Rural
+warren county,virginia,va,south,51.81,Mostly Rural
+spotsylvania county,virginia,va,south,33.92,Mostly Urban
+stafford county,virginia,va,south,20.55,Mostly Urban
+surry county,virginia,va,south,100,Rural
+sussex county,virginia,va,south,100,Rural
+tazewell county,virginia,va,south,50.9,Mostly Rural
+lincoln county,wisconsin,wi,midwest,62.17,Mostly Rural
+la crosse county,wisconsin,wi,midwest,15.73,Mostly Urban
+lafayette county,wisconsin,wi,midwest,100,Rural
+monroe county,wisconsin,wi,midwest,55.88,Mostly Rural
+marathon county,wisconsin,wi,midwest,40.96,Mostly Urban
+marinette county,wisconsin,wi,midwest,74.13,Mostly Rural
+marquette county,wisconsin,wi,midwest,100,Rural
+menominee county,wisconsin,wi,midwest,100,Rural
+milwaukee county,wisconsin,wi,midwest,0.19,Mostly Urban
+pierce county,wisconsin,wi,midwest,56.21,Mostly Rural
+oconto county,wisconsin,wi,midwest,86.31,Mostly Rural
+oneida county,wisconsin,wi,midwest,84.53,Mostly Rural
+outagamie county,wisconsin,wi,midwest,22.57,Mostly Urban
+ozaukee county,wisconsin,wi,midwest,23.53,Mostly Urban
+pepin county,wisconsin,wi,midwest,100,Rural
+st. croix county,wisconsin,wi,midwest,50.05,Mostly Rural
+polk county,wisconsin,wi,midwest,87.26,Mostly Rural
+portage county,wisconsin,wi,midwest,37.05,Mostly Urban
+price county,wisconsin,wi,midwest,100,Rural
+racine county,wisconsin,wi,midwest,11.63,Mostly Urban
+richland county,wisconsin,wi,midwest,71.41,Mostly Rural
+rock county,wisconsin,wi,midwest,19.7,Mostly Urban
+rusk county,wisconsin,wi,midwest,81.08,Mostly Rural
+washington county,wisconsin,wi,midwest,28.77,Mostly Urban
+sauk county,wisconsin,wi,midwest,46.25,Mostly Urban
+sawyer county,wisconsin,wi,midwest,91.41,Mostly Rural
+shawano county,wisconsin,wi,midwest,74.05,Mostly Rural
+sheboygan county,wisconsin,wi,midwest,26.43,Mostly Urban
+taylor county,wisconsin,wi,midwest,81.25,Mostly Rural
+trempealeau county,wisconsin,wi,midwest,90.21,Mostly Rural
+vilas county,wisconsin,wi,midwest,100,Rural
+vernon county,wisconsin,wi,midwest,84.64,Mostly Rural
+walworth county,wisconsin,wi,midwest,37.1,Mostly Urban
+washburn county,wisconsin,wi,midwest,90.13,Mostly Rural
+albany county,wyoming,wy,west,17.41,Mostly Urban
+waukesha county,wisconsin,wi,midwest,9.19,Mostly Urban
+waupaca county,wisconsin,wi,midwest,65.46,Mostly Rural
+waushara county,wisconsin,wi,midwest,91.83,Mostly Rural
+winnebago county,wisconsin,wi,midwest,13.61,Mostly Urban
+wood county,wisconsin,wi,midwest,34.19,Mostly Urban
+lincoln county,wyoming,wy,west,82.94,Mostly Rural
+big horn county,wyoming,wy,west,100,Rural
+campbell county,wyoming,wy,west,28.3,Mostly Urban
+carbon county,wyoming,wy,west,53.47,Mostly Rural
+converse county,wyoming,wy,west,56.22,Mostly Rural
+crook county,wyoming,wy,west,100,Rural
+fremont county,wyoming,wy,west,52.14,Mostly Rural
+goshen county,wyoming,wy,west,45.24,Mostly Urban
+hot springs county,wyoming,wy,west,30.98,Mostly Urban
+johnson county,wyoming,wy,west,53.7,Mostly Rural
+laramie county,wyoming,wy,west,18.4,Mostly Urban
+fulton county,georgia,ga,south,0.95,Mostly Urban
+heard county,georgia,ga,south,100,Rural
+natrona county,wyoming,wy,west,15.17,Mostly Urban
+niobrara county,wyoming,wy,west,100,Rural
+gilmer county,georgia,ga,south,90.26,Mostly Rural
+glascock county,georgia,ga,south,100,Rural
+greene county,georgia,ga,south,86.57,Mostly Rural
+gwinnett county,georgia,ga,south,0.49,Mostly Urban
+glynn county,georgia,ga,south,22.21,Mostly Urban
+grady county,georgia,ga,south,63.79,Mostly Rural
+hall county,georgia,ga,south,22.49,Mostly Urban
+avoyelles parish,louisiana,la,south,68.17,Mostly Rural
+bienville parish,louisiana,la,south,84.61,Mostly Rural
+cameron parish,louisiana,la,south,100,Rural
+bossier parish,louisiana,la,south,24.9,Mostly Urban
+caddo parish,louisiana,la,south,14.26,Mostly Urban
+calcasieu parish,louisiana,la,south,19.54,Mostly Urban
+caldwell parish,louisiana,la,south,100,Rural
+east carroll parish,louisiana,la,south,37.33,Mostly Urban
+catahoula parish,louisiana,la,south,100,Rural
+claiborne parish,louisiana,la,south,80.43,Mostly Rural
+concordia parish,louisiana,la,south,43.82,Mostly Urban
+de soto parish,louisiana,la,south,77.8,Mostly Rural
+east baton rouge parish,louisiana,la,south,6.28,Mostly Urban
+lafourche parish,louisiana,la,south,24.26,Mostly Urban
+east feliciana parish,louisiana,la,south,100,Rural
+hancock county,georgia,ga,south,79.79,Mostly Rural
+haralson county,georgia,ga,south,77.52,Mostly Rural
+harris county,georgia,ga,south,96.69,Mostly Rural
+hart county,georgia,ga,south,76.84,Mostly Rural
+lamar county,georgia,ga,south,62.95,Mostly Rural
+henry county,georgia,ga,south,13.44,Mostly Urban
+houston county,georgia,ga,south,9.73,Mostly Urban
+irwin county,georgia,ga,south,70.07,Mostly Rural
+jasper county,georgia,ga,south,82.09,Mostly Rural
+jeff davis county,georgia,ga,south,69.11,Mostly Rural
+jefferson county,georgia,ga,south,82.56,Mostly Rural
+jenkins county,georgia,ga,south,66.88,Mostly Rural
+johnson county,georgia,ga,south,79.42,Mostly Rural
+jones county,georgia,ga,south,68.43,Mostly Rural
+gordon county,georgia,ga,south,52.13,Mostly Rural
+habersham county,georgia,ga,south,64.35,Mostly Rural
+jackson county,georgia,ga,south,60.54,Mostly Rural
+macon county,georgia,ga,south,60.81,Mostly Rural
+lanier county,georgia,ga,south,71.71,Mostly Rural
+laurens county,georgia,ga,south,56.89,Mostly Rural
+lee county,georgia,ga,south,37.75,Mostly Urban
+liberty county,georgia,ga,south,25.85,Mostly Urban
+lincoln county,georgia,ga,south,100,Rural
+long county,georgia,ga,south,81.21,Mostly Rural
+lowndes county,georgia,ga,south,27.23,Mostly Urban
+lumpkin county,georgia,ga,south,87.77,Mostly Rural
+mcduffie county,georgia,ga,south,60.75,Mostly Rural
+mcintosh county,georgia,ga,south,79.99,Mostly Rural
+monroe county,georgia,ga,south,80.79,Mostly Rural
+madison county,georgia,ga,south,91.94,Mostly Rural
+marion county,georgia,ga,south,100,Rural
+meriwether county,georgia,ga,south,82.68,Mostly Rural
+miller county,georgia,ga,south,100,Rural
+mitchell county,georgia,ga,south,60.2,Mostly Rural
+oconee county,georgia,ga,south,49.41,Mostly Urban
+montgomery county,georgia,ga,south,98.88,Mostly Rural
+morgan county,georgia,ga,south,74.67,Mostly Rural
+murray county,georgia,ga,south,70.25,Mostly Rural
+muscogee county,georgia,ga,south,2.56,Mostly Urban
+newton county,georgia,ga,south,31.74,Mostly Urban
+houston county,minnesota,mn,midwest,58.3,Mostly Rural
+isanti county,minnesota,mn,midwest,62.03,Mostly Rural
+itasca county,minnesota,mn,midwest,84.14,Mostly Rural
+koochiching county,minnesota,mn,midwest,54.72,Mostly Rural
+oglethorpe county,georgia,ga,south,99.06,Mostly Rural
+paulding county,georgia,ga,south,20.68,Mostly Urban
+pike county,georgia,ga,south,99.15,Mostly Rural
+polk county,georgia,ga,south,50.96,Mostly Rural
+peach county,georgia,ga,south,38.99,Mostly Urban
+pickens county,georgia,ga,south,75.62,Mostly Rural
+pierce county,georgia,ga,south,78.19,Mostly Rural
+jackson county,minnesota,mn,midwest,68.52,Mostly Rural
+kanabec county,minnesota,mn,midwest,78.16,Mostly Rural
+kandiyohi county,minnesota,mn,midwest,46.78,Mostly Urban
+kittson county,minnesota,mn,midwest,100,Rural
+lyon county,minnesota,mn,midwest,49.27,Mostly Urban
+lac qui parle county,minnesota,mn,midwest,100,Rural
+lake county,minnesota,mn,midwest,77.37,Mostly Rural
+lake of the woods county,minnesota,mn,midwest,100,Rural
+le sueur county,minnesota,mn,midwest,64.71,Mostly Rural
+lincoln county,minnesota,mn,midwest,100,Rural
+mille lacs county,minnesota,mn,midwest,72.9,Mostly Rural
+evangeline parish,louisiana,la,south,58.61,Mostly Rural
+franklin parish,louisiana,la,south,75.01,Mostly Rural
+jackson parish,louisiana,la,south,69.31,Mostly Rural
+jefferson parish,louisiana,la,south,1.84,Mostly Urban
+grant parish,louisiana,la,south,97.43,Mostly Rural
+iberia parish,louisiana,la,south,27.88,Mostly Urban
+iberville parish,louisiana,la,south,56.49,Mostly Rural
+jefferson davis parish,louisiana,la,south,49.39,Mostly Urban
+lafayette parish,louisiana,la,south,7.86,Mostly Urban
+natchitoches parish,louisiana,la,south,54.64,Mostly Rural
+la salle parish,louisiana,la,south,75.44,Mostly Rural
+lincoln parish,louisiana,la,south,43.37,Mostly Urban
+livingston parish,louisiana,la,south,42.63,Mostly Urban
+madison parish,louisiana,la,south,29.73,Mostly Urban
+morehouse parish,louisiana,la,south,52.03,Mostly Rural
+st. helena parish,louisiana,la,south,100,Rural
+orleans parish,louisiana,la,south,0.5,Mostly Urban
+ouachita parish,louisiana,la,south,23.37,Mostly Urban
+plaquemines parish,louisiana,la,south,23.87,Mostly Urban
+pointe coupee parish,louisiana,la,south,54.89,Mostly Rural
+rapides parish,louisiana,la,south,39.47,Mostly Urban
+red river parish,louisiana,la,south,100,Rural
+richland parish,louisiana,la,south,66.19,Mostly Rural
+sabine parish,louisiana,la,south,91.67,Mostly Rural
+st. charles parish,louisiana,la,south,10.26,Mostly Urban
+st. bernard parish,louisiana,la,south,6.25,Mostly Urban
+st. tammany parish,louisiana,la,south,23.66,Mostly Urban
+st. james parish,louisiana,la,south,28.41,Mostly Urban
+st. john the baptist parish,louisiana,la,south,14.45,Mostly Urban
+st. landry parish,louisiana,la,south,48.25,Mostly Urban
+st. martin parish,louisiana,la,south,52.36,Mostly Rural
+st. mary parish,louisiana,la,south,13.81,Mostly Urban
+webster parish,louisiana,la,south,53.72,Mostly Rural
+tangipahoa parish,louisiana,la,south,41.63,Mostly Urban
+tensas parish,louisiana,la,south,100,Rural
+terrebonne parish,louisiana,la,south,21.06,Mostly Urban
+union parish,louisiana,la,south,85.51,Mostly Rural
+vermilion parish,louisiana,la,south,54.96,Mostly Rural
+vernon parish,louisiana,la,south,54.06,Mostly Rural
+washington parish,louisiana,la,south,65.21,Mostly Rural
+philadelphia county,pennsylvania,pa,northeast,0,Mostly Urban
+pike county,pennsylvania,pa,northeast,77.44,Mostly Rural
+westmoreland county,pennsylvania,pa,northeast,24.95,Mostly Urban
+winn parish,louisiana,la,south,65.12,Mostly Rural
+potter county,pennsylvania,pa,northeast,100,Rural
+schuylkill county,pennsylvania,pa,northeast,35.61,Mostly Urban
+snyder county,pennsylvania,pa,northeast,67.57,Mostly Rural
+somerset county,pennsylvania,pa,northeast,75.26,Mostly Rural
+sullivan county,pennsylvania,pa,northeast,100,Rural
+susquehanna county,pennsylvania,pa,northeast,85.76,Mostly Rural
+tioga county,pennsylvania,pa,northeast,93.59,Mostly Rural
+union county,pennsylvania,pa,northeast,50.91,Mostly Rural
+venango county,pennsylvania,pa,northeast,57.37,Mostly Rural
+warren county,pennsylvania,pa,northeast,61.4,Mostly Rural
+washington county,pennsylvania,pa,northeast,29.94,Mostly Urban
+wyoming county,pennsylvania,pa,northeast,84.8,Mostly Rural
+wayne county,pennsylvania,pa,northeast,89.84,Mostly Rural
+bamberg county,south carolina,sc,south,59.49,Mostly Rural
+york county,pennsylvania,pa,northeast,24.35,Mostly Urban
+bristol county,rhode island,ri,northeast,1.23,Mostly Urban
+mcleod county,minnesota,mn,midwest,44.68,Mostly Urban
+mahnomen county,minnesota,mn,midwest,100,Rural
+marshall county,minnesota,mn,midwest,100,Rural
+martin county,minnesota,mn,midwest,53.01,Mostly Rural
+meeker county,minnesota,mn,midwest,67.17,Mostly Rural
+pine county,minnesota,mn,midwest,90.74,Mostly Rural
+morrison county,minnesota,mn,midwest,73.79,Mostly Rural
+mower county,minnesota,mn,midwest,34.87,Mostly Urban
+murray county,minnesota,mn,midwest,100,Rural
+nicollet county,minnesota,mn,midwest,26,Mostly Urban
+nobles county,minnesota,mn,midwest,45.39,Mostly Urban
+norman county,minnesota,mn,midwest,100,Rural
+olmsted county,minnesota,mn,midwest,15.49,Mostly Urban
+otter tail county,minnesota,mn,midwest,79.56,Mostly Rural
+pipestone county,minnesota,mn,midwest,55.21,Mostly Rural
+pennington county,minnesota,mn,midwest,33.27,Mostly Urban
+rock county,minnesota,mn,midwest,48.97,Mostly Urban
+polk county,minnesota,mn,midwest,53.47,Mostly Rural
+pope county,minnesota,mn,midwest,100,Rural
+ramsey county,minnesota,mn,midwest,0.18,Mostly Urban
+red lake county,minnesota,mn,midwest,100,Rural
+redwood county,minnesota,mn,midwest,68.19,Mostly Rural
+renville county,minnesota,mn,midwest,100,Rural
+rice county,minnesota,mn,midwest,29.01,Mostly Urban
+stearns county,minnesota,mn,midwest,37.9,Mostly Urban
+roseau county,minnesota,mn,midwest,82.19,Mostly Rural
+st. louis county,minnesota,mn,midwest,43.26,Mostly Urban
+scott county,minnesota,mn,midwest,16.93,Mostly Urban
+sherburne county,minnesota,mn,midwest,43.42,Mostly Urban
+sibley county,minnesota,mn,midwest,100,Rural
+wabasha county,minnesota,mn,midwest,64.57,Mostly Rural
+steele county,minnesota,mn,midwest,30.54,Mostly Urban
+stevens county,minnesota,mn,midwest,49.3,Mostly Urban
+swift county,minnesota,mn,midwest,67.28,Mostly Rural
+todd county,minnesota,mn,midwest,81.2,Mostly Rural
+traverse county,minnesota,mn,midwest,100,Rural
+lewis and clark county,montana,mt,west,32.92,Mostly Urban
+mineral county,montana,mt,west,100,Rural
+wadena county,minnesota,mn,midwest,68.97,Mostly Rural
+waseca county,minnesota,mn,midwest,51.28,Mostly Rural
+washington county,minnesota,mn,midwest,14.33,Mostly Urban
+watonwan county,minnesota,mn,midwest,59.8,Mostly Rural
+wilkin county,minnesota,mn,midwest,49.45,Mostly Urban
+madison county,montana,mt,west,100,Rural
+meagher county,montana,mt,west,100,Rural
+liberty county,montana,mt,west,100,Rural
+lincoln county,montana,mt,west,81.94,Mostly Rural
+mccone county,montana,mt,west,100,Rural
+pondera county,montana,mt,west,52.2,Mostly Rural
+missoula county,montana,mt,west,23.83,Mostly Urban
+musselshell county,montana,mt,west,100,Rural
+park county,montana,mt,west,53.96,Mostly Rural
+petroleum county,montana,mt,west,100,Rural
+phillips county,montana,mt,west,100,Rural
+sanders county,montana,mt,west,100,Rural
+powder river county,montana,mt,west,100,Rural
+powell county,montana,mt,west,48.7,Mostly Urban
+prairie county,montana,mt,west,100,Rural
+ravalli county,montana,mt,west,82.88,Mostly Rural
+richland county,montana,mt,west,43.87,Mostly Urban
+roosevelt county,montana,mt,west,45.78,Mostly Urban
+rosebud county,montana,mt,west,100,Rural
+kent county,rhode island,ri,northeast,6.44,Mostly Urban
+newport county,rhode island,ri,northeast,14.55,Mostly Urban
+providence county,rhode island,ri,northeast,5.08,Mostly Urban
+washington county,rhode island,ri,northeast,31.63,Mostly Urban
+abbeville county,south carolina,sc,south,77.97,Mostly Rural
+allendale county,south carolina,sc,south,65.07,Mostly Rural
+anderson county,south carolina,sc,south,38.06,Mostly Urban
+cherokee county,south carolina,sc,south,60.38,Mostly Rural
+barnwell county,south carolina,sc,south,82.36,Mostly Rural
+beaufort county,south carolina,sc,south,20.02,Mostly Urban
+berkeley county,south carolina,sc,south,31.57,Mostly Urban
+calhoun county,south carolina,sc,south,100,Rural
+charleston county,south carolina,sc,south,12.91,Mostly Urban
+aiken county,south carolina,sc,south,36.74,Mostly Urban
+edgefield county,south carolina,sc,south,79.04,Mostly Rural
+chester county,south carolina,sc,south,71.21,Mostly Rural
+chesterfield county,south carolina,sc,south,74.62,Mostly Rural
+clarendon county,south carolina,sc,south,87.24,Mostly Rural
+dillon county,south carolina,sc,south,69.73,Mostly Rural
+dorchester county,south carolina,sc,south,19.63,Mostly Urban
+colleton county,south carolina,sc,south,78.16,Mostly Rural
+darlington county,south carolina,sc,south,56.24,Mostly Rural
+hampton county,south carolina,sc,south,77.19,Mostly Rural
+fairfield county,south carolina,sc,south,77.74,Mostly Rural
+florence county,south carolina,sc,south,37.87,Mostly Urban
+georgetown county,south carolina,sc,south,38.25,Mostly Urban
+greenville county,south carolina,sc,south,12.63,Mostly Urban
+greenwood county,south carolina,sc,south,40.2,Mostly Urban
+mccormick county,south carolina,sc,south,100,Rural
+horry county,south carolina,sc,south,20.41,Mostly Urban
+jasper county,south carolina,sc,south,73.19,Mostly Rural
+kershaw county,south carolina,sc,south,58.46,Mostly Rural
+lancaster county,south carolina,sc,south,48.53,Mostly Urban
+laurens county,south carolina,sc,south,65.97,Mostly Rural
+lee county,south carolina,sc,south,77.98,Mostly Rural
+lexington county,south carolina,sc,south,25.03,Mostly Urban
+chesapeake city,virginia,va,south,6.45,Mostly Urban
+oconee county,south carolina,sc,south,68.09,Mostly Rural
+washington county,virginia,va,south,71.13,Mostly Rural
+westmoreland county,virginia,va,south,76.86,Mostly Rural
+wise county,virginia,va,south,57.45,Mostly Rural
+wythe county,virginia,va,south,73.19,Mostly Rural
+york county,virginia,va,south,8.71,Mostly Urban
+buena vista city,virginia,va,south,3.85,Mostly Urban
+charlottesville city,virginia,va,south,0,Mostly Urban
+alexandria city,virginia,va,south,0,Mostly Urban
+bedford city,virginia,va,south,2.57,Mostly Urban
+bristol city,virginia,va,south,0.02,Mostly Urban
+falls church city,virginia,va,south,0,Mostly Urban
+colonial heights city,virginia,va,south,0,Mostly Urban
+covington city,virginia,va,south,0,Mostly Urban
+danville city,virginia,va,south,4.4,Mostly Urban
+emporia city,virginia,va,south,6.04,Mostly Urban
+fairfax city,virginia,va,south,0,Mostly Urban
+martinsville city,virginia,va,south,0,Mostly Urban
+franklin city,virginia,va,south,3.38,Mostly Urban
+fredericksburg city,virginia,va,south,0.94,Mostly Urban
+galax city,virginia,va,south,12.98,Mostly Urban
+hampton city,virginia,va,south,0.26,Mostly Urban
+toole county,montana,mt,west,47.17,Mostly Urban
+sheridan county,montana,mt,west,100,Rural
+silver bow county,montana,mt,west,10.73,Mostly Urban
+stillwater county,montana,mt,west,100,Rural
+sweet grass county,montana,mt,west,100,Rural
+teton county,montana,mt,west,100,Rural
+box butte county,nebraska,ne,midwest,25.65,Mostly Urban
+treasure county,montana,mt,west,100,Rural
+valley county,montana,mt,west,65.4,Mostly Rural
+wheatland county,montana,mt,west,100,Rural
+wibaux county,montana,mt,west,100,Rural
+yellowstone county,montana,mt,west,15.39,Mostly Urban
+adams county,nebraska,ne,midwest,20.73,Mostly Urban
+blaine county,nebraska,ne,midwest,100,Rural
+boone county,nebraska,ne,midwest,100,Rural
+boyd county,nebraska,ne,midwest,100,Rural
+arthur county,nebraska,ne,midwest,100,Rural
+antelope county,nebraska,ne,midwest,100,Rural
+banner county,nebraska,ne,midwest,100,Rural
+brown county,nebraska,ne,midwest,100,Rural
+burt county,nebraska,ne,midwest,100,Rural
+butler county,nebraska,ne,midwest,68.79,Mostly Rural
+cedar county,nebraska,ne,midwest,100,Rural
+cass county,nebraska,ne,midwest,73.08,Mostly Rural
+buffalo county,nebraska,ne,midwest,32.63,Mostly Urban
+cuming county,nebraska,ne,midwest,64.22,Mostly Rural
+chase county,nebraska,ne,midwest,100,Rural
+cherry county,nebraska,ne,midwest,55.02,Mostly Rural
+cheyenne county,nebraska,ne,midwest,38.54,Mostly Urban
+clay county,nebraska,ne,midwest,100,Rural
+colfax county,nebraska,ne,midwest,51.77,Mostly Rural
+park county,wyoming,wy,west,46.81,Mostly Urban
+pulaski county,georgia,ga,south,63,Mostly Rural
+stephens county,georgia,ga,south,59.98,Mostly Rural
+custer county,nebraska,ne,midwest,69.12,Mostly Rural
+dakota county,nebraska,ne,midwest,23.82,Mostly Urban
+dawes county,nebraska,ne,midwest,44.03,Mostly Urban
+dawson county,nebraska,ne,midwest,31.28,Mostly Urban
+platte county,wyoming,wy,west,60.81,Mostly Rural
+sheridan county,wyoming,wy,west,37.24,Mostly Urban
+sublette county,wyoming,wy,west,100,Rural
+sweetwater county,wyoming,wy,west,12.64,Mostly Urban
+teton county,wyoming,wy,west,57.02,Mostly Rural
+uinta county,wyoming,wy,west,42.81,Mostly Urban
+weston county,wyoming,wy,west,53.18,Mostly Rural
+washakie county,wyoming,wy,west,35.46,Mostly Urban
+harrisonburg city,virginia,va,south,0,Mostly Urban
+hopewell city,virginia,va,south,0,Mostly Urban
+lexington city,virginia,va,south,0,Mostly Urban
+lynchburg city,virginia,va,south,2.72,Mostly Urban
+manassas park city,virginia,va,south,0,Mostly Urban
+manassas city,virginia,va,south,0,Mostly Urban
+portsmouth city,virginia,va,south,0,Mostly Urban
+newport news city,virginia,va,south,0.03,Mostly Urban
+norfolk city,virginia,va,south,0,Mostly Urban
+norton city,virginia,va,south,2.78,Mostly Urban
+petersburg city,virginia,va,south,1.99,Mostly Urban
+poquoson city,virginia,va,south,6.56,Mostly Urban
+waynesboro city,virginia,va,south,2.35,Mostly Urban
+radford city,virginia,va,south,3.17,Mostly Urban
+richmond city,virginia,va,south,0,Mostly Urban
+roanoke city,virginia,va,south,0.01,Mostly Urban
+salem city,virginia,va,south,0,Mostly Urban
+staunton city,virginia,va,south,4.03,Mostly Urban
+suffolk city,virginia,va,south,22.7,Mostly Urban
+virginia beach city,virginia,va,south,1.59,Mostly Urban
+douglas county,washington,wa,west,31.84,Mostly Urban
+asotin county,washington,wa,west,7.83,Mostly Urban
+chelan county,washington,wa,west,35.21,Mostly Urban
+benton county,washington,wa,west,9.64,Mostly Urban
+williamsburg city,virginia,va,south,0,Mostly Urban
+winchester city,virginia,va,south,0,Mostly Urban
+adams county,washington,wa,west,49.73,Mostly Urban
+clallam county,washington,wa,west,35.65,Mostly Urban
+clark county,washington,wa,west,12.5,Mostly Urban
+columbia county,washington,wa,west,40.31,Mostly Urban
+cowlitz county,washington,wa,west,27.75,Mostly Urban
+ferry county,washington,wa,west,100,Rural
+franklin county,washington,wa,west,13.9,Mostly Urban
+garfield county,washington,wa,west,100,Rural
+putnam county,georgia,ga,south,85,Mostly Rural
+quitman county,georgia,ga,south,76.75,Mostly Rural
+rabun county,georgia,ga,south,86.81,Mostly Rural
+randolph county,georgia,ga,south,54.97,Mostly Rural
+richmond county,georgia,ga,south,8.28,Mostly Urban
+rockdale county,georgia,ga,south,14.73,Mostly Urban
+schley county,georgia,ga,south,100,Rural
+screven county,georgia,ga,south,79.37,Mostly Rural
+seminole county,georgia,ga,south,74.53,Mostly Rural
+spalding county,georgia,ga,south,40.8,Mostly Urban
+thomas county,georgia,ga,south,45.26,Mostly Urban
+stewart county,georgia,ga,south,100,Rural
+sumter county,georgia,ga,south,44.96,Mostly Urban
+talbot county,georgia,ga,south,94.29,Mostly Rural
+telfair county,georgia,ga,south,60.19,Mostly Rural
+terrell county,georgia,ga,south,54.14,Mostly Rural
+taliaferro county,georgia,ga,south,100,Rural
+tattnall county,georgia,ga,south,72.43,Mostly Rural
+taylor county,georgia,ga,south,100,Rural
+union county,georgia,ga,south,100,Rural
+tift county,georgia,ga,south,40.88,Mostly Urban
+toombs county,georgia,ga,south,51.14,Mostly Rural
+towns county,georgia,ga,south,100,Rural
+treutlen county,georgia,ga,south,62,Mostly Rural
+troup county,georgia,ga,south,43.96,Mostly Urban
+turner county,georgia,ga,south,49.49,Mostly Urban
+twiggs county,georgia,ga,south,100,Rural
+washington county,georgia,ga,south,62.88,Mostly Rural
+androscoggin county,maine,me,northeast,42.01,Mostly Urban
+aroostook county,maine,me,northeast,82.51,Mostly Rural
+hancock county,maine,me,northeast,92.1,Mostly Rural
+west baton rouge parish,louisiana,la,south,29.82,Mostly Urban
+west carroll parish,louisiana,la,south,100,Rural
+west feliciana parish,louisiana,la,south,100,Rural
+cumberland county,maine,me,northeast,39.15,Mostly Urban
+franklin county,maine,me,northeast,89.29,Mostly Rural
+somerset county,maine,me,northeast,84.13,Mostly Rural
+kennebec county,maine,me,northeast,63.72,Mostly Rural
+knox county,maine,me,northeast,69.54,Mostly Rural
+lincoln county,maine,me,northeast,100,Rural
+oxford county,maine,me,northeast,85.32,Mostly Rural
+penobscot county,maine,me,northeast,60.1,Mostly Rural
+piscataquis county,maine,me,northeast,100,Rural
+sagadahoc county,maine,me,northeast,63.1,Mostly Rural
+charles county,maryland,md,south,30.07,Mostly Urban
+waldo county,maine,me,northeast,90.74,Mostly Rural
+washington county,maine,me,northeast,94.28,Mostly Rural
+york county,maine,me,northeast,55.68,Mostly Rural
+allegany county,maryland,md,south,26.84,Mostly Urban
+anne arundel county,maryland,md,south,5.28,Mostly Urban
+baltimore county,maryland,md,south,5.96,Mostly Urban
+cecil county,maryland,md,south,43.08,Mostly Urban
+carroll county,maryland,md,south,39.27,Mostly Urban
+calvert county,maryland,md,south,36.24,Mostly Urban
+upson county,georgia,ga,south,46.11,Mostly Urban
+walker county,georgia,ga,south,42.38,Mostly Urban
+walton county,georgia,ga,south,42.58,Mostly Urban
+ware county,georgia,ga,south,27.73,Mostly Urban
+warren county,georgia,ga,south,100,Rural
+wilkinson county,georgia,ga,south,100,Rural
+white county,georgia,ga,south,87.38,Mostly Rural
+whitfield county,georgia,ga,south,30.1,Mostly Urban
+wayne county,georgia,ga,south,61.46,Mostly Rural
+webster county,georgia,ga,south,100,Rural
+wheeler county,georgia,ga,south,100,Rural
+wilcox county,georgia,ga,south,100,Rural
+wilkes county,georgia,ga,south,67.58,Mostly Rural
+maui county,hawaii,hi,west,16.38,Mostly Urban
+worth county,georgia,ga,south,70.22,Mostly Rural
+hawaii county,hawaii,hi,west,42.08,Mostly Urban
+honolulu county,hawaii,hi,west,0.88,Mostly Urban
+kalawao county,hawaii,hi,west,100,Rural
+kauai county,hawaii,hi,west,17.54,Mostly Urban
+yellow medicine county,minnesota,mn,midwest,80.63,Mostly Rural
+bear lake county,idaho,id,west,100,Rural
+benewah county,idaho,id,west,73.93,Mostly Rural
+ada county,idaho,id,west,3.78,Mostly Urban
+adams county,idaho,id,west,100,Rural
+bannock county,idaho,id,west,15.98,Mostly Urban
+bingham county,idaho,id,west,54.73,Mostly Rural
+blaine county,idaho,id,west,42.09,Mostly Urban
+winona county,minnesota,mn,midwest,33.61,Mostly Urban
+wright county,minnesota,mn,midwest,35.79,Mostly Urban
+bolivar county,mississippi,ms,south,54.57,Mostly Rural
+adams county,mississippi,ms,south,32.43,Mostly Urban
+alcorn county,mississippi,ms,south,64.31,Mostly Rural
+amite county,mississippi,ms,south,100,Rural
+attala county,mississippi,ms,south,67.23,Mostly Rural
+benton county,mississippi,ms,south,100,Rural
+coahoma county,mississippi,ms,south,32.78,Mostly Urban
+calhoun county,mississippi,ms,south,100,Rural
+carroll county,mississippi,ms,south,100,Rural
+chickasaw county,mississippi,ms,south,85.24,Mostly Rural
+choctaw county,mississippi,ms,south,100,Rural
+claiborne county,mississippi,ms,south,100,Rural
+clarke county,mississippi,ms,south,100,Rural
+clay county,mississippi,ms,south,57.15,Mostly Rural
+issaquena county,mississippi,ms,south,100,Rural
+copiah county,mississippi,ms,south,67.42,Mostly Rural
+covington county,mississippi,ms,south,100,Rural
+desoto county,mississippi,ms,south,20.2,Mostly Urban
+kemper county,mississippi,ms,south,100,Rural
+jefferson davis county,mississippi,ms,south,100,Rural
+forrest county,mississippi,ms,south,28.35,Mostly Urban
+franklin county,mississippi,ms,south,100,Rural
+george county,mississippi,ms,south,89.46,Mostly Rural
+greene county,mississippi,ms,south,100,Rural
+grenada county,mississippi,ms,south,51.85,Mostly Rural
+hancock county,mississippi,ms,south,39.27,Mostly Urban
+harrison county,mississippi,ms,south,20.58,Mostly Urban
+hinds county,mississippi,ms,south,14.63,Mostly Urban
+holmes county,mississippi,ms,south,86.79,Mostly Rural
+humphreys county,mississippi,ms,south,54.06,Mostly Rural
+jefferson county,mississippi,ms,south,100,Rural
+jones county,mississippi,ms,south,62.75,Mostly Rural
+lafayette county,mississippi,ms,south,44.94,Mostly Urban
+caroline county,maryland,md,south,75.46,Mostly Rural
+kent county,maryland,md,south,76.41,Mostly Rural
+dorchester county,maryland,md,south,56.52,Mostly Rural
+frederick county,maryland,md,south,24.67,Mostly Urban
+garrett county,maryland,md,south,87.72,Mostly Rural
+harford county,maryland,md,south,17.63,Mostly Urban
+howard county,maryland,md,south,8.2,Mostly Urban
+wicomico county,maryland,md,south,26.78,Mostly Urban
+montgomery county,maryland,md,south,2.22,Mostly Urban
+prince george's county,maryland,md,south,1.99,Mostly Urban
+queen anne's county,maryland,md,south,54.73,Mostly Rural
+st. mary's county,maryland,md,south,50.65,Mostly Rural
+somerset county,maryland,md,south,58.18,Mostly Rural
+talbot county,maryland,md,south,59.07,Mostly Rural
+washington county,maryland,md,south,28.58,Mostly Urban
+bristol county,massachusetts,ma,northeast,9.31,Mostly Urban
+worcester county,maryland,md,south,16.3,Mostly Urban
+baltimore city,maryland,md,south,0,Mostly Urban
+barnstable county,massachusetts,ma,northeast,11.6,Mostly Urban
+dukes county,massachusetts,ma,northeast,50.09,Mostly Rural
+berkshire county,massachusetts,ma,northeast,36.89,Mostly Urban
+plymouth county,massachusetts,ma,northeast,10.24,Mostly Urban
+essex county,massachusetts,ma,northeast,4.19,Mostly Urban
+franklin county,massachusetts,ma,northeast,54.63,Mostly Rural
+hampden county,massachusetts,ma,northeast,8.72,Mostly Urban
+hampshire county,massachusetts,ma,northeast,29.91,Mostly Urban
+middlesex county,massachusetts,ma,northeast,2.73,Mostly Urban
+nantucket county,massachusetts,ma,northeast,37.84,Mostly Urban
+norfolk county,massachusetts,ma,northeast,1.1,Mostly Urban
+orangeburg county,south carolina,sc,south,65.4,Mostly Rural
+pickens county,south carolina,sc,south,38.01,Mostly Urban
+williamsburg county,south carolina,sc,south,81.24,Mostly Rural
+suffolk county,massachusetts,ma,northeast,0,Mostly Urban
+marion county,south carolina,sc,south,60.3,Mostly Rural
+marlboro county,south carolina,sc,south,60.59,Mostly Rural
+newberry county,south carolina,sc,south,70.65,Mostly Rural
+richland county,south carolina,sc,south,9.08,Mostly Urban
+saluda county,south carolina,sc,south,84.21,Mostly Rural
+spartanburg county,south carolina,sc,south,26.71,Mostly Urban
+sumter county,south carolina,sc,south,31.56,Mostly Urban
+union county,south carolina,sc,south,63.48,Mostly Rural
+bennett county,south dakota,sd,midwest,100,Rural
+york county,south carolina,sc,south,22.62,Mostly Urban
+aurora county,south dakota,sd,midwest,100,Rural
+brookings county,south dakota,sd,midwest,32.53,Mostly Urban
+brule county,south dakota,sd,midwest,100,Rural
+brown county,south dakota,sd,midwest,27.49,Mostly Urban
+beadle county,south dakota,sd,midwest,27.29,Mostly Urban
+bon homme county,south dakota,sd,midwest,100,Rural
+clay county,south dakota,sd,midwest,28.99,Mostly Urban
+buffalo county,south dakota,sd,midwest,100,Rural
+butte county,south dakota,sd,midwest,48.78,Mostly Urban
+campbell county,south dakota,sd,midwest,100,Rural
+clark county,south dakota,sd,midwest,100,Rural
+charles mix county,south dakota,sd,midwest,100,Rural
+douglas county,south dakota,sd,midwest,100,Rural
+codington county,south dakota,sd,midwest,20.39,Mostly Urban
+corson county,south dakota,sd,midwest,100,Rural
+custer county,south dakota,sd,midwest,100,Rural
+davison county,south dakota,sd,midwest,21.16,Mostly Urban
+lamar county,mississippi,ms,south,47.82,Mostly Urban
+monroe county,mississippi,ms,south,69.14,Mostly Rural
+itawamba county,mississippi,ms,south,88.18,Mostly Rural
+jackson county,mississippi,ms,south,25.26,Mostly Urban
+jasper county,mississippi,ms,south,100,Rural
+neshoba county,mississippi,ms,south,72.64,Mostly Rural
+noxubee county,mississippi,ms,south,76.6,Mostly Rural
+lauderdale county,mississippi,ms,south,45.71,Mostly Urban
+lawrence county,mississippi,ms,south,100,Rural
+leake county,mississippi,ms,south,83.88,Mostly Rural
+lee county,mississippi,ms,south,44.37,Mostly Urban
+leflore county,mississippi,ms,south,21.21,Mostly Urban
+lincoln county,mississippi,ms,south,69.21,Mostly Rural
+lowndes county,mississippi,ms,south,41.29,Mostly Urban
+madison county,mississippi,ms,south,27.41,Mostly Urban
+marion county,mississippi,ms,south,73.76,Mostly Rural
+marshall county,mississippi,ms,south,85.98,Mostly Rural
+montgomery county,mississippi,ms,south,62.44,Mostly Rural
+newton county,mississippi,ms,south,86.9,Mostly Rural
+oktibbeha county,mississippi,ms,south,37.85,Mostly Urban
+deuel county,nebraska,ne,midwest,100,Rural
+dixon county,nebraska,ne,midwest,100,Rural
+gage county,nebraska,ne,midwest,43.11,Mostly Urban
+dodge county,nebraska,ne,midwest,28.26,Mostly Urban
+douglas county,nebraska,ne,midwest,2.29,Mostly Urban
+frontier county,nebraska,ne,midwest,100,Rural
+furnas county,nebraska,ne,midwest,100,Rural
+dundy county,nebraska,ne,midwest,100,Rural
+fillmore county,nebraska,ne,midwest,100,Rural
+franklin county,nebraska,ne,midwest,100,Rural
+hall county,nebraska,ne,midwest,15.39,Mostly Urban
+garden county,nebraska,ne,midwest,100,Rural
+garfield county,nebraska,ne,midwest,100,Rural
+gosper county,nebraska,ne,midwest,100,Rural
+grant county,nebraska,ne,midwest,100,Rural
+greeley county,nebraska,ne,midwest,100,Rural
+jefferson county,nebraska,ne,midwest,45.56,Mostly Urban
+hamilton county,nebraska,ne,midwest,51.29,Mostly Rural
+harlan county,nebraska,ne,midwest,100,Rural
+hayes county,nebraska,ne,midwest,100,Rural
+hitchcock county,nebraska,ne,midwest,100,Rural
+holt county,nebraska,ne,midwest,65.98,Mostly Rural
+hooker county,nebraska,ne,midwest,100,Rural
+howard county,nebraska,ne,midwest,100,Rural
+knox county,nebraska,ne,midwest,100,Rural
+johnson county,nebraska,ne,midwest,100,Rural
+kearney county,nebraska,ne,midwest,53.22,Mostly Rural
+keith county,nebraska,ne,midwest,59.02,Mostly Rural
+keya paha county,nebraska,ne,midwest,100,Rural
+kimball county,nebraska,ne,midwest,100,Rural
+nuckolls county,nebraska,ne,midwest,100,Rural
+lancaster county,nebraska,ne,midwest,7.55,Mostly Urban
+lincoln county,nebraska,ne,midwest,29.83,Mostly Urban
+logan county,nebraska,ne,midwest,100,Rural
+loup county,nebraska,ne,midwest,100,Rural
+mcpherson county,nebraska,ne,midwest,100,Rural
+madison county,nebraska,ne,midwest,26.84,Mostly Urban
+merrick county,nebraska,ne,midwest,59.36,Mostly Rural
+morrill county,nebraska,ne,midwest,100,Rural
+nemaha county,nebraska,ne,midwest,50.2,Mostly Rural
+nance county,nebraska,ne,midwest,100,Rural
+platte county,nebraska,ne,midwest,30.44,Mostly Urban
+day county,south dakota,sd,midwest,100,Rural
+deuel county,south dakota,sd,midwest,100,Rural
+dewey county,south dakota,sd,midwest,65.03,Mostly Rural
+hughes county,south dakota,sd,midwest,23.78,Mostly Urban
+edmunds county,south dakota,sd,midwest,100,Rural
+fall river county,south dakota,sd,midwest,56.26,Mostly Rural
+faulk county,south dakota,sd,midwest,100,Rural
+grant county,south dakota,sd,midwest,52.98,Mostly Rural
+gregory county,south dakota,sd,midwest,100,Rural
+haakon county,south dakota,sd,midwest,100,Rural
+hanson county,south dakota,sd,midwest,100,Rural
+harding county,south dakota,sd,midwest,100,Rural
+hamlin county,south dakota,sd,midwest,100,Rural
+hand county,south dakota,sd,midwest,100,Rural
+kingsbury county,south dakota,sd,midwest,100,Rural
+hutchinson county,south dakota,sd,midwest,100,Rural
+hyde county,south dakota,sd,midwest,100,Rural
+jackson county,south dakota,sd,midwest,100,Rural
+jerauld county,south dakota,sd,midwest,100,Rural
+jones county,south dakota,sd,midwest,100,Rural
+mcpherson county,south dakota,sd,midwest,100,Rural
+lake county,south dakota,sd,midwest,50.84,Mostly Rural
+lawrence county,south dakota,sd,midwest,41.05,Mostly Urban
+lincoln county,south dakota,sd,midwest,28.76,Mostly Urban
+lyman county,south dakota,sd,midwest,100,Rural
+mccook county,south dakota,sd,midwest,100,Rural
+klickitat county,washington,wa,west,61.79,Mostly Rural
+grant county,washington,wa,west,44.27,Mostly Urban
+grays harbor county,washington,wa,west,40.62,Mostly Urban
+island county,washington,wa,west,52.76,Mostly Rural
+jefferson county,washington,wa,west,60.44,Mostly Rural
+king county,washington,wa,west,3.14,Mostly Urban
+kitsap county,washington,wa,west,16.58,Mostly Urban
+lewis county,washington,wa,west,62.38,Mostly Rural
+kittitas county,washington,wa,west,49.29,Mostly Urban
+skagit county,washington,wa,west,32.44,Mostly Urban
+lincoln county,washington,wa,west,100,Rural
+mason county,washington,wa,west,73.51,Mostly Rural
+okanogan county,washington,wa,west,84,Mostly Rural
+pacific county,washington,wa,west,63.14,Mostly Rural
+pend oreille county,washington,wa,west,87.59,Mostly Rural
+pierce county,washington,wa,west,6.95,Mostly Urban
+san juan county,washington,wa,west,100,Rural
+wahkiakum county,washington,wa,west,100,Rural
+skamania county,washington,wa,west,100,Rural
+snohomish county,washington,wa,west,11.25,Mostly Urban
+spokane county,washington,wa,west,12.99,Mostly Urban
+stevens county,washington,wa,west,82.26,Mostly Rural
+thurston county,washington,wa,west,20.7,Mostly Urban
+calhoun county,west virginia,wv,south,100,Rural
+yakima county,washington,wa,west,23.75,Mostly Urban
+whitman county,washington,wa,west,31.19,Mostly Urban
+barbour county,west virginia,wv,south,84.04,Mostly Rural
+walla walla county,washington,wa,west,17.3,Mostly Urban
+whatcom county,washington,wa,west,26.24,Mostly Urban
+boone county,west virginia,wv,south,80.8,Mostly Rural
+berkeley county,west virginia,wv,south,31.78,Mostly Urban
+braxton county,west virginia,wv,south,100,Rural
+cabell county,west virginia,wv,south,19.83,Mostly Urban
+brooke county,west virginia,wv,south,38.02,Mostly Urban
+hancock county,west virginia,wv,south,29.26,Mostly Urban
+otoe county,nebraska,ne,midwest,54.76,Mostly Rural
+pawnee county,nebraska,ne,midwest,100,Rural
+perkins county,nebraska,ne,midwest,100,Rural
+phelps county,nebraska,ne,midwest,39.43,Mostly Urban
+pierce county,nebraska,ne,midwest,100,Rural
+scotts bluff county,nebraska,ne,midwest,31,Mostly Urban
+polk county,nebraska,ne,midwest,100,Rural
+red willow county,nebraska,ne,midwest,30.64,Mostly Urban
+richardson county,nebraska,ne,midwest,51.58,Mostly Rural
+rock county,nebraska,ne,midwest,100,Rural
+saline county,nebraska,ne,midwest,58.64,Mostly Rural
+sarpy county,nebraska,ne,midwest,5.45,Mostly Urban
+saunders county,nebraska,ne,midwest,67.32,Mostly Rural
+boise county,idaho,id,west,100,Rural
+clark county,idaho,id,west,100,Rural
+sherman county,nebraska,ne,midwest,100,Rural
+clay county,west virginia,wv,south,100,Rural
+doddridge county,west virginia,wv,south,100,Rural
+fayette county,west virginia,wv,south,56.76,Mostly Rural
+gilmer county,west virginia,wv,south,80.28,Mostly Rural
+grant county,west virginia,wv,south,78.81,Mostly Rural
+greenbrier county,west virginia,wv,south,69.7,Mostly Rural
+hampshire county,west virginia,wv,south,100,Rural
+lewis county,west virginia,wv,south,68.33,Mostly Rural
+hardy county,west virginia,wv,south,83.88,Mostly Rural
+harrison county,west virginia,wv,south,35.22,Mostly Urban
+jackson county,west virginia,wv,south,69.89,Mostly Rural
+jefferson county,west virginia,wv,south,49.81,Mostly Urban
+kanawha county,west virginia,wv,south,23.56,Mostly Urban
+boundary county,idaho,id,west,75.11,Mostly Rural
+bonner county,idaho,id,west,77.02,Mostly Rural
+bonneville county,idaho,id,west,13.6,Mostly Urban
+butte county,idaho,id,west,100,Rural
+camas county,idaho,id,west,100,Rural
+canyon county,idaho,id,west,20.15,Mostly Urban
+caribou county,idaho,id,west,60.66,Mostly Rural
+cassia county,idaho,id,west,50.55,Mostly Rural
+idaho county,idaho,id,west,82.49,Mostly Rural
+clearwater county,idaho,id,west,65.39,Mostly Rural
+custer county,idaho,id,west,100,Rural
+elmore county,idaho,id,west,31.43,Mostly Urban
+franklin county,idaho,id,west,65.48,Mostly Rural
+fremont county,idaho,id,west,84.94,Mostly Rural
+gem county,idaho,id,west,43.72,Mostly Urban
+gooding county,idaho,id,west,56.88,Mostly Rural
+lewis county,idaho,id,west,100,Rural
+jefferson county,idaho,id,west,67.51,Mostly Rural
+jerome county,idaho,id,west,50.81,Mostly Rural
+kootenai county,idaho,id,west,28.58,Mostly Urban
+latah county,idaho,id,west,37.05,Mostly Urban
+lemhi county,idaho,id,west,66.19,Mostly Rural
+twin falls county,idaho,id,west,27.24,Mostly Urban
+lincoln county,idaho,id,west,100,Rural
+madison county,idaho,id,west,29.08,Mostly Urban
+minidoka county,idaho,id,west,43.35,Mostly Urban
+nez perce county,idaho,id,west,19.47,Mostly Urban
+oneida county,idaho,id,west,100,Rural
+shoshone county,idaho,id,west,56.14,Mostly Rural
+teton county,idaho,id,west,100,Rural
+owyhee county,idaho,id,west,80.09,Mostly Rural
+payette county,idaho,id,west,41.14,Mostly Urban
+power county,idaho,id,west,44.84,Mostly Urban
+clark county,illinois,il,midwest,57.8,Mostly Rural
+valley county,idaho,id,west,100,Rural
+washington county,idaho,id,west,47.78,Mostly Urban
+adams county,illinois,il,midwest,31.09,Mostly Urban
+champaign county,illinois,il,midwest,12.36,Mostly Urban
+christian county,illinois,il,midwest,43.28,Mostly Urban
+calhoun county,illinois,il,midwest,100,Rural
+cass county,illinois,il,midwest,56.24,Mostly Rural
+carroll county,illinois,il,midwest,82.26,Mostly Rural
+alexander county,illinois,il,midwest,56.39,Mostly Rural
+boone county,illinois,il,midwest,20.32,Mostly Urban
+bond county,illinois,il,midwest,67.23,Mostly Rural
+bureau county,illinois,il,midwest,56.04,Mostly Rural
+brown county,illinois,il,midwest,59.5,Mostly Rural
+worcester county,massachusetts,ma,northeast,17.32,Mostly Urban
+alcona county,michigan,mi,midwest,98.09,Mostly Rural
+antrim county,michigan,mi,midwest,100,Rural
+lincoln county,west virginia,wv,south,100,Rural
+logan county,west virginia,wv,south,68.45,Mostly Rural
+mcdowell county,west virginia,wv,south,86.1,Mostly Rural
+marion county,west virginia,wv,south,39.94,Mostly Urban
+marshall county,west virginia,wv,south,48.86,Mostly Urban
+mason county,west virginia,wv,south,64.16,Mostly Rural
+mingo county,west virginia,wv,south,87.2,Mostly Rural
+mercer county,west virginia,wv,south,39.64,Mostly Urban
+allegan county,michigan,mi,midwest,63.57,Mostly Rural
+alger county,michigan,mi,midwest,83.63,Mostly Rural
+alpena county,michigan,mi,midwest,55.54,Mostly Rural
+arenac county,michigan,mi,midwest,100,Rural
+baraga county,michigan,mi,midwest,100,Rural
+delta county,michigan,mi,midwest,50.62,Mostly Rural
+barry county,michigan,mi,midwest,75.39,Mostly Rural
+bay county,michigan,mi,midwest,28.5,Mostly Urban
+benzie county,michigan,mi,midwest,100,Rural
+berrien county,michigan,mi,midwest,36.68,Mostly Urban
+branch county,michigan,mi,midwest,70.06,Mostly Rural
+calhoun county,michigan,mi,midwest,29.45,Mostly Urban
+cass county,michigan,mi,midwest,73.19,Mostly Rural
+charlevoix county,michigan,mi,midwest,68.79,Mostly Rural
+cheboygan county,michigan,mi,midwest,87.86,Mostly Rural
+chippewa county,michigan,mi,midwest,66.87,Mostly Rural
+clare county,michigan,mi,midwest,77.82,Mostly Rural
+clinton county,michigan,mi,midwest,50.52,Mostly Rural
+crawford county,michigan,mi,midwest,84,Mostly Rural
+eaton county,michigan,mi,midwest,34.57,Mostly Urban
+dickinson county,michigan,mi,midwest,38.12,Mostly Urban
+emmet county,michigan,mi,midwest,76.96,Mostly Rural
+huron county,michigan,mi,midwest,91.89,Mostly Rural
+genesee county,michigan,mi,midwest,14.67,Mostly Urban
+gladwin county,michigan,mi,midwest,91.95,Mostly Rural
+gogebic county,michigan,mi,midwest,71.45,Mostly Rural
+grand traverse county,michigan,mi,midwest,46.93,Mostly Urban
+gratiot county,michigan,mi,midwest,66.48,Mostly Rural
+hillsdale county,michigan,mi,midwest,69.87,Mostly Rural
+houghton county,michigan,mi,midwest,45.25,Mostly Urban
+jackson county,michigan,mi,midwest,42.11,Mostly Urban
+ingham county,michigan,mi,midwest,12.01,Mostly Urban
+ionia county,michigan,mi,midwest,64,Mostly Rural
+iosco county,michigan,mi,midwest,64.69,Mostly Rural
+iron county,michigan,mi,midwest,79.25,Mostly Rural
+isabella county,michigan,mi,midwest,51.35,Mostly Rural
+cumberland county,illinois,il,midwest,100,Rural
+clay county,illinois,il,midwest,64.57,Mostly Rural
+clinton county,illinois,il,midwest,46.13,Mostly Urban
+coles county,illinois,il,midwest,24.41,Mostly Urban
+cook county,illinois,il,midwest,0.04,Mostly Urban
+crawford county,illinois,il,midwest,61.7,Mostly Rural
+tunica county,mississippi,ms,south,71.46,Mostly Rural
+dekalb county,illinois,il,midwest,20.64,Mostly Urban
+panola county,mississippi,ms,south,79.4,Mostly Rural
+pearl river county,mississippi,ms,south,68.97,Mostly Rural
+perry county,mississippi,ms,south,100,Rural
+warren county,mississippi,ms,south,40.56,Mostly Urban
+wayne county,mississippi,ms,south,78.93,Mostly Rural
+union county,mississippi,ms,south,75.74,Mostly Rural
+tishomingo county,mississippi,ms,south,100,Rural
+pike county,mississippi,ms,south,59.53,Mostly Rural
+pontotoc county,mississippi,ms,south,84.08,Mostly Rural
+prentiss county,mississippi,ms,south,76.8,Mostly Rural
+quitman county,mississippi,ms,south,59.24,Mostly Rural
+rankin county,mississippi,ms,south,33.62,Mostly Urban
+scott county,mississippi,ms,south,74.81,Mostly Rural
+sharkey county,mississippi,ms,south,100,Rural
+simpson county,mississippi,ms,south,86.3,Mostly Rural
+smith county,mississippi,ms,south,100,Rural
+stone county,mississippi,ms,south,80.52,Mostly Rural
+sunflower county,mississippi,ms,south,41.78,Mostly Urban
+tallahatchie county,mississippi,ms,south,78.32,Mostly Rural
+tate county,mississippi,ms,south,80.12,Mostly Rural
+tippah county,mississippi,ms,south,83.67,Mostly Rural
+walthall county,mississippi,ms,south,100,Rural
+washington county,mississippi,ms,south,17.84,Mostly Urban
+webster county,mississippi,ms,south,100,Rural
+wilkinson county,mississippi,ms,south,100,Rural
+audrain county,missouri,mo,south,41.79,Mostly Urban
+caldwell county,missouri,mo,south,100,Rural
+butler county,missouri,mo,south,51.5,Mostly Rural
+callaway county,missouri,mo,south,65.08,Mostly Rural
+cape girardeau county,missouri,mo,south,29.34,Mostly Urban
+camden county,missouri,mo,south,71.69,Mostly Rural
+andrew county,missouri,mo,south,60.77,Mostly Rural
+adair county,missouri,mo,south,40.36,Mostly Urban
+atchison county,missouri,mo,south,100,Rural
+barry county,missouri,mo,south,76.3,Mostly Rural
+winston county,mississippi,ms,south,77.26,Mostly Rural
+yalobusha county,mississippi,ms,south,81.15,Mostly Rural
+yazoo county,mississippi,ms,south,54.78,Mostly Rural
+boone county,missouri,mo,south,18.47,Mostly Urban
+bollinger county,missouri,mo,south,100,Rural
+buchanan county,missouri,mo,south,13.17,Mostly Urban
+cass county,missouri,mo,south,32.78,Mostly Urban
+bates county,missouri,mo,south,75.98,Mostly Rural
+barton county,missouri,mo,south,62.91,Mostly Rural
+benton county,missouri,mo,south,89.89,Mostly Rural
+carroll county,missouri,mo,south,64.17,Mostly Rural
+carter county,missouri,mo,south,100,Rural
+cedar county,missouri,mo,south,74.36,Mostly Rural
+christian county,missouri,mo,south,44.4,Mostly Urban
+crawford county,missouri,mo,south,75.22,Mostly Rural
+clark county,missouri,mo,south,100,Rural
+clay county,missouri,mo,south,8.95,Mostly Urban
+clinton county,missouri,mo,south,76.13,Mostly Rural
+cole county,missouri,mo,south,28.03,Mostly Urban
+lenawee county,michigan,mi,midwest,54.81,Mostly Rural
+kalamazoo county,michigan,mi,midwest,16.47,Mostly Urban
+kalkaska county,michigan,mi,midwest,89.34,Mostly Rural
+kent county,michigan,mi,midwest,14.38,Mostly Urban
+keweenaw county,michigan,mi,midwest,100,Rural
+lake county,michigan,mi,midwest,100,Rural
+lapeer county,michigan,mi,midwest,76.07,Mostly Rural
+leelanau county,michigan,mi,midwest,93.04,Mostly Rural
+menominee county,michigan,mi,midwest,68.42,Mostly Rural
+livingston county,michigan,mi,midwest,34.39,Mostly Urban
+luce county,michigan,mi,midwest,74.67,Mostly Rural
+mackinac county,michigan,mi,midwest,87.76,Mostly Rural
+macomb county,michigan,mi,midwest,2.5,Mostly Urban
+manistee county,michigan,mi,midwest,69.25,Mostly Rural
+marquette county,michigan,mi,midwest,50.8,Mostly Rural
+mecosta county,michigan,mi,midwest,75.78,Mostly Rural
+mason county,michigan,mi,midwest,66.87,Mostly Rural
+marshall county,south dakota,sd,midwest,100,Rural
+meade county,south dakota,sd,midwest,39.27,Mostly Urban
+perkins county,south dakota,sd,midwest,100,Rural
+miner county,south dakota,sd,midwest,100,Rural
+mellette county,south dakota,sd,midwest,100,Rural
+minnehaha county,south dakota,sd,midwest,12.22,Mostly Urban
+moody county,south dakota,sd,midwest,100,Rural
+pennington county,south dakota,sd,midwest,22.93,Mostly Urban
+stanley county,south dakota,sd,midwest,42.68,Mostly Urban
+potter county,south dakota,sd,midwest,100,Rural
+roberts county,south dakota,sd,midwest,100,Rural
+sanborn county,south dakota,sd,midwest,100,Rural
+shannon county,south dakota,sd,midwest,80.94,Mostly Rural
+spink county,south dakota,sd,midwest,100,Rural
+ziebach county,south dakota,sd,midwest,82.98,Mostly Rural
+sully county,south dakota,sd,midwest,100,Rural
+todd county,south dakota,sd,midwest,100,Rural
+tripp county,south dakota,sd,midwest,50.52,Mostly Rural
+turner county,south dakota,sd,midwest,100,Rural
+union county,south dakota,sd,midwest,61.56,Mostly Rural
+walworth county,south dakota,sd,midwest,42.39,Mostly Urban
+yankton county,south dakota,sd,midwest,34.62,Mostly Urban
+cheatham county,tennessee,tn,south,82.89,Mostly Rural
+bledsoe county,tennessee,tn,south,100,Rural
+blount county,tennessee,tn,south,34.58,Mostly Urban
+bradley county,tennessee,tn,south,32.43,Mostly Urban
+carter county,tennessee,tn,south,42.72,Mostly Urban
+carroll county,tennessee,tn,south,83.79,Mostly Rural
+anderson county,tennessee,tn,south,33.14,Mostly Urban
+bedford county,tennessee,tn,south,56.3,Mostly Rural
+benton county,tennessee,tn,south,80.79,Mostly Rural
+campbell county,tennessee,tn,south,58.51,Mostly Rural
+cannon county,tennessee,tn,south,80.44,Mostly Rural
+crockett county,tennessee,tn,south,68.08,Mostly Rural
+chester county,tennessee,tn,south,69.71,Mostly Rural
+claiborne county,tennessee,tn,south,72.9,Mostly Rural
+clay county,tennessee,tn,south,100,Rural
+cocke county,tennessee,tn,south,68.54,Mostly Rural
+coffee county,tennessee,tn,south,46.45,Mostly Urban
+dyer county,tennessee,tn,south,41.62,Mostly Urban
+cumberland county,tennessee,tn,south,57.83,Mostly Rural
+davidson county,tennessee,tn,south,3.29,Mostly Urban
+decatur county,tennessee,tn,south,100,Rural
+dekalb county,tennessee,tn,south,80.71,Mostly Rural
+cooper county,missouri,mo,south,56.37,Mostly Rural
+valley county,nebraska,ne,midwest,100,Rural
+sioux county,nebraska,ne,midwest,100,Rural
+stanton county,nebraska,ne,midwest,77.52,Mostly Rural
+thayer county,nebraska,ne,midwest,100,Rural
+thomas county,nebraska,ne,midwest,100,Rural
+thurston county,nebraska,ne,midwest,100,Rural
+seward county,nebraska,ne,midwest,61.06,Mostly Rural
+sheridan county,nebraska,ne,midwest,100,Rural
+clark county,nevada,nv,west,1.47,Mostly Urban
+washington county,nebraska,ne,midwest,60.1,Mostly Rural
+wayne county,nebraska,ne,midwest,46.08,Mostly Urban
+webster county,nebraska,ne,midwest,100,Rural
+wheeler county,nebraska,ne,midwest,100,Rural
+york county,nebraska,ne,midwest,42.5,Mostly Urban
+douglas county,nevada,nv,west,39.67,Mostly Urban
+churchill county,nevada,nv,west,34.44,Mostly Urban
+lincoln county,nevada,nv,west,100,Rural
+elko county,nevada,nv,west,41.95,Mostly Urban
+esmeralda county,nevada,nv,west,100,Rural
+eureka county,nevada,nv,west,100,Rural
+humboldt county,nevada,nv,west,40.69,Mostly Urban
+lander county,nevada,nv,west,43.07,Mostly Urban
+carson city,nevada,nv,west,4.92,Mostly Urban
+lyon county,nevada,nv,west,39.13,Mostly Urban
+mineral county,nevada,nv,west,34.17,Mostly Urban
+nye county,nevada,nv,west,38.1,Mostly Urban
+pershing county,nevada,nv,west,100,Rural
+storey county,nevada,nv,west,93.67,Mostly Rural
+washoe county,nevada,nv,west,4.33,Mostly Urban
+white pine county,nevada,nv,west,48.18,Mostly Urban
+hillsborough county,new hampshire,nh,northeast,20.02,Mostly Urban
+coos county,new hampshire,nh,northeast,73.88,Mostly Rural
+grafton county,new hampshire,nh,northeast,78.67,Mostly Rural
+belknap county,new hampshire,nh,northeast,71.09,Mostly Rural
+carroll county,new hampshire,nh,northeast,92.01,Mostly Rural
+cheshire county,new hampshire,nh,northeast,66.3,Mostly Rural
+camden county,new jersey,nj,northeast,1.65,Mostly Urban
+sullivan county,new hampshire,nh,northeast,66.62,Mostly Rural
+atlantic county,new jersey,nj,northeast,10.81,Mostly Urban
+merrimack county,new hampshire,nh,northeast,54.36,Mostly Rural
+rockingham county,new hampshire,nh,northeast,22.62,Mostly Urban
+strafford county,new hampshire,nh,northeast,33.43,Mostly Urban
+bergen county,new jersey,nj,northeast,0.09,Mostly Urban
+burlington county,new jersey,nj,northeast,6.31,Mostly Urban
+hunterdon county,new jersey,nj,northeast,48.14,Mostly Urban
+cape may county,new jersey,nj,northeast,9.08,Mostly Urban
+cumberland county,new jersey,nj,northeast,22.08,Mostly Urban
+essex county,new jersey,nj,northeast,0.02,Mostly Urban
+gloucester county,new jersey,nj,northeast,8.33,Mostly Urban
+hudson county,new jersey,nj,northeast,0,Mostly Urban
+passaic county,new jersey,nj,northeast,2.58,Mostly Urban
+dickson county,tennessee,tn,south,66.36,Mostly Rural
+mineral county,west virginia,wv,south,63.4,Mostly Rural
+monongalia county,west virginia,wv,south,25.86,Mostly Urban
+monroe county,west virginia,wv,south,89.67,Mostly Rural
+raleigh county,west virginia,wv,south,39.12,Mostly Urban
+fayette county,tennessee,tn,south,79.78,Mostly Rural
+fentress county,tennessee,tn,south,100,Rural
+franklin county,tennessee,tn,south,69.18,Mostly Rural
+gibson county,tennessee,tn,south,46.76,Mostly Urban
+giles county,tennessee,tn,south,72.13,Mostly Rural
+greene county,tennessee,tn,south,65.7,Mostly Rural
+grundy county,tennessee,tn,south,100,Rural
+hamblen county,tennessee,tn,south,22.35,Mostly Urban
+hancock county,tennessee,tn,south,100,Rural
+hardeman county,tennessee,tn,south,79.54,Mostly Rural
+henderson county,tennessee,tn,south,76.07,Mostly Rural
+morgan county,west virginia,wv,south,100,Rural
+nicholas county,west virginia,wv,south,87.12,Mostly Rural
+ohio county,west virginia,wv,south,18.78,Mostly Urban
+pendleton county,west virginia,wv,south,100,Rural
+pleasants county,west virginia,wv,south,58.29,Mostly Rural
+pocahontas county,west virginia,wv,south,100,Rural
+preston county,west virginia,wv,south,89.93,Mostly Rural
+putnam county,west virginia,wv,south,35.93,Mostly Urban
+upshur county,west virginia,wv,south,66.38,Mostly Rural
+randolph county,west virginia,wv,south,63.61,Mostly Rural
+ritchie county,west virginia,wv,south,100,Rural
+roane county,west virginia,wv,south,79.64,Mostly Rural
+summers county,west virginia,wv,south,78.88,Mostly Rural
+taylor county,west virginia,wv,south,59.49,Mostly Rural
+tucker county,west virginia,wv,south,100,Rural
+tyler county,west virginia,wv,south,92.28,Mostly Rural
+wyoming county,west virginia,wv,south,88.9,Mostly Rural
+wayne county,west virginia,wv,south,63.14,Mostly Rural
+webster county,west virginia,wv,south,100,Rural
+wetzel county,west virginia,wv,south,54.42,Mostly Rural
+wirt county,west virginia,wv,south,100,Rural
+wood county,west virginia,wv,south,25.14,Mostly Urban
+calumet county,wisconsin,wi,midwest,29.04,Mostly Urban
+buffalo county,wisconsin,wi,midwest,100,Rural
+burnett county,wisconsin,wi,midwest,100,Rural
+bayfield county,wisconsin,wi,midwest,100,Rural
+barron county,wisconsin,wi,midwest,67.22,Mostly Rural
+brown county,wisconsin,wi,midwest,13.35,Mostly Urban
+adams county,wisconsin,wi,midwest,100,Rural
+ashland county,wisconsin,wi,midwest,64.25,Mostly Rural
+dodge county,wisconsin,wi,midwest,49.43,Mostly Urban
+chippewa county,wisconsin,wi,midwest,47.67,Mostly Urban
+clark county,wisconsin,wi,midwest,92.11,Mostly Rural
+columbia county,wisconsin,wi,midwest,61.96,Mostly Rural
+crawford county,wisconsin,wi,midwest,68.58,Mostly Rural
+dane county,wisconsin,wi,midwest,11.11,Mostly Urban
+grant county,wisconsin,wi,midwest,67.98,Mostly Rural
+door county,wisconsin,wi,midwest,80.42,Mostly Rural
+douglas county,wisconsin,wi,midwest,46.12,Mostly Urban
+dunn county,wisconsin,wi,midwest,61.19,Mostly Rural
+eau claire county,wisconsin,wi,midwest,22.18,Mostly Urban
+florence county,wisconsin,wi,midwest,100,Rural
+fond du lac county,wisconsin,wi,midwest,34.03,Mostly Urban
+forest county,wisconsin,wi,midwest,100,Rural
+jefferson county,wisconsin,wi,midwest,35.29,Mostly Urban
