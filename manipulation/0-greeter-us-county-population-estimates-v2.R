@@ -8,12 +8,16 @@
 #These first few lines run only when the file is run in RStudio, !!NOT when an Rmd/Rnw file calls it!!
 rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
 cat("\f") # clear console 
+
+
 # ---- knitr-opts --------------------------------------------------------------
+#+ include = FALSE
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 knitr::opts_knit$set(root.dir = "../")
 
 # ---- load-sources ------------------------------------------------------------
 
+#' # Load Packages
 # ---- load-packages -----------------------------------------------------------
 # Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 
@@ -60,7 +64,7 @@ age_group_key <- c(
 
 
 col_key <- c(
-"state_name"                         = "STNAME"           
+"state"                              = "STNAME"           
 ,"county_name"                       = "CTYNAME"           
 ,"year"                              = "YEAR"           
 ,"age_group"                         = "AGEGRP"           
@@ -97,33 +101,9 @@ ds_estimates <- ds_estimates_raw %>%
          ,across(year, ~fct_recode(.,!!!year_key))
          ,across(age_group, ~fct_recode(.,!!!age_group_key))) %>% 
   drop_na(year)
+
+ds_estimates %>% glimpse()
   
-  
-# ---- testing small data set -------------------------------------------------
-
-# filter data to one county to test calcuations
-
-ds_test <- ds_estimates %>% 
-  filter(str_detect(county_name, "Bladen"))
-
-ds_test_total <- ds_test %>% 
-  filter(age_group == "Total") %>% 
-  rowwise() %>% 
-  mutate(
-    total_white = sum(c_across(8:9))
-    ,total_black = sum(c_across(10:11))
-    ,total_indigenous =sum(c_across(12:13))
-  )
-
-ds_test_total_1 <- ds_test %>% 
-  filter(age_group == "Total") %>% 
-  select(1:5, -4)
-
-ds_test_with_total <- ds_test %>% 
-  filter(age_group != "Total") %>% 
-  select(-total_population) %>% 
-  left_join(ds_test_total_1)
-
 # ---- calculate-pct ----------------------------------------------------------
 
 calculate_percent <- function(data, base_select_vars){
@@ -187,7 +167,6 @@ calculate_percent <- function(data, base_select_vars){
         (native_hawaiian_female_population/year_total_population)*100,2)
     )
   
-  
   d_ethnicity <- data %>% 
     filter(age_group != "Total") %>%
     select(all_of(base_select_vars)
@@ -219,10 +198,12 @@ calculate_percent <- function(data, base_select_vars){
   }   
 
 
-ds0 <- calculate_percent(ds_estimates, c("state_name"
+ds0 <- calculate_percent(ds_estimates, c("state"
                                          ,"county_name"
                                          ,"year"
                                          ,"age_group"))
+
+ds0 %>% glimpse()
 
 # ---- save-to-disk -----------------------------------------------------------
 
@@ -231,4 +212,19 @@ ds0 %>% write_rds("./data-public/derived/us-county-population-estimates-v2.rds"
                   )
 ds0 %>% write_csv("./data-public/derived/us-county-population-estimates-v2.csv")
                   
-                  
+
+
+
+
+
+
+
+# test
+
+# testing summarizing data 
+
+# test <- ds0 %>% 
+#   filter(str_detect(county_name, "Bladen")) %>% 
+#   select(-year_total_population, -age_group) %>% 
+#   group_by(state_name, county_name, year) %>%
+#   summarise(across(is.numeric,sum))
