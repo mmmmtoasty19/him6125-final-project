@@ -12,6 +12,7 @@ cat("\f") # clear console
 
 # ---- load-sources ------------------------------------------------------------
 
+
 # ---- load-packages -----------------------------------------------------------
 # Attach these packages so their functions don't need to be qualified: 
 # http://r-pkgs.had.co.nz/namespace.html#search-path
@@ -21,6 +22,8 @@ library(tidyverse)
 # ---- declare-globals ---------------------------------------------------------
 
 # ---- load-data ---------------------------------------------------------------
+
+# describe row in each data set
 
 ds_rural_housing <- read_rds("./data-public/derived/percentage-rural.rds")
 ds_risk_factors  <- read_rds(

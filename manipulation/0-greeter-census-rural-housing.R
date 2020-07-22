@@ -33,8 +33,7 @@ state_names <- read_csv("./data-public/metadata/state-abb.csv") %>%
 ds_rural_housing <- ds_rural_housing_raw %>% 
   janitor::clean_names() %>% 
   select(
-    -id
-    ,-total_urban_inside_urbanized_areas
+    -total_urban_inside_urbanized_areas
     ,-total_urban_inside_urban_clusters
     ,-total_not_defined_for_this_file
     ) %>% 
@@ -45,6 +44,7 @@ ds_rural_housing <- ds_rural_housing_raw %>%
    mutate(
      across(where(is.character), tolower)
      ,across(where(is.character), trimws)
+     ,across(id, ~str_sub(.,-5))
      ,pct_rural = round((total_rural/total)*100,2)
      ,rural     = case_when(
        pct_rural == 100 ~ "Rural"
@@ -58,7 +58,11 @@ ds_rural_housing <- ds_rural_housing_raw %>%
     -total
     ,-total_urban
     ,-total_rural
+  ) %>% rename(
+    county_fips = id
   )
+
+
 
 # ---- save-to-disk -----------------------------------------------------------
 

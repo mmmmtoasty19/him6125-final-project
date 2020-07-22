@@ -222,9 +222,16 @@ ds0 %>% write_csv("./data-public/derived/us-county-population-estimates-v2.csv")
 # test
 
 # testing summarizing data 
-
-# test <- ds0 %>% 
-#   filter(str_detect(county_name, "Bladen")) %>% 
-#   select(-year_total_population, -age_group) %>% 
-#   group_by(state_name, county_name, year) %>%
-#   summarise(across(is.numeric,sum))
+# 
+# test <- ds0 %>%
+#   filter(str_detect(county_name, "Bladen")) %>%
+#   select(-year_total_population, -age_group) %>%
+#   group_by(state, county_name, year) %>%
+#   summarise(across(where(is.numeric),sum))
+# 
+# 
+# 
+# test %>% rowwise() %>% 
+#   mutate(
+#     total_white = sum(c_across(7:8))
+#   )

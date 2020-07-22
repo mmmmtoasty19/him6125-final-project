@@ -60,7 +60,7 @@ for(item in seq_along(county_rankings)){
   d <- county_rankings[[item]] %>% 
     filter(state_abbreviation != "US") %>% 
     select(
-      1:6
+      1:6  #in 2012 column names are different then other years
       ,contains(
         c(
           "smoking"
