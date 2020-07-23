@@ -1,4 +1,4 @@
-county_fips,release_year,adult_smoking_percent,adult_obesity_percent,physical_inactivity_percent,food_environment_index
+county_fips,year,adult_smoking_percent,adult_obesity_percent,physical_inactivity_percent,food_environment_index
 01001,2010,28.1,30,NA,NA
 01003,2010,23.1,24.5,NA,NA
 01005,2010,22.7,36.4,NA,NA

@@ -106,6 +106,7 @@ ds_risk_factors <- ds_risk_factors_raw %>%
     ) %>% 
   rename(
     county_fips = x5_digit_fips_code 
+    ,year = release_year
   ) %>% 
   filter(county_fips_code != "000") %>% 
   select(
