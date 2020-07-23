@@ -35,7 +35,6 @@ import_data <- function(folder){
       drop_na() %>% 
       janitor::clean_names() %>% 
       filter(!str_detect(state,"Puerto Rico")) %>% 
-      select(-county_fips) %>% 
       mutate(across(c("percentage","lower_limit","upper_limit"),as.numeric)
              ,across(where(is.character),tolower)
              ,year = as.integer(item_year)) %>% 
@@ -57,10 +56,14 @@ ds_diabetes_raw <- import_data(folder)
 
 # ---- merge-data -------------------------------------------------------------
 
-ds_diabetes <- bind_rows(ds_diabetes_raw)
+ds_diabetes <- bind_rows(ds_diabetes_raw) %>% 
+  select(-county, -state)
 
 
 # ---- save-data --------------------------------------------------------------
 
-ds_diabetes %>% write_rds("./data-public/derived/us-diabetes-data.rds", compress = 'gz')
+ds_diabetes %>% write_rds(
+  "./data-public/derived/us-diabetes-data.rds"
+  ,compress = 'gz'
+  )
 ds_diabetes %>% write_csv("./data-public/derived/us-diabetes-data.csv")
