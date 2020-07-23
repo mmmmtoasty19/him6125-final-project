@@ -50,7 +50,7 @@ county_rankings <- import_data(folder_path)
 
 # ---- filter ------------------------------------------------------------------
 
-# filter data for diabetes risk factors, other additonal factors
+# filter data for diabetes risk factors, other additional factors
 
 risk_factors <- list()
 
@@ -111,15 +111,9 @@ ds_risk_factors <- ds_risk_factors_raw %>%
   select(
     -state_fips_code
     ,-county_fips_code
-  ) %>% 
-  left_join(read_csv("./data-public/metadata/state-abb.csv")
-    ,by = c("state_abbreviation" = "abb")) %>% 
-  relocate(state, region, .after = state_abbreviation) %>% 
-  mutate(across(where(is.character), tolower))
-  
-
-
-
+    ,-state_abbreviation
+    ,-name
+  )
 
 # ---- save-to-disk ------------------------------------------------------------
 
