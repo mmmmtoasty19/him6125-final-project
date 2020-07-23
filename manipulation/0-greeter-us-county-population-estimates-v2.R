@@ -64,39 +64,42 @@ age_group_key <- c(
 
 
 col_key <- c(
-"state"                              = "STNAME"           
-,"county_name"                       = "CTYNAME"           
-,"year"                              = "YEAR"           
-,"age_group"                         = "AGEGRP"           
-,"total_population"                  = "TOT_POP"           
-,"total_male_population"             = "TOT_MALE"           
-,"total_female_population"           = "TOT_FEMALE"           
-,"white_male_population"             = "WA_MALE"           
-,"white_female_population"           = "WA_FEMALE"           
-,"black_male_population"             = "BA_MALE"           
-,"black_female_population"           = "BA_FEMALE"           
-,"american_indian_male_population"   = "IA_MALE"           
-,"american_indian_female_population" = "IA_FEMALE"     
-,"asian_male_population"             = "AA_MALE"           
-,"asian_female_population"           = "AA_FEMALE"           
-,"native_hawaiian_male_population"   = "NA_MALE"
-,"native_hawaiian_female_population" = "NA_FEMALE" 
-,"not_hispanic_male_population"      = "NH_MALE"
-,"not_hispanic_female_population"    = "NH_FEMALE"
-,"hispanic_male_population"          = "H_MALE"
-,"hispanic_female_population"        = "H_FEMALE"
+  "state_fips"                         = "STATE"
+  ,"county_fips"                       = "COUNTY"
+  ,"year"                              = "YEAR"           
+  ,"age_group"                         = "AGEGRP"           
+  ,"total_population"                  = "TOT_POP"           
+  ,"total_male_population"             = "TOT_MALE"           
+  ,"total_female_population"           = "TOT_FEMALE"           
+  ,"white_male_population"             = "WA_MALE"           
+  ,"white_female_population"           = "WA_FEMALE"           
+  ,"black_male_population"             = "BA_MALE"           
+  ,"black_female_population"           = "BA_FEMALE"           
+  ,"american_indian_male_population"   = "IA_MALE"           
+  ,"american_indian_female_population" = "IA_FEMALE"     
+  ,"asian_male_population"             = "AA_MALE"           
+  ,"asian_female_population"           = "AA_FEMALE"           
+  ,"native_hawaiian_male_population"   = "NA_MALE"
+  ,"native_hawaiian_female_population" = "NA_FEMALE" 
+  ,"not_hispanic_male_population"      = "NH_MALE"
+  ,"not_hispanic_female_population"    = "NH_FEMALE"
+  ,"hispanic_male_population"          = "H_MALE"
+  ,"hispanic_female_population"        = "H_FEMALE"
 )
 
 
 
 # ---- load-data ---------------------------------------------------------------
 
-ds_estimates_raw <- read_csv("./data-unshared/raw/us-population-estimate-2010-2019-age-race.csv")
+ds_estimates_raw <- read_csv(
+  "./data-unshared/raw/us-population-estimate-2010-2019-age-race.csv"
+  )
 
 # ---- tweak-data -------------------------------------------------------------
 
 ds_estimates <- ds_estimates_raw %>%
-  select(all_of(col_key)) %>% 
+  select(all_of(col_key)) %>%
+  unite(col = "county_fips", state_fips:county_fips, sep = "") %>% 
   mutate(across(c(year,age_group),as_factor)
          ,across(year, ~fct_recode(.,!!!year_key))
          ,across(age_group, ~fct_recode(.,!!!age_group_key))) %>% 
@@ -198,8 +201,7 @@ calculate_percent <- function(data, base_select_vars){
   }   
 
 
-ds0 <- calculate_percent(ds_estimates, c("state"
-                                         ,"county_name"
+ds0 <- calculate_percent(ds_estimates, c("county_fips"
                                          ,"year"
                                          ,"age_group"))
 
