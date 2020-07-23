@@ -25,9 +25,6 @@ ds_rural_housing_raw <- read_csv(
   ,skip = 1
   ) 
 
-state_names <- read_csv("./data-public/metadata/state-abb.csv") %>% 
-  mutate(across(.fn = tolower))
-
 # ---- tweak-data -------------------------------------------------------------
 
 ds_rural_housing <- ds_rural_housing_raw %>% 
@@ -52,13 +49,11 @@ ds_rural_housing <- ds_rural_housing_raw %>%
        ,TRUE ~ "Mostly Urban"
        )
      ) %>% 
-  left_join(state_names) %>% 
-  relocate(c("abb", "region"), .after = state) %>% 
   select(
-    -total
-    ,-total_urban
-    ,-total_rural
-  ) %>% rename(
+    id
+    ,pct_rural  
+    ,rural 
+    ) %>% rename(
     county_fips = id
   )
 
