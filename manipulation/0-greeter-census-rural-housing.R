@@ -8,16 +8,20 @@
 #These first few lines run only when the file is run in RStudio, !!NOT when an Rmd/Rnw file calls it!!
 rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
 cat("\f") # clear console 
-
+knitr::opts_knit$set(root.dir = "../")
+knitr::opts_chunk$set(warning = F, message = F)
 # ---- load-sources ------------------------------------------------------------
 
+#' # Load Packages
 # ---- load-packages -----------------------------------------------------------
-# Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
+# Attach these packages so their functions 
+# don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 
 library(tidyverse)
 
 # ---- declare-globals ---------------------------------------------------------
 
+#' # Load Data
 # ---- load-data ---------------------------------------------------------------
 
 ds_rural_housing_raw <- read_csv(
@@ -25,6 +29,7 @@ ds_rural_housing_raw <- read_csv(
   ,skip = 1
   ) 
 
+#' # Tweak Data
 # ---- tweak-data -------------------------------------------------------------
 
 ds_rural_housing <- ds_rural_housing_raw %>% 
@@ -58,32 +63,12 @@ ds_rural_housing <- ds_rural_housing_raw %>%
   )
 
 
-
+#' # Save to Disk
 # ---- save-to-disk -----------------------------------------------------------
 
 ds_rural_housing %>% write_rds("./data-public/derived/percentage-rural.rds"
                                ,compress = "gz")
 ds_rural_housing %>% write_csv("./data-public/derived/percentage-rural.csv")
-
-
-
-# ---- testing-thresholds ------------------------------------------------------
-
-
-# comparing pct-rural to Office of Rural Health Policy list of rural counties
-
-# rural_county <- read_csv('./data-public/metadata/rural-counties.csv') %>% pull() %>% tolower()
-# 
-# ds_test <- ds_rural_housing %>% 
-#   mutate(across(where(is.character),trimws)) %>% 
-#   filter(state == "north carolina") %>% 
-#   mutate(across(county, ~str_remove_all(.,"county"))
-#          ,across(county, trimws)) %>% 
-#   mutate(rural = county %in% rural_county)
-# 
-# 
-# ds_test %>% ggplot(aes(x = pct_rural)) +
-#   geom_histogram()
 
 
 

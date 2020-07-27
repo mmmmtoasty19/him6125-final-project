@@ -25,7 +25,7 @@ library(tidyverse)
 
 # describe row in each data set
 
-ds_rural_housing <- read_rds("./data-public/derived/percentage-rural.rds")
+ds_rural_housing <- read_rds("./data-public/derived/percentage-rural.rds") 
 ds_risk_factors  <- read_rds(
   "./data-public/derived/national-diabetes-risk-factors-2010-2020.rds")
 ds_population    <- read_rds(
@@ -34,26 +34,30 @@ ds_us_diabetes   <- read_rds("./data-public/derived/us-diabetes-data.rds")
 
 # ---- filter-states -----------------------------------------------------------
 
-ds_list <- list(ds_rural_housing,ds_risk_factors,ds_population,ds_us_diabetes)
+ds_list0 <- list(
+  rural_housing = ds_rural_housing
+  ,risk_factors = ds_risk_factors
+  ,population   = ds_population
+  ,diabetes     = ds_us_diabetes
+  )
 
-for(item in seq_along(ds_list)){
-  d <- ds_list[[item]]
-  
-  d_out <- d %>% 
-    filter(!str_detect(state, "alaska|hawaii"))
-  
-  ds_list[[item]] <- d_out
-}
+# remove alaska and hawaii
+ds_list1 <- ds_list0 %>% map(~filter(.,!str_detect(county_fips, "^02|^15")))
+
+# ---- join-data ---------------------------------------------------------------
+
+ds0 <- ds_list1[["population"]] %>% 
+  mutate(across(year, ~as.character(.) %>% as.numeric(.))) %>% 
+  left_join(ds_list1[["risk_factors"]]) %>% 
+  left_join(ds_list1[["diabetes"]]) %>% 
+  left_join(ds_list1[["rural_housing"]])
+
+# ---- save-data ---------------------------------------------------------------
+
+ds0 %>% write_rds(
+  "./data-public/derived/diabetes-modeling.rds"
+  ,compress = "gz")
+
+ds0 %>% write_csv("./data-public/derived/diabetes-modeling.csv")
 
 
-ds_list %>% map(~filter(.,!str_detect(state, "alaska|hawaii")))
-
-
-
-# ---- county-names ------------------------------------------------------------
-
-rural_names <- ds_rural_housing %>% pull(county)
-risk_names <- ds_risk_factors %>% filter(release_year == 2014) %>% pull(name)
-pop_names <- ds_population %>% filter(year == 2014,age_group == "20-24") %>%  
-  pull(county_name)
-diabetes_names <- ds_us_diabetes %>% filter(year == 2014) %>% pull(county)

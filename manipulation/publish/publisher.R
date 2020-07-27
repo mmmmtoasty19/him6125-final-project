@@ -19,9 +19,20 @@ publish_report <- function(file, format){
 
 # ---- publish ---------------------------------------------------------------
 
+base_dir <- "./manipulation/"
 
-# publish_report("./manipulation/scribe-population-data.R", "html_document")
-publish_report("./manipulation/scribe-population-data.R", "github_document")
-publish_report("./manipulation/scribe-risk-factors.R", "github_document")
-publish_report("./manipulation/0-greeter-us-county-population-estimates-v2.R", "html_document")
+scripts <- c(
+  "0-greeter-census-rural-housing.R"          
+  ,"0-greeter-county-rankings-national.R"      
+  ,"0-greeter-us-county-population-estimates.R"
+  ,"0-greeter-us-diabetes.R"                   
+  ,"1-scribe-diabetes-data-set.R"
+)
 
+
+
+publish_report(paste0(base_dir, scripts[1]),"github_document")
+publish_report(paste0(base_dir, scripts[2]),"github_document")
+publish_report(paste0(base_dir, scripts[3]),"github_document")
+publish_report(paste0(base_dir, scripts[4]),"github_document")
+publish_report(paste0(base_dir, scripts[5]),"github_document")

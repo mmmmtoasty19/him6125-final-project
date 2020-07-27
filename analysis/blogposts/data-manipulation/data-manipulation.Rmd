@@ -1,0 +1,107 @@
+---
+title: "Diabetes in Rural North Carolina : Data Collection and Cleaning"
+author: "Kyle Belanger"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme: journal
+    toc: yes
+    toc_depth: 3
+    keep_md: no
+    toc_float: yes
+    code_folding: hide
+  word_document:
+    toc: yes
+    toc_depth: '3'
+#bibliography: ./bib/basic_bib.bib
+#csl: ./bib/apa.csl
+---
+
+<!-- These two chunks should be added in the beginning of every .Rmd 
+  that you want to source an .R script -->
+<!--  The 1st mandatory chunk  -->
+<!--  Set the working directory to the repository's base directory -->
+```{r, echo=F, message=F, warning=F} 
+#Don't combine this call with any other chunk 
+# cat("Working directory: ", getwd()) # check where you are
+  library(knitr)
+# Rmd is in "./reports/reportA/reportA.Rmd", but now the root is "./"
+  # knitr::opts_knit$set(root.dir='../../') 
+```
+
+<!--  The 2nd mandatory chunk  -->
+<!-- Set the report-wide options, and point to the external code file. -->
+```{r set_options, echo=F}
+# set options shared by all chunks
+opts_chunk$set(
+  results='show', 
+  message = FALSE,
+  comment = NA, 
+  tidy = FALSE,
+  fig.height = 4, 
+  fig.width = 5.5, 
+  out.width = "550px",
+  fig.path = 'figure_rmd/',     
+  dev = "png",
+  dpi = 400,
+  warning = FALSE
+  # fig.path = 'figure_pdf/',     
+  # dev = "pdf"#,
+  # dev.args=list(pdf = list(colormodel = 'cmyk'))
+)
+echoChunks <- FALSE
+options(width=120
+        ,knitr.table.format = "html") #So the output is 50% wider than the default.
+```
+
+# Abstract 
+
+This is the second post in the series exploring Diabetes in rural North Carolina.  This post will explore the data used for this project, from collection, cleaning, and analysis ready data.
+
+# Data
+
+---
+
+## Overall 
+
+Overall there are four data sources that have have been used to create the analysis ready data for this project. There is one additional metadata file that contains the list of all county FIP codes, used for linking the various data sets.  All data sets use the county FIPS as the county identifier, the count name is added at the end using the metadata. The image below shows the steps taking to achieve the analysis data set, as well as a table below showing the structure of each data set.  
+
+![](data-cleaning.png)
+
+---
+
+```{r, echo=echoChunks}
+library(magrittr)
+data_sources <- readr::read_csv("data-sources-descrip.csv")
+data_sources %>% knitr::kable() %>% kableExtra::kable_styling()
+  
+```
+
+## Rural Housing
+
+The first data set comes from the [US Census](https://data.census.gov/cedsci/table?q=rural%20house&hidePreview=true&tid=DECENNIALSF12010.H2&vintage=2010&tp=true&g=0100000US.050000), and contains the amount of housing units inside both Urban and Rural areas.  The raw data was taken and used to calculate the percentage of housing units in rural areas, as well as adding the classifications of Rural, Mostly Rural, and Mostly Urban.  More about these classifications can be read [here](https://www2.census.gov/geo/pdfs/reference/ua/Defining_Rural.pdf).  This data set is from the 2010 US Census, which is then used to set the rural classification until the next Census (2020). 
+
+View greeter script [here]() <!-- NEED LINK --> 
+
+```{r, echo=echoChunks}
+ds_rural_housing <- readr::read_csv(
+  "../../../data-public/derived/percentage-rural.csv")
+
+head(ds_rural_housing) %>% janitor::clean_names(case = "title") %>% 
+  knitr::kable(align = 'c') %>% 
+  kableExtra::kable_styling() %>% 
+  kableExtra::footnote(general = "Total Rows: 3,143")
+```
+
+## County Health Rankings
+
+The second data set comes from [County Health Rankings](https://www.countyhealthrankings.org/) and contains data for the risk factors associated with diabetes, this data set is complied from many different data sources.  County Health Rankings uses this data to rate health outcomes across all counties of the United States, for this analysis four categories have been extracted from the overall data set. Note that the food environment index is itself a combine measure, it is a score of both access to healthy food based on distance to grocery stores, as well as access based on cost.  
+
+```{r, echo=echoChunks}
+county_risk_sources <- readr::read_csv("county_health_rankings_sources.csv")
+county_risk_sources %>% knitr::kable() %>% kableExtra::kable_styling() %>% 
+  kableExtra::footnote(general = "https://www.countyhealthrankings.org/explore-health-rankings/measures-data-sources/2020-measures" , general_title = "Source: ")
+
+```
+
+

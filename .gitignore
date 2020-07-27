@@ -48,3 +48,5 @@ vignettes/*.pdf
 data-unshared/*
 manipulation/publish/*.html
 manipulation/retired/*
+analysis/blogposts/data-manipulation/data-cleaning.vsdx
+*.~vsdx

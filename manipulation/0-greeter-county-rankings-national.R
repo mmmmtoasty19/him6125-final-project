@@ -4,19 +4,22 @@
 #' 
 #' ---
 
-#These first few lines run only when the file is run in RStudio, 
-#!!NOT when an Rmd/Rnw file calls it!!
+#+ include = FALSE
+#These first few lines run only when the file is run in RStudio, !!NOT when an Rmd/Rnw file calls it!!
 rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
-cat("\f") # clear console
-
+cat("\f") # clear console 
+knitr::opts_knit$set(root.dir = "../")
+knitr::opts_chunk$set(warning = F, message = F)
 # ---- load-sources ------------------------------------------------------------
 
+#' # Load Packages
 # ---- load-packages -----------------------------------------------------------
 # Attach these packages so their functions don't need to be qualified: 
 # http://r-pkgs.had.co.nz/namespace.html#search-path
 
 library(tidyverse)  
 
+#' # Declare Globals
 # ---- declare-globals ---------------------------------------------------------
 
 folder_path <- "./data-unshared/raw/county-health-rankings-national"
@@ -42,12 +45,12 @@ import_data <- function(path_folder){
 }
 
 
-
+#' # Load Data
 # ---- load-data ---------------------------------------------------------------
 
 county_rankings <- import_data(folder_path)
 
-
+#' # Filter Data
 # ---- filter ------------------------------------------------------------------
 
 # filter data for diabetes risk factors, other additional factors
@@ -94,7 +97,7 @@ for(item in seq_along(county_rankings)){
 
 ds_risk_factors_raw <- bind_rows(risk_factors)
 
-
+#' # Tweak Data
 # ---- mutate-data -------------------------------------------------------------
 
 ds_risk_factors <- ds_risk_factors_raw %>% 
@@ -116,6 +119,7 @@ ds_risk_factors <- ds_risk_factors_raw %>%
     ,-name
   )
 
+#' # Save to Disk
 # ---- save-to-disk ------------------------------------------------------------
 
 ds_risk_factors %>% write_rds(
