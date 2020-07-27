@@ -1,32 +1,20 @@
-#' ---
-#' author: Kyle Belanger
-#' date: "`r format(Sys.Date(), '%m/%d/%Y')`"
-#' 
-#' ---
+0-greeter-us-diabetes.R
+================
+Kyle Belanger
+07/27/2020
 
-#+ include = FALSE
-#These first few lines run only when the file is run in RStudio, !!NOT when an Rmd/Rnw file calls it!!
-rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
-cat("\f") # clear console 
+# Load Packages
 
-
-# ---- knitr-opts --------------------------------------------------------------
-#+ include = FALSE
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-knitr::opts_knit$set(root.dir = "../")
-
-# ---- load-sources ------------------------------------------------------------
-
-#' # Load Packages
-# ---- load-packages -----------------------------------------------------------
+``` r
 # Attach these packages so their functions don't need to be qualified: 
 # http://r-pkgs.had.co.nz/namespace.html#search-path
 
 library(tidyverse)
+```
 
-#' # Declare Globals
-# ---- declare-globals ---------------------------------------------------------
+# Declare Globals
 
+``` r
 folder <- "./data-unshared/raw/us-diabetes-data"
 
 import_data <- function(folder){
@@ -56,23 +44,27 @@ import_data <- function(folder){
   }
   return(output_list)
 }
+```
 
-#' # Load Data
-# ---- load-data --------------------------------------------------------------
+# Load Data
 
+``` r
 ds_diabetes_raw <- import_data(folder)
+```
 
-#' # Merge Data
-# ---- merge-data -------------------------------------------------------------
+# Merge Data
 
+``` r
 ds_diabetes <- bind_rows(ds_diabetes_raw) %>% 
   select(-county, -state)
+```
 
-#' # Save to Disk
-# ---- save-data --------------------------------------------------------------
+# Save to Disk
 
+``` r
 ds_diabetes %>% write_rds(
   "./data-public/derived/us-diabetes-data.rds"
   ,compress = 'gz'
   )
 ds_diabetes %>% write_csv("./data-public/derived/us-diabetes-data.csv")
+```
