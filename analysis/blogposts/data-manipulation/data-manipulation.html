@@ -11,7 +11,7 @@
 
 <meta name="author" content="Kyle Belanger" />
 
-<meta name="date" content="2020-07-26" />
+<meta name="date" content="2020-07-28" />
 
 <title>Diabetes in Rural North Carolina : Data Collection and Cleaning</title>
 
@@ -1604,7 +1604,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Diabetes in Rural North Carolina : Data Collection and Cleaning</h1>
 <h4 class="author">Kyle Belanger</h4>
-<h4 class="date">2020-07-26</h4>
+<h4 class="date">2020-07-28</h4>
 
 </div>
 
@@ -1707,7 +1707,7 @@ Raw data is one year per file
 <div id="rural-housing" class="section level2">
 <h2>Rural Housing</h2>
 <p>The first data set comes from the <a href="https://data.census.gov/cedsci/table?q=rural%20house&amp;hidePreview=true&amp;tid=DECENNIALSF12010.H2&amp;vintage=2010&amp;tp=true&amp;g=0100000US.050000">US Census</a>, and contains the amount of housing units inside both Urban and Rural areas. The raw data was taken and used to calculate the percentage of housing units in rural areas, as well as adding the classifications of Rural, Mostly Rural, and Mostly Urban. More about these classifications can be read <a href="https://www2.census.gov/geo/pdfs/reference/ua/Defining_Rural.pdf">here</a>. This data set is from the 2010 US Census, which is then used to set the rural classification until the next Census (2020).</p>
-<p>View greeter script <a href>here</a> <!-- NEED LINK --></p>
+<p>View greeter script <a href="https://github.com/mmmmtoasty19/nc-diabetes-epidemic-2020/blob/master/manipulation/publish/0-greeter-census-rural-housing.md">here</a></p>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1798,7 +1798,7 @@ Rural
 </tr>
 <tr>
 <td style="padding: 0; border: 0;" colspan="100%">
-<sup></sup> Total Rows: 3,143
+<sup></sup> Displaying 6 of 3,143 rows
 </td>
 </tr>
 </tfoot>
@@ -1806,7 +1806,8 @@ Rural
 </div>
 <div id="county-health-rankings" class="section level2">
 <h2>County Health Rankings</h2>
-<p>The second data set comes from <a href="https://www.countyhealthrankings.org/">County Health Rankings</a> and contains data for the risk factors associated with diabetes, this data set is complied from many different data sources. County Health Rankings uses this data to rate health outcomes across all counties of the United States, for this analysis four categories have been extracted from the overall data set. Note that the food environment index is itself a combine measure, it is a score of both access to healthy food based on distance to grocery stores, as well as access based on cost.</p>
+<p>The second data set comes from <a href="https://www.countyhealthrankings.org/">County Health Rankings</a> and contains data for the risk factors associated with diabetes, this data set is complied from many different data sources. The data was downloaded by year, and then combine to form one data set. County Health Rankings uses this data to rate health outcomes across all counties of the United States, for this analysis four categories have been extracted from the overall data set. Note that the food environment index is itself a combine measure, it is a score of both access to healthy food based on distance to grocery stores, as well as access based on cost.</p>
+<p>View greeter script <a href="https://github.com/mmmmtoasty19/nc-diabetes-epidemic-2020/blob/master/manipulation/publish/0-greeter-county-rankings-national.md">here</a></p>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1879,6 +1880,1091 @@ USDA Food Environment Atlas, Map the Meal Gap
 </td>
 </tr>
 </tfoot>
+</table>
+<hr />
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+County Risk Factors Data Set
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+County Fips
+</th>
+<th style="text-align:center;">
+Year
+</th>
+<th style="text-align:center;">
+Adult Smoking Percent
+</th>
+<th style="text-align:center;">
+Adult Obesity Percent
+</th>
+<th style="text-align:center;">
+Physical Inactivity Percent
+</th>
+<th style="text-align:center;">
+Food Environment Index
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+01001
+</td>
+<td style="text-align:center;">
+2010
+</td>
+<td style="text-align:center;">
+28.1
+</td>
+<td style="text-align:center;">
+30.0
+</td>
+<td style="text-align:center;">
+NA
+</td>
+<td style="text-align:center;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+01003
+</td>
+<td style="text-align:center;">
+2010
+</td>
+<td style="text-align:center;">
+23.1
+</td>
+<td style="text-align:center;">
+24.5
+</td>
+<td style="text-align:center;">
+NA
+</td>
+<td style="text-align:center;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+01005
+</td>
+<td style="text-align:center;">
+2010
+</td>
+<td style="text-align:center;">
+22.7
+</td>
+<td style="text-align:center;">
+36.4
+</td>
+<td style="text-align:center;">
+NA
+</td>
+<td style="text-align:center;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+01007
+</td>
+<td style="text-align:center;">
+2010
+</td>
+<td style="text-align:center;">
+NA
+</td>
+<td style="text-align:center;">
+31.7
+</td>
+<td style="text-align:center;">
+NA
+</td>
+<td style="text-align:center;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+01009
+</td>
+<td style="text-align:center;">
+2010
+</td>
+<td style="text-align:center;">
+23.4
+</td>
+<td style="text-align:center;">
+31.5
+</td>
+<td style="text-align:center;">
+NA
+</td>
+<td style="text-align:center;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+01011
+</td>
+<td style="text-align:center;">
+2010
+</td>
+<td style="text-align:center;">
+NA
+</td>
+<td style="text-align:center;">
+37.3
+</td>
+<td style="text-align:center;">
+NA
+</td>
+<td style="text-align:center;">
+NA
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<sup></sup> Displaying 6 of 34,555 rows
+</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div id="population-estimates" class="section level2">
+<h2>Population Estimates</h2>
+<p>The third data set also comes from the <a href="https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html">US Census</a> and contains population estimates for each county in the United States broken down by, year, age-group, sex, race, and ethnicity. For each row in the table the percent of each type of population was calculated using the yearly population total for the county. This breakdown is useful for this project as African-Americans and Hispanics suffer from diabetes at a higher rate then other groups.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+County Fips
+</th>
+<th style="text-align:right;">
+Year
+</th>
+<th style="text-align:left;">
+Age Group
+</th>
+<th style="text-align:right;">
+Year Total Population
+</th>
+<th style="text-align:right;">
+Total Male Population
+</th>
+<th style="text-align:right;">
+Total Female Population
+</th>
+<th style="text-align:right;">
+White Male Population
+</th>
+<th style="text-align:right;">
+White Female Population
+</th>
+<th style="text-align:right;">
+Black Male Population
+</th>
+<th style="text-align:right;">
+Black Female Population
+</th>
+<th style="text-align:right;">
+American Indian Male Population
+</th>
+<th style="text-align:right;">
+American Indian Female Population
+</th>
+<th style="text-align:right;">
+Asian Male Population
+</th>
+<th style="text-align:right;">
+Asian Female Population
+</th>
+<th style="text-align:right;">
+Native Hawaiian Male Population
+</th>
+<th style="text-align:right;">
+Native Hawaiian Female Population
+</th>
+<th style="text-align:right;">
+Not Hispanic Male Population
+</th>
+<th style="text-align:right;">
+Not Hispanic Female Population
+</th>
+<th style="text-align:right;">
+Hispanic Male Population
+</th>
+<th style="text-align:right;">
+Hispanic Female Population
+</th>
+<th style="text-align:right;">
+Pct Hsipanic Female Population
+</th>
+<th style="text-align:right;">
+Pct Male
+</th>
+<th style="text-align:right;">
+Pct Female
+</th>
+<th style="text-align:right;">
+Pct White Male Population
+</th>
+<th style="text-align:right;">
+Pct White Female Population
+</th>
+<th style="text-align:right;">
+Pct Black Male Population
+</th>
+<th style="text-align:right;">
+Pct Black Female Population
+</th>
+<th style="text-align:right;">
+Pct American Indian Male Population
+</th>
+<th style="text-align:right;">
+Pct American Indian Female Population
+</th>
+<th style="text-align:right;">
+Pct Asian Male Population
+</th>
+<th style="text-align:right;">
+Pct Asian Female Population
+</th>
+<th style="text-align:right;">
+Pct Native Hawaiian Male Population
+</th>
+<th style="text-align:right;">
+Pct Native Hawaiian Female Population
+</th>
+<th style="text-align:right;">
+Pct not Hispanic Male Population
+</th>
+<th style="text-align:right;">
+Pct not Hispanic Female Population
+</th>
+<th style="text-align:right;">
+Pct Hispanic Male Population
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+01001
+</td>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+0-4
+</td>
+<td style="text-align:right;">
+54773
+</td>
+<td style="text-align:right;">
+1863
+</td>
+<td style="text-align:right;">
+1712
+</td>
+<td style="text-align:right;">
+1415
+</td>
+<td style="text-align:right;">
+1314
+</td>
+<td style="text-align:right;">
+356
+</td>
+<td style="text-align:right;">
+319
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1778
+</td>
+<td style="text-align:right;">
+1653
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+59
+</td>
+<td style="text-align:right;">
+0.11
+</td>
+<td style="text-align:right;">
+3.40
+</td>
+<td style="text-align:right;">
+3.13
+</td>
+<td style="text-align:right;">
+2.58
+</td>
+<td style="text-align:right;">
+2.40
+</td>
+<td style="text-align:right;">
+0.65
+</td>
+<td style="text-align:right;">
+0.58
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+<td style="text-align:right;">
+0.03
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3.25
+</td>
+<td style="text-align:right;">
+3.02
+</td>
+<td style="text-align:right;">
+0.16
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+01001
+</td>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+5-9
+</td>
+<td style="text-align:right;">
+54773
+</td>
+<td style="text-align:right;">
+1984
+</td>
+<td style="text-align:right;">
+1980
+</td>
+<td style="text-align:right;">
+1506
+</td>
+<td style="text-align:right;">
+1517
+</td>
+<td style="text-align:right;">
+398
+</td>
+<td style="text-align:right;">
+369
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+1916
+</td>
+<td style="text-align:right;">
+1908
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+0.13
+</td>
+<td style="text-align:right;">
+3.62
+</td>
+<td style="text-align:right;">
+3.61
+</td>
+<td style="text-align:right;">
+2.75
+</td>
+<td style="text-align:right;">
+2.77
+</td>
+<td style="text-align:right;">
+0.73
+</td>
+<td style="text-align:right;">
+0.67
+</td>
+<td style="text-align:right;">
+0.03
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.03
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+3.50
+</td>
+<td style="text-align:right;">
+3.48
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+01001
+</td>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+10-14
+</td>
+<td style="text-align:right;">
+54773
+</td>
+<td style="text-align:right;">
+2163
+</td>
+<td style="text-align:right;">
+2129
+</td>
+<td style="text-align:right;">
+1657
+</td>
+<td style="text-align:right;">
+1621
+</td>
+<td style="text-align:right;">
+427
+</td>
+<td style="text-align:right;">
+409
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2098
+</td>
+<td style="text-align:right;">
+2064
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+<td style="text-align:right;">
+3.95
+</td>
+<td style="text-align:right;">
+3.89
+</td>
+<td style="text-align:right;">
+3.03
+</td>
+<td style="text-align:right;">
+2.96
+</td>
+<td style="text-align:right;">
+0.78
+</td>
+<td style="text-align:right;">
+0.75
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.03
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3.83
+</td>
+<td style="text-align:right;">
+3.77
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+01001
+</td>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+15-19
+</td>
+<td style="text-align:right;">
+54773
+</td>
+<td style="text-align:right;">
+2182
+</td>
+<td style="text-align:right;">
+2047
+</td>
+<td style="text-align:right;">
+1601
+</td>
+<td style="text-align:right;">
+1551
+</td>
+<td style="text-align:right;">
+497
+</td>
+<td style="text-align:right;">
+426
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+2125
+</td>
+<td style="text-align:right;">
+1996
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+51
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+3.98
+</td>
+<td style="text-align:right;">
+3.74
+</td>
+<td style="text-align:right;">
+2.92
+</td>
+<td style="text-align:right;">
+2.83
+</td>
+<td style="text-align:right;">
+0.91
+</td>
+<td style="text-align:right;">
+0.78
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.03
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3.88
+</td>
+<td style="text-align:right;">
+3.64
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+01001
+</td>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+20-24
+</td>
+<td style="text-align:right;">
+54773
+</td>
+<td style="text-align:right;">
+1573
+</td>
+<td style="text-align:right;">
+1579
+</td>
+<td style="text-align:right;">
+1223
+</td>
+<td style="text-align:right;">
+1219
+</td>
+<td style="text-align:right;">
+306
+</td>
+<td style="text-align:right;">
+316
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+1511
+</td>
+<td style="text-align:right;">
+1537
+</td>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+0.08
+</td>
+<td style="text-align:right;">
+2.87
+</td>
+<td style="text-align:right;">
+2.88
+</td>
+<td style="text-align:right;">
+2.23
+</td>
+<td style="text-align:right;">
+2.23
+</td>
+<td style="text-align:right;">
+0.56
+</td>
+<td style="text-align:right;">
+0.58
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+2.76
+</td>
+<td style="text-align:right;">
+2.81
+</td>
+<td style="text-align:right;">
+0.11
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+01001
+</td>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+25-29
+</td>
+<td style="text-align:right;">
+54773
+</td>
+<td style="text-align:right;">
+1574
+</td>
+<td style="text-align:right;">
+1617
+</td>
+<td style="text-align:right;">
+1251
+</td>
+<td style="text-align:right;">
+1235
+</td>
+<td style="text-align:right;">
+289
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+1505
+</td>
+<td style="text-align:right;">
+1570
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+2.87
+</td>
+<td style="text-align:right;">
+2.95
+</td>
+<td style="text-align:right;">
+2.28
+</td>
+<td style="text-align:right;">
+2.25
+</td>
+<td style="text-align:right;">
+0.53
+</td>
+<td style="text-align:right;">
+0.62
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+2.75
+</td>
+<td style="text-align:right;">
+2.87
+</td>
+<td style="text-align:right;">
+0.13
+</td>
+</tr>
+</tbody>
+</table>
+<tfoot>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<sup></sup> Displaying 6 of 565560 rows
+</td>
+</tr>
+</tfoot>
+</div>
+</div>
+<div id="diabetes-percentages" class="section level2">
+<h2>Diabetes Percentages</h2>
+<p>The final data set comes from the <a href="https://www.cdc.gov/diabetes/data/index.html">CDC Diabetes Atlas</a> and contains the estimated prevalence of diabetes in each county of the United States, by year. The data set also includes the upper and lower estimated limits, see the <a href="https://kyleb.rbind.io/post/2020-06-25-diabetes-1/">previous post</a> for an explanation of how these numbers are calculated. The data was downloaded by year, and then merged into one data set for the project.</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Year
+</th>
+<th style="text-align:left;">
+County Fips
+</th>
+<th style="text-align:right;">
+Diabetes Percentage
+</th>
+<th style="text-align:right;">
+Diabetes Lower Limit
+</th>
+<th style="text-align:right;">
+Diabetes Upper Limit
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+01001
+</td>
+<td style="text-align:right;">
+11.2
+</td>
+<td style="text-align:right;">
+8.8
+</td>
+<td style="text-align:right;">
+13.9
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+01003
+</td>
+<td style="text-align:right;">
+10.2
+</td>
+<td style="text-align:right;">
+8.7
+</td>
+<td style="text-align:right;">
+11.9
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+01005
+</td>
+<td style="text-align:right;">
+13.0
+</td>
+<td style="text-align:right;">
+10.6
+</td>
+<td style="text-align:right;">
+15.9
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+01007
+</td>
+<td style="text-align:right;">
+10.6
+</td>
+<td style="text-align:right;">
+8.2
+</td>
+<td style="text-align:right;">
+13.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+01009
+</td>
+<td style="text-align:right;">
+12.6
+</td>
+<td style="text-align:right;">
+9.8
+</td>
+<td style="text-align:right;">
+15.7
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:left;">
+01011
+</td>
+<td style="text-align:right;">
+16.1
+</td>
+<td style="text-align:right;">
+12.4
+</td>
+<td style="text-align:right;">
+20.4
+</td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
