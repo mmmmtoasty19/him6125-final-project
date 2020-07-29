@@ -66,6 +66,6 @@ ds0 %>% write_rds(
   "./data-public/derived/diabetes-modeling.rds"
   ,compress = "gz")
 
-ds0 %>% write_csv("./data-public/derived/diabetes-modeling.csv")
+ds0 %>% write_csv(gzfile("./data-public/derived/diabetes-modeling.csv.gz"))
 
 
