@@ -57,7 +57,10 @@ ds0 <- ds_list1[["population"]] %>%
   mutate(across(year, ~as.character(.) %>% as.numeric(.))) %>% 
   left_join(ds_list1[["risk_factors"]]) %>% 
   left_join(ds_list1[["diabetes"]]) %>% 
-  left_join(ds_list1[["rural_housing"]])
+  left_join(ds_list1[["rural_housing"]]) %>% 
+  left_join(read_csv("./data-public/metadata/county_fips.csv")) %>% 
+  relocate(c("area_name", "state_name", "state_abb"),.after = "county_fips") %>% 
+  rename("county_name" = "area_name")
 
 #' # Save to Disk
 # ---- save-data ---------------------------------------------------------------

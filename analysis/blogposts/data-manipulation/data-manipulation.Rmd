@@ -64,7 +64,7 @@ This is the second post in the series exploring Diabetes in rural North Carolina
 
 ## Overall 
 
-Overall there are four data sources that have have been used to create the analysis ready data for this project. There is one additional metadata file that contains the list of all county FIP codes, used for linking the various data sets.  All data sets use the county FIPS as the county identifier, the count name is added at the end using the metadata. The image below shows the steps taking to achieve the analysis data set, as well as a table below showing the structure of each data set.  
+Overall there are four data sources that have have been used to create the analysis ready data for this project. There is one additional metadata file that contains the list of all county FIP codes, used for linking the various data sets.  All data sets use the county FIPS as the county identifier, the county name is added at the end using the metadata. The image below shows the steps taking to achieve the analysis data set, as well as a table below showing the structure of each data set.  
 
 ![](data-cleaning.png)
 
