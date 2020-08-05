@@ -23,9 +23,16 @@ options(knitr.table.format = "html")
 # Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 
 library(tidyverse)
-
+library(dplyr)
+library(readr)
 # ---- declare-globals ---------------------------------------------------------
-
+ggplot2::theme_set(
+  ggplot2::theme_bw(
+  )+
+    theme(
+      strip.background = element_rect(fill="grey90", color = NA)
+    )
+)
 # ---- load-data ---------------------------------------------------------------
 
 ds_diabetes_raw <-  read_rds("./data-public/derived/us-diabetes-data.rds")
@@ -38,7 +45,7 @@ ds_rural_housing_raw <- read_rds("./data-public/derived/percentage-rural.rds")
 ds_diabetes <- ds_diabetes_raw %>% 
   left_join(ds_rural_housing_raw) %>% 
   left_join(read_csv("./data-public/metadata/county_fips.csv")) %>% 
-  relocate(c("area_name", "state_name", "state_abb"), .after = "county_fips") %>% 
+  dplyr::relocate(c("area_name", "state_name", "state_abb"), .after = "county_fips") %>% 
   rename(county_name = area_name)
 
 # ---- filter ------------------------------------------------------------------
@@ -60,6 +67,52 @@ ds_diabetes %>% ggplot(aes(x = year, y = diabetes_percentage)) +
   geom_line(aes(group = county_fips)) + 
   facet_wrap(~state_abb)
 
+# ---- compute-delta-measures ----------
+ds_diabetes %>% glimpse()
+
+#1. Delta btw years
+#2. Detla btw mean of 2010 - 2015 and 2016, 2017
+#3. Delta btw three slopes: a)2010 - 2015, b) 2010-2016, c)2010-2017
+
+# compute the difference from one year to the next
+ds_delta <- ds_diabetes %>% 
+  select(year, state_abb, state_name, county_name, county_fips, 
+         dbpct = diabetes_percentage) %>% 
+  # filter(county_name %in% c("Albany County","Bladen County") ) %>% 
+  arrange(state_abb, county_name) %>% 
+  group_by(state_abb, county_name, county_fips) %>% 
+  mutate(
+    lag = lag(dbpct, order_by = year),
+    delta_lag = dbpct - lag,
+    lag_positive = delta_lag > 0
+  ) %>% 
+  ungroup()
+#%>% 
+  # print(n = nrow(.))
+
+# How do lag difference vary across counties? 
+ds_delta %>% 
+  filter(year == 2016) %>% 
+  TabularManifest::histogram_continuous("delta_lag")
+ds_delta %>% glimpse()
+
+# join the lag inidicators to the original data set
+ds2 <- ds_diabetes %>% 
+  select(year, state_name, state_abb, county_name, county_fips, diabetes_percentage) %>% 
+  left_join(
+    ds_delta %>% filter(year == 2016) %>% 
+      select(state_abb, county_fips, delta_lag,lag_positive), by = c("state_abb", "county_fips")
+  )
+ds2 %>% glimpse()
+
+ds2 %>% 
+  # filter(state_abb == "NC") %>% 
+  filter(!is.na(state_name)) %>% 
+  ggplot(aes(x=year, y = diabetes_percentage, color = lag_positive))+
+  geom_line(aes(group = county_name), alpha = .5)+
+  scale_color_viridis_d(option = "magma", begin = 0, end = .8)+
+  facet_wrap(~state_name)
+  
 # ---- calculate SD ------------------------------------------------------------
 
 # Single State
