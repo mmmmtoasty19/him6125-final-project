@@ -148,3 +148,12 @@ ds_diabetes_summary <- ds_diabetes %>%
 # ds_diabetes_summary %>% knitr::kable() %>%
 #   kableExtra::kable_styling() %>%
 #   kableExtra::scroll_box(width = "100%", height = "500px")
+
+
+# ---- national-average --------------------------------------------------------
+
+ds_national_average <- ds_diabetes %>% 
+  group_by(year) %>% 
+  summarise(
+    mean = mean(diabetes_percentage, na.rm = TRUE)
+  )
