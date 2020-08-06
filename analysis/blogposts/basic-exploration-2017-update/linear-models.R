@@ -15,6 +15,14 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 knitr::opts_knit$set(root.dir = "../../../")
 options(knitr.table.format = "html")
 
+# ---- script-description ------------------------------------------------------
+
+#1. Delta btw years
+#2. Detla btw mean of 2010 - 2015 and 2016, 2017
+#3. Delta btw three slopes: a)2010 - 2015, b) 2010-2016, c)2010-2017
+
+#4 Model a)2010-2014 b)2010-2015  c) 2010-2016, d)2010-2017
+
 # ---- load-sources ------------------------------------------------------------
 
 # ---- load-packages -----------------------------------------------------------
@@ -72,5 +80,20 @@ ds_delta %>%
   filter(state_abb == "NC") %>% 
   ggplot(aes(x = year, y = delta_lag, color = county_fips)) +
   geom_line(aes(group = county_fips), na.rm = TRUE, show.legend = FALSE)
-  
 
+
+# ---- delta between 2010-2015 & 2016,17 ---------------------------------------
+
+ds1 <- ds_diabetes %>% 
+  rename(dbpct = diabetes_percentage) %>% 
+  group_by(state_abb, county_name, county_fips) %>% 
+  arrange(state_abb, county_name) %>%
+  pivot_wider(names_from = year, values_from = dbpct) %>% 
+  ungroup() %>% rowwise() %>% 
+  mutate(
+    `2010-2015_mean` = round(mean(c_across(`2010`:`2015`), na.rm = TRUE),2)
+    ,delta_16        = `2016` - `2010-2015_mean`
+    ,delta_17        = `2017`- `2016`
+  ) %>% 
+  select(-`2010`,-`2011`,-`2012`,-`2013`,-`2014`,-`2015`)
+  

@@ -155,5 +155,6 @@ ds_diabetes_summary <- ds_diabetes %>%
 ds_national_average <- ds_diabetes %>% 
   group_by(year) %>% 
   summarise(
-    mean = mean(diabetes_percentage, na.rm = TRUE)
+    mean = round(mean(diabetes_percentage, na.rm = TRUE),2)
+    ,median = round(median(diabetes_percentage, na.rm = TRUE),2)
   )
