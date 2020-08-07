@@ -29,6 +29,7 @@ options(knitr.table.format = "html")
 # Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 
 library(tidyverse)
+library(tidymodels)
 
 # ---- declare-globals ---------------------------------------------------------
 
@@ -54,6 +55,122 @@ ds_diabetes <- ds_diabetes_raw %>%
     ) %>% 
   rename(county_name = area_name) %>% 
   select(-diabetes_lower_limit, -diabetes_upper_limit)
+
+
+
+# ---- NC LM -------------------------------------------------------------------
+
+# Practicing using one year, will create loop 
+
+# 2004-2014   
+
+
+ds_nc_diabetes <- ds_diabetes %>% 
+  filter(state_abb == "NC") %>% 
+  select(-state_abb, -state_name)
+
+# Bladen County Only - Testing
+
+lm1 <- ds_nc_diabetes %>% 
+  filter(year < 2015, county_fips == "37017") %>% 
+  nest(data = c(-county_fips, -county_name)) %>% 
+  mutate(
+    fit = map(data, ~ lm(diabetes_percentage ~ 1 + year, data = .x))
+    ,tidied = map(fit, tidy)
+  ) %>% 
+  unnest(tidied) %>% 
+  select(-data, -fit)
+
+print(lm1)
+
+
+ds_nc_diabetes %>% filter(year < 2015, county_fips == "37017") %>% 
+  ggplot(aes(x = year, y = diabetes_percentage)) +
+  geom_line() +
+  geom_smooth(method = "lm", se = FALSE) +
+  ggpmisc::stat_poly_eq(
+    formula = y ~ + x
+    ,aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~"))
+    ,parse = TRUE
+    , vjust = 3
+  )
+
+ds_nc_diabetes %>% filter(county_fips == "37017") %>% 
+  ggplot(aes(x = year, y = diabetes_percentage)) +
+  geom_line() +
+  geom_smooth(method = "lm", se = FALSE) +
+  ggpmisc::stat_poly_eq(
+    formula = y ~ + x
+    ,aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~"))
+    ,parse = TRUE
+    , vjust = 3
+  )
+
+# Model Function - Code needs to be more concise 
+
+many_models <- function(county_fips){
+  id <- county_fips
+  
+  d <- ds_diabetes %>% filter(county_fips == id)
+  
+  lm1 <- d %>% filter(year < 2015) %>% 
+    nest(data = c(-county_fips, -county_name)) %>% 
+    mutate(
+      fit = map(data, ~ lm(diabetes_percentage ~ 1 + year, data = .x))
+      ,tidied = map(fit, tidy)
+    ) %>% 
+    unnest(tidied) %>% 
+    select(-data, -fit)
+  
+  lm2 <- d %>% filter(year < 2016) %>% 
+    nest(data = c(-county_fips, -county_name)) %>% 
+    mutate(
+      fit = map(data, ~ lm(diabetes_percentage ~ 1 + year, data = .x))
+      ,tidied = map(fit, tidy)
+    ) %>% 
+    unnest(tidied) %>% 
+    select(-data, -fit)
+  
+  lm3 <- d %>% filter(year < 2017) %>% 
+    nest(data = c(-county_fips, -county_name)) %>% 
+    mutate(
+      fit = map(data, ~ lm(diabetes_percentage ~ 1 + year, data = .x))
+      ,tidied = map(fit, tidy)
+    ) %>% 
+    unnest(tidied) %>% 
+    select(-data, -fit)
+  
+  lm4 <- d %>% filter(year < 2018) %>% 
+    nest(data = c(-county_fips, -county_name)) %>% 
+    mutate(
+      fit = map(data, ~ lm(diabetes_percentage ~ 1 + year, data = .x))
+      ,tidied = map(fit, tidy)
+    ) %>% 
+    unnest(tidied) %>% 
+    select(-data, -fit)
+  
+  
+  d_out <- bind_rows(
+    lm_2014  = lm1
+    ,lm_2015 = lm2
+    ,lm_2016 = lm3
+    ,lm_2017 = lm4
+    , .id = "id")
+  
+  
+  
+}
+
+
+
+
+# How to use 
+
+many_lm1 <- many_models("37017")
+
+
+
+
 
 
 # ---- delta by year -----------------------------------------------------------
