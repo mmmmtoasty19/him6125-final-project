@@ -1,31 +1,19 @@
-#' ---
-#' author: Kyle Belanger
-#' date: "`r format(Sys.Date(), '%m/%d/%Y')`"
-#' 
-#' ---
+0-greeter-pop-estimates-2000-2009.R
+================
+Kyle Belanger
+08/11/2020
 
-#+ include = FALSE
-#These first few lines run only when the file is run in RStudio, !!NOT when an Rmd/Rnw file calls it!!
-rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
-cat("\f") # clear console 
+# Load Packages
 
-
-# ---- knitr-opts --------------------------------------------------------------
-#+ include = FALSE
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-knitr::opts_knit$set(root.dir = "../")
-
-# ---- load-sources ------------------------------------------------------------
-
-#' # Load Packages
-# ---- load-packages -----------------------------------------------------------
+``` r
 # Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
 
 library(tidyverse)
+```
 
-#' Declare Globals
-# ---- declare-globals ---------------------------------------------------------
+Declare Globals
 
+``` r
 year_key <- c(
   NULL    = "1"
   ,NULL   = "12"
@@ -89,9 +77,11 @@ col_key <- c(
   ,"hispanic_male_population"          = "H_MALE"
   ,"hispanic_female_population"        = "H_FEMALE"
 )
-#' # Load Data
-# ---- load-data ---------------------------------------------------------------
+```
 
+# Load Data
+
+``` r
 data_files <- list.files("data-unshared/raw/pop-estimates-2000-2009"
                          ,full.names = TRUE)
 dto <- list()
@@ -115,10 +105,11 @@ for(item_i in seq_along(data_files)){
   
   
 }
-  
-#' # Tweak Data
-# ---- tweak data --------------------------------------------------------------
+```
 
+# Tweak Data
+
+``` r
 ds0 <- bind_rows(dto)
 
 
@@ -152,16 +143,14 @@ ds1 <- ds0 %>% filter(age_group %in% age_filter) %>%
       )
     ,.groups = "keep"
     )
+```
 
+# Save Data
 
-#' # Save Data 
-# ---- save-data ---------------------------------------------------------------
-
+``` r
 ds1 %>% write_rds("./data-public/derived/us-pop-estimate-2000-2009.rds"
                   ,compress = "gz")
 
 # ds1 %>% write_csv(
 #   gzfile("./data-public/derived/us-pop-estimate-2000-2009.csv"))
-
-
-
+```

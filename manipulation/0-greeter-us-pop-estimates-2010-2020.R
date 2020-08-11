@@ -28,24 +28,22 @@ library(tidyverse)
 
 year_key <- c(
   NULL    = "1"
-  ,NULL   = "12"
-  ,NULL   = "13"
-  ,"2000" =  "2"  
-  ,"2001" =  "3"  
-  ,"2002" =  "4"  
-  ,"2003" =  "5"  
-  ,"2004" =  "6"  
-  ,"2005" =  "7"  
-  ,"2006" =  "8"  
-  ,"2007" = "9"  
-  ,"2008" = "10"  
-  ,"2009" = "11"
+  ,NULL   = "2"
+  ,"2010" =  "3"  
+  ,"2011" =  "4"  
+  ,"2012" =  "5"  
+  ,"2013" =  "6"  
+  ,"2014" =  "7"  
+  ,"2015" =  "8"  
+  ,"2016" =  "9"  
+  ,"2017" = "10"  
+  ,"2018" = "11"  
+  ,"2019" = "12"
 )
 
 age_group_key <- c(
-  "Total"    = "99"
-  ,"0"       = "0"
-  ,"1-4"     = "1"
+  "Total"    = "0"
+  ,"0-4"     = "1"
   ,"5-9"     = "2"
   ,"10-14"   = "3"
   ,"15-19"   = "4"
@@ -89,38 +87,6 @@ col_key <- c(
   ,"hispanic_male_population"          = "H_MALE"
   ,"hispanic_female_population"        = "H_FEMALE"
 )
-#' # Load Data
-# ---- load-data ---------------------------------------------------------------
-
-data_files <- list.files("data-unshared/raw/pop-estimates-2000-2009"
-                         ,full.names = TRUE)
-dto <- list()
-
-for(item_i in seq_along(data_files)){
-  item_path <- data_files[item_i]
-  item_name <- item_path %>% basename() %>% 
-    stringr::str_replace(".csv","") %>% tolower()
-  
-  d_raw <- readr::read_csv(item_path) 
-  
-  d <- d_raw %>% 
-    select(all_of(col_key)) %>%
-    unite(col = "county_fips", state_fips:county_fips, sep = "") %>% 
-    mutate(across(c(year,age_group),as_factor)
-           ,across(year, ~fct_recode(.,!!!year_key))
-           ,across(age_group, ~fct_recode(.,!!!age_group_key))) %>% 
-    drop_na(year)
-  
-  dto[[item_name]] <- d
-  
-  
-}
-  
-#' # Tweak Data
-# ---- tweak data --------------------------------------------------------------
-
-ds0 <- bind_rows(dto)
-
 
 age_filter <- c(
   "20-24"   
@@ -137,10 +103,29 @@ age_filter <- c(
   ,"75-79"   
   ,"80-84"   
   ,"85-over" 
+)
+
+
+#' # Load Data
+# ---- load-data ---------------------------------------------------------------
+
+ds_estimates_raw <- read_csv(
+  "./data-unshared/raw/us-population-estimate-2010-2019-age-race.csv"
   )
 
+#' # Tweak Data
+# ---- tweak-data -------------------------------------------------------------
 
-ds1 <- ds0 %>% filter(age_group %in% age_filter) %>% 
+ds_estimates <- ds_estimates_raw %>%
+  select(all_of(col_key)) %>%
+  unite(col = "county_fips", state_fips:county_fips, sep = "") %>% 
+  mutate(across(c(year,age_group),as_factor)
+         ,across(year, ~fct_recode(.,!!!year_key))
+         ,across(age_group, ~fct_recode(.,!!!age_group_key))) %>% 
+  drop_na(year)
+
+
+ds1 <- ds_estimates %>% filter(age_group %in% age_filter) %>% 
   group_by(year, county_fips) %>% 
   summarise(across(where(is.numeric), sum),.groups = "keep" ) %>% 
   summarise(
@@ -149,19 +134,20 @@ ds1 <- ds0 %>% filter(age_group %in% age_filter) %>%
       where(is.numeric) & !total_population
       ,~(.x / total_population)*100
       ,.names = "adult_pct_{col}"
-      )
-    ,.groups = "keep"
     )
+    ,.groups = "keep"
+  )
+
+ds1 %>% glimpse()
 
 
 #' # Save Data 
 # ---- save-data ---------------------------------------------------------------
 
-ds1 %>% write_rds("./data-public/derived/us-pop-estimate-2000-2009.rds"
+ds1 %>% write_rds("./data-public/derived/us-pop-estimate-2010-2019.rds"
                   ,compress = "gz")
 
 # ds1 %>% write_csv(
-#   gzfile("./data-public/derived/us-pop-estimate-2000-2009.csv"))
-
+#   gzfile("./data-public/derived/us-pop-estimate-2010-2019.csv"))
 
 
