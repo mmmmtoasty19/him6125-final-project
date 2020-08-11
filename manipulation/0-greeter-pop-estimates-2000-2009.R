@@ -151,7 +151,7 @@ ds1 <- ds0 %>% filter(age_group %in% age_filter) %>%
       ,.names = "adult_pct_{col}"
       )
     ,.groups = "keep"
-    )
+    ) %>% ungroup()
 
 
 #' # Save Data 

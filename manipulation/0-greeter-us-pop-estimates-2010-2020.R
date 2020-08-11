@@ -136,7 +136,7 @@ ds1 <- ds_estimates %>% filter(age_group %in% age_filter) %>%
       ,.names = "adult_pct_{col}"
     )
     ,.groups = "keep"
-  )
+  ) %>% ungroup()
 
 ds1 %>% glimpse()
 

@@ -66,9 +66,9 @@ ds_rural_housing <- ds_rural_housing_raw %>%
 #' # Save to Disk
 # ---- save-to-disk -----------------------------------------------------------
 
-ds_rural_housing %>% write_rds("./data-public/derived/percentage-rural.rds"
+ds_rural_housing %>% write_rds("./data-public/derived/percentage-rural-2010.rds"
                                ,compress = "gz")
-ds_rural_housing %>% write_csv("./data-public/derived/percentage-rural.csv")
+ds_rural_housing %>% write_csv("./data-public/derived/percentage-rural-2010.csv")
 
 
 
