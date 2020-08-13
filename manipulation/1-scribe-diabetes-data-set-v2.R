@@ -84,11 +84,11 @@ ds1 <- ds2000 %>%
 #' # Save to Disk
 # ---- save-data ---------------------------------------------------------------
 
-ds0 %>% write_rds(
+ds1 %>% write_rds(
   "./data-public/derived/diabetes-modeling-data.rds"
   ,compress = "gz")
 
-ds0 %>% write_csv(
+ds1 %>% write_csv(
   gzfile("./data-public/derived/diabetes-modeling-data.csv.gz")
   )
 

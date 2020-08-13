@@ -106,6 +106,16 @@ age_filter <- c(
 )
 
 
+
+
+age_groups <- list(
+  age_20_44  = c("20-24" ,"25-29" ,"30-34" ,"35-39" ,"40-44" )
+  ,age_45_64 = c("45-49","50-54","55-59","60-64")
+  ,age_65_74 = c("65-69","70-74")
+  ,age_75_over = c( "75-79" ,"80-84" ,"85-over")
+)
+
+
 #' # Load Data
 # ---- load-data ---------------------------------------------------------------
 
@@ -141,10 +151,60 @@ ds1 <- ds_estimates %>% filter(age_group %in% age_filter) %>%
 ds1 %>% glimpse()
 
 
+# AGe group percents
+
+ds_total <- ds_estimates %>% 
+  select(county_fips, year, age_group,total_population) %>% 
+  filter(age_group %in% age_filter) %>% 
+  group_by(year, county_fips) %>% 
+  summarise(across(total_population, sum))
+
+ls_age_groups <- list()
+
+for(item_i in seq_along(age_groups)){
+  column_name <- names(age_groups[item_i])
+  
+  ls_age_groups[[item_i]] <-  ds_estimates %>% 
+    select(county_fips, year, age_group,total_population) %>% 
+    filter(age_group %in% age_groups[[item_i]]) %>% 
+    group_by(year, county_fips) %>% 
+    summarise(total = sum(total_population)
+    ) %>% 
+    rename_with(.fn = ~paste0(.,"_",column_name), .cols = total)
+  
+}
+
+
+ds_age_group <- ds_total %>% 
+  left_join(ls_age_groups[[1]]) %>%
+  left_join(ls_age_groups[[2]]) %>% 
+  left_join(ls_age_groups[[3]]) %>% 
+  left_join(ls_age_groups[[4]]) %>% 
+  group_by(year, county_fips) %>% 
+  summarise(
+    total_population = total_population
+    ,across(
+      where(is.numeric) & !total_population
+      ,~(.x / total_population)*100
+      ,.names = "pct_{col}"
+    )
+    ,.groups = "keep"
+  ) %>% ungroup()
+
+
+#' # Join 
+# ---- join-data ---------------------------------------------------------------
+
+
+ds_combined <- ds1 %>% 
+  left_join(ds_age_group, by = c("year", "county_fips", "total_population"))
+
+
+
 #' # Save Data 
 # ---- save-data ---------------------------------------------------------------
 
-ds1 %>% write_rds("./data-public/derived/us-pop-estimate-2010-2019.rds"
+ds_combined %>% write_rds("./data-public/derived/us-pop-estimate-2010-2019.rds"
                   ,compress = "gz")
 
 # ds1 %>% write_csv(
