@@ -175,27 +175,6 @@ many_lm2 <- many_models("37043")
 many_lm3 <- many_models("37183")
 
 
-# testing offset
-
-
-bladen_model <- ds_diabetes %>% filter(county_fips == "37017") %>% 
-  filter(year < 2015) %>% 
-  nest(data = c(-county_fips, -county_name)) %>% 
-  mutate(
-    fit = map(data, ~ lm(I(diabetes_percentage - 533) ~ 0 + year, data = .x))
-    ,tidied = map(fit, tidy)
-  ) %>% 
-  unnest(tidied) %>% 
-  select(-data, -fit)
-
-ds_nc_diabetes %>% filter(year < 2015, county_fips == "37017") %>% 
-  ggplot(aes(x = year, y = diabetes_percentage)) +
-  geom_line() +
-  # geom_smooth(method = "lm", se = FALSE) +
-  geom_abline(slope = -0.2596032, intercept = 12
-              )
-  
-
 
 
 
